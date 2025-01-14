@@ -1,0 +1,2054 @@
+@prefix ability: <http://localhost:8000/ability/> .
+@prefix classes: <http://localhost:8000/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+
+ability: a classes:Ability ;
+    rdfs:label ""@en ;
+    schema1:name ""@en .
+
+ability:Adaptability a classes:Ability ;
+    rdfs:label "Adaptability"@en ;
+    schema1:description "Powers up moves of the same type as the Pokémon."@en,
+        "Powers up moves of the same type."@en ;
+    schema1:name "Adaptability"@en .
+
+ability:Aerilate a classes:Ability ;
+    rdfs:label "Aerilate"@en ;
+    schema1:description "Normal-type moves become Flying-type moves."@en,
+        "Normal-type moves become Flying-type moves. The power of those moves is boosted a little."@en ;
+    schema1:name "Aerilate"@en .
+
+ability:Aftermath a classes:Ability ;
+    rdfs:label "Aftermath"@en ;
+    schema1:description "Damages the attacker if it contacts the Pokémon with a finishing hit."@en,
+        "Damages the attacker if it knocks out the Pokémon with a move that makes direct contact."@en,
+        "Damages the attacker landing the finishing hit."@en,
+        "Damages the foe landing the finishing hit."@en ;
+    schema1:name "Aftermath"@en .
+
+ability:Air_Lock a classes:Ability ;
+    rdfs:label "Air_Lock"@en ;
+    schema1:description "Eliminates the effects of weather."@en,
+        "Negates weather effects."@en ;
+    schema1:name "Air_Lock"@en .
+
+ability:Analytic a classes:Ability ;
+    rdfs:label "Analytic"@en ;
+    schema1:description "Boosts move power when the Pokémon moves after the target."@en,
+        "Boosts move power when the Pokémon moves last."@en,
+        "Boosts the power of the Pokémon's move if it is the last to act that turn."@en ;
+    schema1:name "Analytic"@en .
+
+ability:Anger_Point a classes:Ability ;
+    rdfs:label "Anger_Point"@en ;
+    schema1:description "Maxes Attack after taking a critical hit."@en,
+        "Maxes the Attack stat after the Pokémon takes a critical hit."@en,
+        "Raises Attack upon taking a critical hit."@en,
+        "The Pokémon is angered when it takes a critical hit, and that maxes its Attack stat."@en,
+        "The Pokémon is angered when it takes a critical hit, and that maxes its Attack stat. "@en ;
+    schema1:name "Anger_Point"@en .
+
+ability:Anger_Shell a classes:Ability ;
+    rdfs:label "Anger_Shell"@en ;
+    schema1:description "When an attack causes its HP to drop to half or less, the Pokémon gets angry. This lowers its Defense and Sp. Def stats but boosts its Attack, Sp. Atk, and Speed stats."@en ;
+    schema1:name "Anger_Shell"@en .
+
+ability:Anticipation a classes:Ability ;
+    rdfs:label "Anticipation"@en ;
+    schema1:description "Senses a foe's dangerous moves."@en,
+        "Senses an opposing Pokémon's dangerous moves."@en,
+        "Senses the foe's dangerous moves."@en,
+        "The Pokémon can sense an opposing Pokémon's dangerous moves."@en ;
+    schema1:name "Anticipation"@en .
+
+ability:Arena_Trap a classes:Ability ;
+    rdfs:label "Arena_Trap"@en ;
+    schema1:description "Prevents fleeing.{{sup/3"@en,
+        "Prevents opposing Pokémon from fleeing from battle."@en,
+        "Prevents opposing Pokémon from fleeing."@en,
+        "Prevents the foe from fleeing."@en ;
+    schema1:name "Arena_Trap"@en .
+
+ability:Armor_Tail a classes:Ability ;
+    rdfs:label "Armor_Tail"@en ;
+    schema1:description "The mysterious tail covering the Pokémon's head makes opponents unable to use priority moves against the Pokémon or its allies."@en ;
+    schema1:name "Armor_Tail"@en .
+
+ability:Aroma_Veil a classes:Ability ;
+    rdfs:label "Aroma_Veil"@en ;
+    schema1:description "Protects allies from attacks that limit their move choices."@en,
+        "Protects itself and its allies from attacks that limit their move choices."@en,
+        "Protects the Pokémon and its allies from effects that prevent the use of moves."@en ;
+    schema1:name "Aroma_Veil"@en .
+
+ability:Aura_Break a classes:Ability ;
+    rdfs:label "Aura_Break"@en ;
+    schema1:description "The effects of \"Aura\" Abilities are reversed to lower the power of affected moves."@en,
+        "The effects of \"Aura\" Abilities are reversed."@en ;
+    schema1:name "Aura_Break"@en .
+
+ability:Bad_Dreams a classes:Ability ;
+    rdfs:label "Bad_Dreams"@en ;
+    schema1:description "Damages opposing Pokémon that are asleep."@en,
+        "Reduces a sleeping foe's HP."@en,
+        "Reduces the HP of sleeping opposing Pokémon."@en ;
+    schema1:name "Bad_Dreams"@en .
+
+ability:Ball_Fetch a classes:Ability ;
+    rdfs:label "Ball_Fetch"@en ;
+    schema1:description "If the Pokémon is not holding an item, it will fetch the Poké Ball from the first failed throw of the battle.{{AbilityInfobox/desc"@en ;
+    schema1:name "Ball_Fetch"@en .
+
+ability:Battery a classes:Ability ;
+    rdfs:label "Battery"@en ;
+    schema1:description "Powers up ally Pokémon's special moves."@en ;
+    schema1:name "Battery"@en .
+
+ability:Battle_Armor a classes:Ability ;
+    rdfs:label "Battle_Armor"@en ;
+    schema1:description "Blocks critical hits."@en,
+        "Hard armor protects the Pokémon from critical hits."@en,
+        "Protects the Pokémon from critical hits."@en,
+        "The Pokémon is protected against critical hits."@en ;
+    schema1:name "Battle_Armor"@en .
+
+ability:Battle_Bond a classes:Ability ;
+    rdfs:label "Battle_Bond"@en ;
+    schema1:description "Defeating an opposing Pokémon strengthens the Pokémon's bond with its Trainer, and it becomes Ash-Greninja. Water Shuriken gets more powerful."@en,
+        "When the Pokémon knocks out a target, its bond with its Trainer is strengthened, and its Attack, Sp. Atk, and Speed stats are boosted."@en ;
+    schema1:name "Battle_Bond"@en .
+
+ability:Beads_of_Ruin a classes:Ability ;
+    rdfs:label "Beads_of_Ruin"@en ;
+    schema1:description "The power of the Pokémon's ruinous beads lowers the Sp. Def stats of all Pokémon except itself."@en ;
+    schema1:name "Beads_of_Ruin"@en .
+
+ability:Beast_Boost a classes:Ability ;
+    rdfs:label "Beast_Boost"@en ;
+    schema1:description "Boosts the Pokémon's most proficient stat every time it knocks out a target."@en,
+        "The Pokémon boosts its most proficient stat each time it knocks out a Pokémon."@en ;
+    schema1:name "Beast_Boost"@en .
+
+ability:Berserk a classes:Ability ;
+    rdfs:label "Berserk"@en ;
+    schema1:description "Boosts the Pokémon's Sp. Atk stat when it takes a hit that causes its HP to become half or less."@en,
+        "Boosts the Pokémon's Sp. Atk stat when it takes a hit that causes its HP to drop to half or less."@en ;
+    schema1:name "Berserk"@en .
+
+ability:Big_Pecks a classes:Ability ;
+    rdfs:label "Big_Pecks"@en ;
+    schema1:description "Prevents the Pokémon from having its Defense stat lowered."@en,
+        "Protects the Pokémon from Defense-lowering attacks."@en,
+        "Protects the Pokémon from Defense-lowering effects."@en,
+        "Protects the Pokémon from Defense-lowering effects. "@en ;
+    schema1:name "Big_Pecks"@en .
+
+ability:Blaze a classes:Ability ;
+    rdfs:label "Blaze"@en ;
+    schema1:description "Powers up Fire-type moves in a pinch."@en,
+        "Powers up Fire-type moves when the Pokémon is in trouble."@en,
+        "Powers up Fire-type moves when the Pokémon's HP is low."@en,
+        "Ups <sc>Fire</sc> moves in a pinch."@en ;
+    schema1:name "Blaze"@en .
+
+ability:Bulletproof a classes:Ability ;
+    rdfs:label "Bulletproof"@en ;
+    schema1:description "Protects the Pokémon from ball and bomb moves."@en,
+        "Protects the Pokémon from some ball and bomb moves."@en ;
+    schema1:name "Bulletproof"@en .
+
+ability:Cheek_Pouch a classes:Ability ;
+    rdfs:label "Cheek_Pouch"@en ;
+    schema1:description "Restores HP as well when the Pokémon eats a Berry."@en,
+        "The Pokémon's HP is restored when it eats any Berry, in addition to the Berry's usual effect."@en ;
+    schema1:name "Cheek_Pouch"@en .
+
+ability:Chilling_Neigh a classes:Ability ;
+    rdfs:label "Chilling_Neigh"@en ;
+    schema1:description "When the Pokémon knocks out a target, it utters a chilling neigh, which boosts its Attack stat."@en ;
+    schema1:name "Chilling_Neigh"@en .
+
+ability:Chlorophyll a classes:Ability ;
+    rdfs:label "Chlorophyll"@en ;
+    schema1:description "Boosts the Pokémon's Speed in sunshine."@en,
+        "Boosts the Pokémon's Speed stat in harsh sunlight."@en,
+        "Boosts the Pokémon's Speed stat in sunshine."@en,
+        "Boosts the Pokémon's Speed stat in sunshine.{{sup/7"@en,
+        "Raises <sc>Speed</sc> in sunshine."@en ;
+    schema1:name "Chlorophyll"@en .
+
+ability:Clear_Body a classes:Ability ;
+    rdfs:label "Clear_Body"@en ;
+    schema1:description "Prevents ability reduction."@en,
+        "Prevents other Pokémon from lowering its stats."@en,
+        "Prevents other Pokémon's moves or Abilities from lowering the Pokémon's stats."@en,
+        "Prevents other Pokémon's moves or Abilities from lowering the Pokémon's stats. "@en,
+        "Prevents the Pokémon's stats from being lowered.{{sup/4"@en ;
+    schema1:name "Clear_Body"@en .
+
+ability:Cloud_Nine a classes:Ability ;
+    rdfs:label "Cloud_Nine"@en ;
+    schema1:description "Eliminates the effects of weather."@en,
+        "Negates weather effects."@en ;
+    schema1:name "Cloud_Nine"@en .
+
+ability:Color_Change a classes:Ability ;
+    rdfs:label "Color_Change"@en ;
+    schema1:description "Changes the Pokémon's type to the foe's move."@en,
+        "Changes type to foe's move.{{sup/3"@en,
+        "The Pokémon's type becomes the type of the move used on it."@en ;
+    schema1:name "Color_Change"@en .
+
+ability:Comatose a classes:Ability ;
+    rdfs:label "Comatose"@en ;
+    schema1:description "It's always drowsing and will never wake up. It can attack without waking up."@en,
+        "The Pokémon is always drowsing and will never wake up. It can attack while in its sleeping state."@en ;
+    schema1:name "Comatose"@en .
+
+ability:Commander a classes:Ability ;
+    rdfs:label "Commander"@en ;
+    schema1:description "When the Pokémon enters a battle, it goes inside the mouth of an ally {{p"@en ;
+    schema1:name "Commander"@en .
+
+ability:Competitive a classes:Ability ;
+    rdfs:label "Competitive"@en ;
+    schema1:description "Boosts the Pokémon's Sp. Atk stat sharply when its stats are lowered by an opposing Pokémon."@en,
+        "Boosts the Sp. Atk stat sharply when a stat is lowered."@en,
+        "Boosts the Sp. Atk stat sharply when a stat is lowered. "@en,
+        "Boosts the Sp. Atk stat when a stat is lowered."@en ;
+    schema1:name "Competitive"@en .
+
+ability:Compound_Eyes a classes:Ability ;
+    rdfs:label "Compound_Eyes"@en ;
+    schema1:description "Boosts the Pokémon's accuracy."@en,
+        "Raises accuracy."@en,
+        "The Pokémon's accuracy is boosted."@en,
+        "The Pokémon's compound eyes boost its accuracy."@en ;
+    schema1:name "Compound_Eyes"@en .
+
+ability:Contrary a classes:Ability ;
+    rdfs:label "Contrary"@en ;
+    schema1:description "Makes stat changes have an opposite effect."@en,
+        "Reverses any stat changes affecting the Pokémon so that attempts to boost its stats instead lower them—and attempts to lower its stats will boost them."@en ;
+    schema1:name "Contrary"@en .
+
+ability:Corrosion a classes:Ability ;
+    rdfs:label "Corrosion"@en ;
+    schema1:description "The Pokémon can poison the target even if it's a Steel or Poison type."@en ;
+    schema1:name "Corrosion"@en .
+
+ability:Costar a classes:Ability ;
+    rdfs:label "Costar"@en ;
+    schema1:description "When the Pokémon enters a battle, it copies an ally's stat changes."@en ;
+    schema1:name "Costar"@en .
+
+ability:Cotton_Down a classes:Ability ;
+    rdfs:label "Cotton_Down"@en ;
+    schema1:description "When the Pokémon is hit by an attack, it scatters cotton fluff around and lowers the Speed stat of all Pokémon except itself."@en,
+        "When the Pokémon is hit by an attack, it scatters cotton fluff around and lowers the Speed stats of all Pokémon except itself."@en ;
+    schema1:name "Cotton_Down"@en .
+
+ability:Cud_Chew a classes:Ability ;
+    rdfs:label "Cud_Chew"@en ;
+    schema1:description "When the Pokémon eats a Berry, it will regurgitate that Berry at the end of the next turn and eat it one more time."@en ;
+    schema1:name "Cud_Chew"@en .
+
+ability:Cursed_Body a classes:Ability ;
+    rdfs:label "Cursed_Body"@en ;
+    schema1:description "May disable a move that has dealt damage to the Pokémon."@en,
+        "May disable a move used on the Pokémon."@en ;
+    schema1:name "Cursed_Body"@en .
+
+ability:Cute_Charm a classes:Ability ;
+    rdfs:label "Cute_Charm"@en ;
+    schema1:description "Contact with the Pokémon may cause infatuation."@en,
+        "Contact with the Pokémon may cause infatuation. "@en,
+        "Infatuates on contact."@en,
+        "The Pokémon may infatuate attackers that make direct contact with it."@en ;
+    schema1:name "Cute_Charm"@en .
+
+ability:Damp a classes:Ability ;
+    rdfs:label "Damp"@en ;
+    schema1:description "Prevents combatants from self destructing.{{sup/4"@en,
+        "Prevents self-destruction."@en,
+        "Prevents the use of explosive moves such as Self-Destruct by dampening its surroundings."@en,
+        "Prevents the use of explosive moves, such as Self-Destruct, by dampening its surroundings."@en,
+        "Prevents the use of self-destructing moves."@en,
+        "The Pokémon dampens its surroundings, preventing all Pokémon from using explosive moves such as Self-Destruct."@en ;
+    schema1:name "Damp"@en .
+
+ability:Dancer a classes:Ability ;
+    rdfs:label "Dancer"@en ;
+    schema1:description "When another Pokémon uses a dance move, it can use a dance move following it regardless of its Speed."@en,
+        "Whenever a dance move is used in battle, the Pokémon will copy the user to immediately perform that dance move itself."@en ;
+    schema1:name "Dancer"@en .
+
+ability:Dark_Aura a classes:Ability ;
+    rdfs:label "Dark_Aura"@en ;
+    schema1:description "Powers up each Pokémon's Dark-type moves."@en,
+        "Powers up the Dark-type moves of all Pokémon on the field."@en ;
+    schema1:name "Dark_Aura"@en .
+
+ability:Dauntless_Shield a classes:Ability ;
+    rdfs:label "Dauntless_Shield"@en ;
+    schema1:description "Boosts the Pokémon's Defense stat when the Pokémon enters a battle."@en,
+        "Boosts the Pokémon’s Defense stat the first time the Pokémon enters a battle."@en ;
+    schema1:name "Dauntless_Shield"@en .
+
+ability:Dazzling a classes:Ability ;
+    rdfs:label "Dazzling"@en ;
+    schema1:description "Surprises the opposing Pokémon, making it unable to attack using priority moves."@en,
+        "The Pokémon dazzles its opponents, making them unable to use priority moves against the Pokémon or its allies."@en ;
+    schema1:name "Dazzling"@en .
+
+ability:Defeatist a classes:Ability ;
+    rdfs:label "Defeatist"@en ;
+    schema1:description "Halves the Pokémon's Attack and Sp. Atk stats when its HP becomes half or less."@en,
+        "Halves the Pokémon's Attack and Sp. Atk stats when its HP drops to half or less."@en,
+        "Lowers stats when HP becomes half or less."@en ;
+    schema1:name "Defeatist"@en .
+
+ability:Defiant a classes:Ability ;
+    rdfs:label "Defiant"@en ;
+    schema1:description "Boosts the Pokémon's Attack stat sharply when its stats are lowered."@en,
+        "Boosts the Pokémon's Attack stat when its stats are lowered."@en,
+        "If the Pokémon has any stat lowered by an opposing Pokémon, its Attack stat will be boosted sharply."@en,
+        "When its stats are lowered its Attack increases."@en ;
+    schema1:name "Defiant"@en .
+
+ability:Delta_Stream a classes:Ability ;
+    rdfs:label "Delta_Stream"@en ;
+    schema1:description "Affects weather and eliminates all of the Flying type's weaknesses."@en,
+        "The Pokémon changes the weather so that no moves are super effective against the Flying type."@en,
+        "The Pokémon changes the weather to eliminate all of the Flying type's weaknesses."@en ;
+    schema1:name "Delta_Stream"@en .
+
+ability:Desolate_Land a classes:Ability ;
+    rdfs:label "Desolate_Land"@en ;
+    schema1:description "Affects weather and nullifies any Water-type attacks."@en,
+        "The Pokémon changes the weather to nullify Water-type attacks."@en ;
+    schema1:name "Desolate_Land"@en .
+
+ability:Disguise a classes:Ability ;
+    rdfs:label "Disguise"@en ;
+    schema1:description "Once per battle, the shroud that covers the Pokémon can protect it from an attack."@en ;
+    schema1:name "Disguise"@en .
+
+ability:Download a classes:Ability ;
+    rdfs:label "Download"@en ;
+    schema1:description "Adjusts power according to a foe's defenses."@en,
+        "Adjusts power according to the foe's ability."@en,
+        "Adjusts power based on an opposing Pokémon's stats."@en,
+        "Compares an opposing Pokémon's Defense and Sp. Def stats before raising its own Attack or Sp. Atk stat—whichever will be more effective."@en,
+        "The Pokémon compares an opposing Pokémon's Defense and Sp. Def stats before raising its own Attack or Sp. Atk stat—whichever will be more effective."@en ;
+    schema1:name "Download"@en .
+
+<http://localhost:8000/ability/Dragon's_Maw> a classes:Ability ;
+    rdfs:label "Dragon's_Maw"@en ;
+    schema1:description "Powers up Dragon-type moves."@en ;
+    schema1:name "Dragon's_Maw"@en .
+
+ability:Drizzle a classes:Ability ;
+    rdfs:label "Drizzle"@en ;
+    schema1:description "Summons rain in battle."@en,
+        "The Pokémon makes it rain if it appears in battle."@en,
+        "The Pokémon makes it rain when it enters a battle."@en ;
+    schema1:name "Drizzle"@en .
+
+ability:Drought a classes:Ability ;
+    rdfs:label "Drought"@en ;
+    schema1:description "Summons sunlight in battle."@en,
+        "The Pokémon makes it sunny if it is in battle. "@en,
+        "Turns the sunlight harsh if it is in battle."@en,
+        "Turns the sunlight harsh when the Pokémon enters a battle."@en ;
+    schema1:name "Drought"@en .
+
+ability:Dry_Skin a classes:Ability ;
+    rdfs:label "Dry_Skin"@en ;
+    schema1:description "Reduces HP if it is hot. Water restores HP."@en,
+        "Reduces HP if it's hot. Water restores HP."@en,
+        "Restores HP in rain or when hit by Water-type moves. Reduces HP in harsh sunlight, and increases the damage received from Fire-type moves."@en,
+        "Restores HP in rain or when hit by Water-type moves. Reduces HP in sunshine, and increases the damage received from Fire-type moves.{{sup/7"@en,
+        "Restores the Pokémon's HP in rain or when it is hit by Water-type moves. Reduces HP in harsh sunlight, and increases the damage received from Fire-type moves."@en ;
+    schema1:name "Dry_Skin"@en .
+
+ability:Early_Bird a classes:Ability ;
+    rdfs:label "Early_Bird"@en ;
+    schema1:description "Awakens quickly from sleep."@en,
+        "The Pokémon awakens from sleep twice as fast as other Pokémon."@en,
+        "The Pokémon awakens quickly from sleep."@en,
+        "The Pokémon awakens twice as fast as other Pokémon from sleep. "@en ;
+    schema1:name "Early_Bird"@en .
+
+ability:Earth_Eater a classes:Ability ;
+    rdfs:label "Earth_Eater"@en ;
+    schema1:description "If hit by a Ground-type move, the Pokémon has its HP restored instead of taking damage."@en ;
+    schema1:name "Earth_Eater"@en .
+
+ability:Effect_Spore a classes:Ability ;
+    rdfs:label "Effect_Spore"@en ;
+    schema1:description "Contact may paralyze, poison, or cause sleep."@en,
+        "Contact may poison or cause paralysis or sleep."@en,
+        "Contact with the Pokémon may inflict poison, sleep, or paralysis on its attacker."@en,
+        "Contact with the Pokémon may inflict poison, sleep, or paralysis on its attacker. "@en,
+        "Contact with the Pokémon may inflict poison, sleep, or paralysis on the attacker."@en,
+        "Leaves spores on contact."@en ;
+    schema1:name "Effect_Spore"@en .
+
+ability:Electric_Surge a classes:Ability ;
+    rdfs:label "Electric_Surge"@en ;
+    schema1:description "Turns the ground into Electric Terrain when the Pokémon enters a battle."@en ;
+    schema1:name "Electric_Surge"@en .
+
+ability:Electromorphosis a classes:Ability ;
+    rdfs:label "Electromorphosis"@en ;
+    schema1:description "The Pokémon becomes charged when it takes damage, boosting the power of the next Electric-type move the Pokémon uses."@en ;
+    schema1:name "Electromorphosis"@en .
+
+ability:Embody_Aspect a classes:Ability ;
+    rdfs:label "Embody_Aspect"@en ;
+    schema1:description ""@en ;
+    schema1:name "Embody_Aspect"@en .
+
+ability:Emergency_Exit a classes:Ability ;
+    rdfs:label "Emergency_Exit"@en ;
+    schema1:description "The Pokémon, sensing danger, switches out when its HP becomes half or less."@en,
+        "The Pokémon, sensing danger, switches out when its HP drops to half or less."@en ;
+    schema1:name "Emergency_Exit"@en .
+
+ability:Fairy_Aura a classes:Ability ;
+    rdfs:label "Fairy_Aura"@en ;
+    schema1:description "Powers up each Pokémon's Fairy-type moves."@en,
+        "Powers up the Fairy-type moves of all Pokémon on the field."@en ;
+    schema1:name "Fairy_Aura"@en .
+
+ability:Filter a classes:Ability ;
+    rdfs:label "Filter"@en ;
+    schema1:description "Powers down super-effective moves.{{sup/4"@en,
+        "Reduces damage from supereffective attacks."@en,
+        "Reduces damage from supereffective attacks.<!--Yes, no space.-->"@en,
+        "Reduces the power of supereffective attacks taken."@en,
+        "Reduces the power of supereffective attacks that hit the Pokémon."@en ;
+    schema1:name "Filter"@en .
+
+ability:Flame_Body a classes:Ability ;
+    rdfs:label "Flame_Body"@en ;
+    schema1:description "Burns the foe on contact.{{sup/3"@en,
+        "Contact with the Pokémon may burn the attacker."@en,
+        "Contact with the Pokémon may burn the foe."@en ;
+    schema1:name "Flame_Body"@en .
+
+ability:Flare_Boost a classes:Ability ;
+    rdfs:label "Flare_Boost"@en ;
+    schema1:description "Powers up special attacks when burned."@en,
+        "Powers up special attacks when the Pokémon is burned."@en,
+        "Powers up special moves when the Pokémon is burned."@en ;
+    schema1:name "Flare_Boost"@en .
+
+ability:Flash_Fire a classes:Ability ;
+    rdfs:label "Flash_Fire"@en ;
+    schema1:description "If hit by a Fire-type move, the Pokémon absorbs the flames and uses them to power up its own Fire-type moves."@en,
+        "It powers up Fire-type moves if it's hit by one."@en,
+        "Powers up Fire-type moves if hit by a fire move.{{sup/4"@en,
+        "Powers up if hit by fire."@en,
+        "Powers up the Pokémon's Fire-type moves if it's hit by one."@en ;
+    schema1:name "Flash_Fire"@en .
+
+ability:Flower_Gift a classes:Ability ;
+    rdfs:label "Flower_Gift"@en ;
+    schema1:description "Boosts the Attack and Sp. Def stats of itself and allies in harsh sunlight."@en,
+        "Boosts the Attack and Sp. Def stats of itself and allies when it is sunny.{{sup/7"@en,
+        "Boosts the Attack and Sp. Def stats of the Pokémon and its allies in harsh sunlight."@en,
+        "Powers up party Pokémon when it is sunny."@en ;
+    schema1:name "Flower_Gift"@en .
+
+ability:Flower_Veil a classes:Ability ;
+    rdfs:label "Flower_Veil"@en ;
+    schema1:description "Ally Grass-type Pokémon are protected from status conditions and the lowering of their stats."@en,
+        "Ally Grass-type Pokémon are protected from status conditions and the lowering of their stats. "@en,
+        "Prevents lowering of ally Grass-type Pokémon's stats."@en ;
+    schema1:name "Flower_Veil"@en .
+
+ability:Fluffy a classes:Ability ;
+    rdfs:label "Fluffy"@en ;
+    schema1:description "Halves the damage taken from moves that make direct contact, but doubles that of Fire-type moves."@en ;
+    schema1:name "Fluffy"@en .
+
+ability:Forecast a classes:Ability ;
+    rdfs:label "Forecast"@en ;
+    schema1:description "<sc>Castform</sc> transforms with the weather."@en,
+        "Castform transforms with the weather."@en,
+        "Changes with the weather."@en,
+        "The Pokémon transforms with the weather to change its type to Water, Fire, or Ice."@en ;
+    schema1:name "Forecast"@en .
+
+ability:Forewarn a classes:Ability ;
+    rdfs:label "Forewarn"@en ;
+    schema1:description "Determines what moves a foe has."@en,
+        "Determines what moves an opposing Pokémon has."@en,
+        "Determines what moves the foe has."@en,
+        "When it enters a battle, the Pokémon can tell one of the moves an opposing Pokémon has."@en ;
+    schema1:name "Forewarn"@en .
+
+ability:Friend_Guard a classes:Ability ;
+    rdfs:label "Friend_Guard"@en ;
+    schema1:description "Reduces damage dealt to allies."@en,
+        "Reduces damage done to allies."@en ;
+    schema1:name "Friend_Guard"@en .
+
+ability:Frisk a classes:Ability ;
+    rdfs:label "Frisk"@en ;
+    schema1:description "The Pokémon can check a foe's held item."@en,
+        "The Pokémon can check an opposing Pokémon's held item."@en,
+        "The Pokémon can check the foe's held item."@en,
+        "When it enters a battle, the Pokémon can check an opposing Pokémon's held item."@en,
+        "When it enters a battle, the Pokémon can check an opposing Pokémon's held item. "@en ;
+    schema1:name "Frisk"@en .
+
+ability:Full_Metal_Body a classes:Ability ;
+    rdfs:label "Full_Metal_Body"@en ;
+    schema1:description "Prevents other Pokémon's moves or Abilities from lowering the Pokémon's stats."@en ;
+    schema1:name "Full_Metal_Body"@en .
+
+ability:Fur_Coat a classes:Ability ;
+    rdfs:label "Fur_Coat"@en ;
+    schema1:description "Halves damage from physical moves."@en,
+        "Halves the damage from physical moves."@en ;
+    schema1:name "Fur_Coat"@en .
+
+ability:Gale_Wings a classes:Ability ;
+    rdfs:label "Gale_Wings"@en ;
+    schema1:description "Gives priority to Flying-type moves when the Pokémon's HP is full."@en,
+        "Gives priority to Flying-type moves."@en,
+        "Gives priority to the Pokémon's Flying-type moves while its HP is full."@en ;
+    schema1:name "Gale_Wings"@en .
+
+ability:Galvanize a classes:Ability ;
+    rdfs:label "Galvanize"@en ;
+    schema1:description "Normal-type moves become Electric-type moves. The power of those moves is boosted a little."@en ;
+    schema1:name "Galvanize"@en .
+
+ability:Gluttony a classes:Ability ;
+    rdfs:label "Gluttony"@en ;
+    schema1:description "Encourages the early use of a held Berry."@en,
+        "Encourages the early use of a held Berry. "@en,
+        "If the Pokémon is holding a Berry to be eaten when its HP is low, it will instead eat the Berry when its HP drops to half or less."@en,
+        "Makes the Pokémon eat a held Berry when its HP drops to half or less, which is sooner than usual."@en,
+        "Makes the Pokémon eat a held Berry when its HP drops to half or less, which is sooner than usual.  "@en,
+        "Makes the Pokémon use a held Berry earlier than usual."@en ;
+    schema1:name "Gluttony"@en .
+
+ability:Good_as_Gold a classes:Ability ;
+    rdfs:label "Good_as_Gold"@en ;
+    schema1:description "A body of pure, solid gold gives the Pokémon full immunity to other Pokémon's status moves."@en ;
+    schema1:name "Good_as_Gold"@en .
+
+ability:Gooey a classes:Ability ;
+    rdfs:label "Gooey"@en ;
+    schema1:description "Contact with the Pokémon lowers the attacker's Speed stat."@en,
+        "Contact with the Pokémon lowers the attacker's Speed stat. "@en ;
+    schema1:name "Gooey"@en .
+
+ability:Grass_Pelt a classes:Ability ;
+    rdfs:label "Grass_Pelt"@en ;
+    schema1:description "Boosts the Defense stat in Grassy Terrain."@en,
+        "Boosts the Pokémon's Defense stat in Grassy Terrain."@en,
+        "Boosts the Pokémon's Defense stat on Grassy Terrain."@en ;
+    schema1:name "Grass_Pelt"@en .
+
+ability:Grassy_Surge a classes:Ability ;
+    rdfs:label "Grassy_Surge"@en ;
+    schema1:description "Turns the ground into Grassy Terrain when the Pokémon enters a battle."@en ;
+    schema1:name "Grassy_Surge"@en .
+
+ability:Grim_Neigh a classes:Ability ;
+    rdfs:label "Grim_Neigh"@en ;
+    schema1:description "When the Pokémon knocks out a target, it utters a terrifying neigh, which boosts its Sp. Atk stat."@en ;
+    schema1:name "Grim_Neigh"@en .
+
+ability:Guard_Dog a classes:Ability ;
+    rdfs:label "Guard_Dog"@en ;
+    schema1:description "Boosts the Pokémon’s Attack stat if intimidated. Moves and items that would force the Pokémon to switch out also fail to work."@en ;
+    schema1:name "Guard_Dog"@en .
+
+ability:Gulp_Missile a classes:Ability ;
+    rdfs:label "Gulp_Missile"@en ;
+    schema1:description "When the Pokémon uses Surf or Dive, it will come back with prey. When it takes damage, it will spit out the prey to attack."@en ;
+    schema1:name "Gulp_Missile"@en .
+
+ability:Guts a classes:Ability ;
+    rdfs:label "Guts"@en ;
+    schema1:description "Boosts Attack if there is a status problem."@en,
+        "Boosts the Attack stat if the Pokémon has a status condition."@en,
+        "It's so gutsy that having a status condition boosts the Pokémon's Attack stat."@en,
+        "Ups <sc>Attack</sc> if suffering."@en ;
+    schema1:name "Guts"@en .
+
+ability:Hadron_Engine a classes:Ability ;
+    rdfs:label "Hadron_Engine"@en ;
+    schema1:description "Turns the ground into Electric Terrain when the Pokémon enters a battle. The futuristic engine within the Pokémon also boosts its Sp. Atk stat on Electric Terrain."@en ;
+    schema1:name "Hadron_Engine"@en .
+
+ability:Harvest a classes:Ability ;
+    rdfs:label "Harvest"@en ;
+    schema1:description "May create another Berry after one is used."@en ;
+    schema1:name "Harvest"@en .
+
+ability:Healer a classes:Ability ;
+    rdfs:label "Healer"@en ;
+    schema1:description "May heal an ally's status conditions."@en,
+        "Sometimes cures the status conditions of the Pokémon's allies."@en,
+        "Sometimes heals an ally's status condition."@en ;
+    schema1:name "Healer"@en .
+
+ability:Heatproof a classes:Ability ;
+    rdfs:label "Heatproof"@en ;
+    schema1:description "The Pokémon's heatproof body halves the damage taken from Fire-type moves."@en,
+        "The heatproof body of the Pokémon halves the damage from Fire-type moves that hit it."@en,
+        "Weakens the power of Fire-type moves."@en ;
+    schema1:name "Heatproof"@en .
+
+ability:Heavy_Metal a classes:Ability ;
+    rdfs:label "Heavy_Metal"@en ;
+    schema1:description "Doubles the Pokémon's weight."@en ;
+    schema1:name "Heavy_Metal"@en .
+
+ability:Honey_Gather a classes:Ability ;
+    rdfs:label "Honey_Gather"@en ;
+    schema1:description "The Pokémon may gather Honey after a battle."@en,
+        "The Pokémon may gather Honey after a battle. "@en,
+        "The Pokémon may gather Honey from somewhere."@en,
+        "The Pokémon may gather Honey from somewhere.{{sup/4"@en ;
+    schema1:name "Honey_Gather"@en .
+
+ability:Hospitality a classes:Ability ;
+    rdfs:label "Hospitality"@en ;
+    schema1:description "When the Pokémon enters a battle, it showers its ally with hospitality, restoring a small amount of the ally's HP."@en ;
+    schema1:name "Hospitality"@en .
+
+ability:Huge_Power a classes:Ability ;
+    rdfs:label "Huge_Power"@en ;
+    schema1:description "Boosts the Pokémon's Attack stat."@en,
+        "Doubles the Pokémon's Attack stat."@en,
+        "Doubles the Pokémon's Attack stat. "@en,
+        "Raises <sc>Attack</sc>."@en,
+        "Raises the Pokémon's Attack stat."@en ;
+    schema1:name "Huge_Power"@en .
+
+ability:Hunger_Switch a classes:Ability ;
+    rdfs:label "Hunger_Switch"@en ;
+    schema1:description "The Pokémon changes its form, alternating between its Full Belly Mode and Hangry Mode after the end of each turn."@en,
+        "The Pokémon changes its form, alternating between its Full Belly Mode and Hangry Mode after the end of every turn."@en ;
+    schema1:name "Hunger_Switch"@en .
+
+ability:Hustle a classes:Ability ;
+    rdfs:label "Hustle"@en ;
+    schema1:description "Boosts the Attack stat, but lowers accuracy."@en,
+        "Boosts the Attack stat, but lowers accuracy. "@en,
+        "Boosts the Pokémon's Attack stat but lowers its accuracy."@en,
+        "Trades accuracy for power."@en ;
+    schema1:name "Hustle"@en .
+
+ability:Hydration a classes:Ability ;
+    rdfs:label "Hydration"@en ;
+    schema1:description "Cures the Pokémon's status conditions in rain."@en,
+        "Heals status conditions if it's raining."@en,
+        "Heals status conditions if it's raining. "@en,
+        "Heals status problems if it is raining."@en ;
+    schema1:name "Hydration"@en .
+
+ability:Hyper_Cutter a classes:Ability ;
+    rdfs:label "Hyper_Cutter"@en ;
+    schema1:description "Prevents <sc>Attack</sc> reduction."@en,
+        "Prevents other Pokémon from lowering Attack stat."@en,
+        "Prevents other Pokémon from lowering its Attack stat."@en,
+        "Prevents the Attack stat from being lowered."@en,
+        "The Pokémon's prized, mighty pincers prevent other Pokémon from lowering its Attack stat."@en,
+        "The Pokémon's proud of its powerful pincers. They prevent other Pokémon from lowering its Attack stat."@en,
+        "The Pokémon's proud of its powerful pincers. They prevent other Pokémon from lowering its Attack stat. "@en ;
+    schema1:name "Hyper_Cutter"@en .
+
+ability:Ice_Body a classes:Ability ;
+    rdfs:label "Ice_Body"@en ;
+    schema1:description "The Pokémon gradually regains HP in a hailstorm."@en,
+        "The Pokémon gradually regains HP in snow."@en,
+        "The Pokémon regains HP in a hailstorm."@en ;
+    schema1:name "Ice_Body"@en .
+
+ability:Ice_Face a classes:Ability ;
+    rdfs:label "Ice_Face"@en ;
+    schema1:description "The Pokémon's ice head can take a physical attack as a substitute, but the attack also changes the Pokémon's appearance. The ice will be restored when it hails."@en,
+        "The Pokémon's ice head can take a physical attack as a substitute, but the attack also changes the Pokémon's appearance. The ice will be restored when it snows."@en ;
+    schema1:name "Ice_Face"@en .
+
+ability:Ice_Scales a classes:Ability ;
+    rdfs:label "Ice_Scales"@en ;
+    schema1:description "The Pokémon is protected by ice scales, which halve the damage taken from special moves."@en ;
+    schema1:name "Ice_Scales"@en .
+
+ability:Illuminate a classes:Ability ;
+    rdfs:label "Illuminate"@en ;
+    schema1:description ""@en,
+        "Encounter rate increases. "@en,
+        "Raises the likelihood of meeting wild Pokémon by illuminating the surroundings."@en,
+        "Raises the likelihood of meeting wild Pokémon."@en,
+        "Raises the likelihood of meeting wild Pokémon.{{sup/4"@en ;
+    schema1:name "Illuminate"@en .
+
+ability:Immunity a classes:Ability ;
+    rdfs:label "Immunity"@en ;
+    schema1:description "Prevents poisoning."@en,
+        "Prevents the Pokémon from getting poisoned."@en,
+        "The Pokémon's immune system prevents it from being poisoned."@en,
+        "The immune system of the Pokémon prevents it from getting poisoned."@en ;
+    schema1:name "Immunity"@en .
+
+ability:Imposter a classes:Ability ;
+    rdfs:label "Imposter"@en ;
+    schema1:description "It transforms itself into the Pokémon it is facing."@en,
+        "The Pokémon transforms itself into the Pokémon it's facing."@en ;
+    schema1:name "Imposter"@en .
+
+ability:Infiltrator a classes:Ability ;
+    rdfs:label "Infiltrator"@en ;
+    schema1:description "Passes through the foe's barrier and strikes."@en,
+        "Passes through the opposing Pokémon's barrier and strikes."@en,
+        "Passes through the opposing Pokémon's barrier, substitute, and the like and strikes."@en,
+        "The Pokémon's moves are unaffected by the target's barriers, substitutes, and the like."@en ;
+    schema1:name "Infiltrator"@en .
+
+ability:Innards_Out a classes:Ability ;
+    rdfs:label "Innards_Out"@en ;
+    schema1:description "Damages the attacker landing the finishing hit by the amount equal to its last HP."@en,
+        "When the Pokémon is knocked out, it damages its attacker by the amount equal to the HP it had left before it was hit."@en ;
+    schema1:name "Innards_Out"@en .
+
+ability:Inner_Focus a classes:Ability ;
+    rdfs:label "Inner_Focus"@en ;
+    schema1:description "Prevents flinching."@en,
+        "Protects the Pokémon from flinching."@en,
+        "The Pokémon is protected from flinching."@en,
+        "The Pokémon's intense focus prevents it from flinching or being affected by Intimidate."@en,
+        "The Pokémon's intensely focused, and that protects the Pokémon from flinching."@en,
+        "The Pokémon's intensely focused, and that protects the Pokémon from flinching. "@en ;
+    schema1:name "Inner_Focus"@en .
+
+ability:Insomnia a classes:Ability ;
+    rdfs:label "Insomnia"@en ;
+    schema1:description "Prevents sleep."@en,
+        "Prevents the Pokémon from falling asleep."@en,
+        "The Pokémon is suffering from insomnia and cannot fall asleep."@en,
+        "The Pokémon's insomnia prevents it from falling asleep."@en ;
+    schema1:name "Insomnia"@en .
+
+ability:Intimidate a classes:Ability ;
+    rdfs:label "Intimidate"@en ;
+    schema1:description "Lowers the foe's <sc>Attack</sc>."@en,
+        "Lowers the foe's Attack stat."@en,
+        "Lowers the opposing Pokémon's Attack stat."@en,
+        "The Pokémon intimidates opposing Pokémon upon entering battle, lowering their Attack stat."@en,
+        "When the Pokémon enters a battle, it intimidates opposing Pokémon and makes them cower, lowering their Attack stats."@en ;
+    schema1:name "Intimidate"@en .
+
+ability:Intrepid_Sword a classes:Ability ;
+    rdfs:label "Intrepid_Sword"@en ;
+    schema1:description "Boosts the Pokémon's Attack stat when the Pokémon enters a battle."@en,
+        "Boosts the Pokémon’s Attack stat the first time the Pokémon enters a battle."@en ;
+    schema1:name "Intrepid_Sword"@en .
+
+ability:Iron_Barbs a classes:Ability ;
+    rdfs:label "Iron_Barbs"@en ;
+    schema1:description "Inflicts damage on the attacker upon contact with iron barbs."@en,
+        "Inflicts damage to the Pokémon on contact."@en,
+        "Inflicts damage to the attacker on contact with iron barbs."@en,
+        "Inflicts damage to the attacker on contact."@en,
+        "The Pokémon's iron barbs damage the attacker if it makes direct contact."@en ;
+    schema1:name "Iron_Barbs"@en .
+
+ability:Iron_Fist a classes:Ability ;
+    rdfs:label "Iron_Fist"@en ;
+    schema1:description "Boosts the power of punching moves."@en,
+        "Powers up punching moves."@en ;
+    schema1:name "Iron_Fist"@en .
+
+ability:Justified a classes:Ability ;
+    rdfs:label "Justified"@en ;
+    schema1:description "Being hit by a Dark-type move boosts the Attack stat of the Pokémon, for justice."@en,
+        "Boosts the Attack stat when it's hit by a Dark-type move."@en,
+        "Raises Attack when hit by a Dark-type move."@en,
+        "When the Pokémon is hit by a Dark-type attack, its Attack stat is boosted by its sense of justice."@en ;
+    schema1:name "Justified"@en .
+
+ability:Keen_Eye a classes:Ability ;
+    rdfs:label "Keen_Eye"@en ;
+    schema1:description "Keen eyes prevent other Pokémon from lowering this Pokémon's accuracy."@en,
+        "Prevents loss of accuracy."@en,
+        "Prevents other Pokémon from lowering accuracy."@en,
+        "Prevents the Pokémon from losing accuracy."@en,
+        "The Pokémon's keen eyes prevent its accuracy from being lowered."@en ;
+    schema1:name "Keen_Eye"@en .
+
+ability:Klutz a classes:Ability ;
+    rdfs:label "Klutz"@en ;
+    schema1:description "The Pokémon can't use any held items."@en ;
+    schema1:name "Klutz"@en .
+
+ability:Leaf_Guard a classes:Ability ;
+    rdfs:label "Leaf_Guard"@en ;
+    schema1:description "Prevents problems with status in sunny weather."@en,
+        "Prevents status conditions in harsh sunlight."@en,
+        "Prevents status conditions in sunny weather."@en,
+        "Prevents status conditions in sunny weather.{{sup/7"@en,
+        "Prevents status problems in sunny weather.{{sup/4"@en ;
+    schema1:name "Leaf_Guard"@en .
+
+ability:Levitate a classes:Ability ;
+    rdfs:label "Levitate"@en ;
+    schema1:description "By floating in the air, the Pokémon receives full immunity to all Ground-type moves."@en,
+        "By floating in the air, the Pokémon receives full immunity to all Ground-type moves. "@en,
+        "Gives full immunity to all Ground-type moves."@en,
+        "Not hit by <sc>Ground</sc> Attacks."@en ;
+    schema1:name "Levitate"@en .
+
+ability:Libero a classes:Ability ;
+    rdfs:label "Libero"@en ;
+    schema1:description "Changes the Pokémon's type to the type of the move it's about to use."@en,
+        "Changes the Pokémon's type to the type of the move it's about to use. This works only once each time the Pokémon enters battle."@en ;
+    schema1:name "Libero"@en .
+
+ability:Light_Metal a classes:Ability ;
+    rdfs:label "Light_Metal"@en ;
+    schema1:description "Halves the Pokémon's weight."@en ;
+    schema1:name "Light_Metal"@en .
+
+ability:Lightning_Rod a classes:Ability ;
+    rdfs:label "Lightning_Rod"@en ;
+    schema1:description "Draws electrical moves."@en,
+        "Draws in all Electric-type moves to boost its Sp. Atk stat."@en,
+        "Draws in all Electric-type moves to up Sp. Attack."@en,
+        "The Pokémon draws in all Electric-type moves."@en,
+        "The Pokémon draws in all Electric-type moves. Instead of being hit by Electric-type moves, it boosts its Sp. Atk."@en,
+        "The Pokémon draws in all Electric-type moves. Instead of taking damage from them, its Sp. Atk stat is boosted."@en ;
+    schema1:name "Lightning_Rod"@en .
+
+ability:Limber a classes:Ability ;
+    rdfs:label "Limber"@en ;
+    schema1:description "Its limber body protects the Pokémon from paralysis."@en,
+        "Prevents paralysis."@en,
+        "Protects the Pokémon from paralysis."@en,
+        "The Pokémon is protected from paralysis."@en,
+        "The Pokémon's limber body prevents it from being paralyzed."@en ;
+    schema1:name "Limber"@en .
+
+ability:Lingering_Aroma a classes:Ability ;
+    rdfs:label "Lingering_Aroma"@en ;
+    schema1:description "Contact with the Pokémon changes the attacker's Ability to Lingering Aroma."@en ;
+    schema1:name "Lingering_Aroma"@en .
+
+ability:Liquid_Ooze a classes:Ability ;
+    rdfs:label "Liquid_Ooze"@en ;
+    schema1:description "Damages attackers using any draining move."@en,
+        "Draining causes injury."@en,
+        "Inflicts damage on foes using any draining move."@en,
+        "Oozed liquid has strong stench, which damages attackers using any draining move. "@en,
+        "The oozed liquid has a strong stench, which damages attackers using any draining move."@en,
+        "The strong stench of the Pokémon's oozed liquid damages attackers that use HP-draining moves."@en ;
+    schema1:name "Liquid_Ooze"@en .
+
+ability:Liquid_Voice a classes:Ability ;
+    rdfs:label "Liquid_Voice"@en ;
+    schema1:description "All sound-based moves become Water-type moves."@en,
+        "Sound-based moves become Water-type moves."@en ;
+    schema1:name "Liquid_Voice"@en .
+
+ability:Long_Reach a classes:Ability ;
+    rdfs:label "Long_Reach"@en ;
+    schema1:description "The Pokémon uses its moves without making contact with the target."@en ;
+    schema1:name "Long_Reach"@en .
+
+ability:Magic_Bounce a classes:Ability ;
+    rdfs:label "Magic_Bounce"@en ;
+    schema1:description "Reflects status moves instead of getting hit by them."@en,
+        "Reflects status moves, instead of getting hit by them."@en,
+        "Reflects status moves."@en,
+        "Reflects status-changing moves."@en,
+        "The Pokémon reflects status moves instead of getting hit by them."@en ;
+    schema1:name "Magic_Bounce"@en .
+
+ability:Magic_Guard a classes:Ability ;
+    rdfs:label "Magic_Guard"@en ;
+    schema1:description "The Pokémon only takes damage from attacks."@en ;
+    schema1:name "Magic_Guard"@en .
+
+ability:Magician a classes:Ability ;
+    rdfs:label "Magician"@en ;
+    schema1:description "The Pokémon steals the held item from any target it hits with a move."@en,
+        "The Pokémon steals the held item of a Pokémon it hits with a move."@en ;
+    schema1:name "Magician"@en .
+
+ability:Magma_Armor a classes:Ability ;
+    rdfs:label "Magma_Armor"@en ;
+    schema1:description "Prevents freezing."@en,
+        "Prevents the Pokémon from becoming frozen."@en,
+        "The Pokémon is covered with hot magma, which prevents the Pokémon from becoming frozen."@en,
+        "The Pokémon’s hot magma coating prevents it from being frozen."@en ;
+    schema1:name "Magma_Armor"@en .
+
+ability:Magnet_Pull a classes:Ability ;
+    rdfs:label "Magnet_Pull"@en ;
+    schema1:description "Prevents Steel-type Pokémon from escaping using its magnetic force."@en,
+        "Prevents Steel-type Pokémon from escaping."@en,
+        "Prevents Steel-type Pokémon from fleeing by pulling them in with magnetism."@en,
+        "Traps <sc>Steel</sc>-type <sc>Pok</sc>é<sc>mon</sc>.{{sup/3"@en ;
+    schema1:name "Magnet_Pull"@en .
+
+ability:Marvel_Scale a classes:Ability ;
+    rdfs:label "Marvel_Scale"@en ;
+    schema1:description "Boosts Defense if there is a status problem.{{sup/4"@en,
+        "Boosts the Defense stat if the Pokémon has a status condition."@en,
+        "The Pokémon's marvelous scales boost its Defense stat if it has a status condition."@en,
+        "The Pokémon's marvelous scales boost the Defense stat if it has a status condition."@en,
+        "Ups <sc>Defense</sc> if suffering."@en,
+        "Ups Defense if there is a status problem."@en ;
+    schema1:name "Marvel_Scale"@en .
+
+ability:Mega_Launcher a classes:Ability ;
+    rdfs:label "Mega_Launcher"@en ;
+    schema1:description "Powers up aura and pulse moves."@en,
+        "Powers up aura and pulse moves. "@en,
+        "Powers up pulse moves."@en ;
+    schema1:name "Mega_Launcher"@en .
+
+ability:Merciless a classes:Ability ;
+    rdfs:label "Merciless"@en ;
+    schema1:description "The Pokémon's attacks become critical hits if the target is poisoned."@en ;
+    schema1:name "Merciless"@en .
+
+ability:Mimicry a classes:Ability ;
+    rdfs:label "Mimicry"@en ;
+    schema1:description "Changes the Pokémon's type depending on the terrain."@en ;
+    schema1:name "Mimicry"@en .
+
+<http://localhost:8000/ability/Mind's_Eye> a classes:Ability ;
+    rdfs:label "Mind's_Eye"@en ;
+    schema1:description "The Pokémon ignores changes to opponents' evasiveness, its accuracy can't be lowered, and it can hit Ghost types with Normal- and Fighting-type moves."@en ;
+    schema1:name "Mind's_Eye"@en .
+
+ability:Minus a classes:Ability ;
+    rdfs:label "Minus"@en ;
+    schema1:description "Boosts Sp. Atk if another Pokémon has Plus.{{sup/4"@en,
+        "Boosts the Sp. Atk stat if another Pokémon has Plus or Minus."@en,
+        "Boosts the Sp. Atk stat of the Pokémon if an ally with the Plus or Minus Ability is also in battle."@en,
+        "Powers up with <sc>Plus</sc>."@en,
+        "Ups Sp. Atk if another Pokémon has Plus or Minus."@en ;
+    schema1:name "Minus"@en .
+
+ability:Mirror_Armor a classes:Ability ;
+    rdfs:label "Mirror_Armor"@en ;
+    schema1:description "Bounces back only the stat-lowering effects that the Pokémon receives."@en ;
+    schema1:name "Mirror_Armor"@en .
+
+ability:Misty_Surge a classes:Ability ;
+    rdfs:label "Misty_Surge"@en ;
+    schema1:description "Turns the ground into Misty Terrain when the Pokémon enters a battle."@en ;
+    schema1:name "Misty_Surge"@en .
+
+ability:Mold_Breaker a classes:Ability ;
+    rdfs:label "Mold_Breaker"@en ;
+    schema1:description "Moves can be used on the target regardless of its Abilities."@en,
+        "Moves can be used regardless of Abilities."@en,
+        "Moves can be used regardless of abilities."@en,
+        "The Pokémon's moves are unimpeded by the Ability of the target."@en ;
+    schema1:name "Mold_Breaker"@en .
+
+ability:Moody a classes:Ability ;
+    rdfs:label "Moody"@en ;
+    schema1:description "Every turn, one of the Pokémon's stats will be boosted sharply but another stat will be lowered."@en,
+        "Raises one stat and lowers another."@en,
+        "Raises one stat sharply and lowers another every turn."@en ;
+    schema1:name "Moody"@en .
+
+ability:Motor_Drive a classes:Ability ;
+    rdfs:label "Motor_Drive"@en ;
+    schema1:description "Boosts its Speed stat if hit by an Electric-type move instead of taking damage."@en,
+        "Boosts its Speed stat if hit by an Electric-type move, instead of taking damage."@en,
+        "Boosts the Speed stat when it's hit by an Electric-type move."@en,
+        "Raises Speed if hit by an Electric-type move."@en,
+        "The Pokémon takes no damage when hit by Electric-type moves. Instead, its Speed stat is boosted."@en ;
+    schema1:name "Motor_Drive"@en .
+
+ability:Moxie a classes:Ability ;
+    rdfs:label "Moxie"@en ;
+    schema1:description "Boosts Attack after knocking out any Pokémon."@en,
+        "Boosts the Attack stat after knocking out any Pokémon."@en,
+        "The Pokémon shows moxie, and that boosts the Attack stat after knocking out any Pokémon."@en,
+        "When the Pokémon knocks out a target, it shows moxie, which boosts its Attack stat."@en ;
+    schema1:name "Moxie"@en .
+
+ability:Multiscale a classes:Ability ;
+    rdfs:label "Multiscale"@en ;
+    schema1:description "Reduces damage the Pokémon takes when its HP is full.{{sup/6"@en,
+        "Reduces damage when HP is full."@en,
+        "Reduces the amount of damage the Pokémon takes when its HP is full."@en,
+        "Reduces the amount of damage the Pokémon takes while its HP is full."@en ;
+    schema1:name "Multiscale"@en .
+
+ability:Multitype a classes:Ability ;
+    rdfs:label "Multitype"@en ;
+    schema1:description "Changes the Pokémon's type to match the Plate it holds."@en,
+        "Changes the Pokémon's type to match the Plate or Z-Crystal it holds."@en,
+        "Changes the Pokémon's type to match the Plate or Z-Crystal it holds.{{sup/8"@en,
+        "Changes the Pokémon's type to match the plate it holds.<!--plate isn't capitalized in the game text-->"@en,
+        "Changes type to match the held Plate."@en ;
+    schema1:name "Multitype"@en .
+
+ability:Mummy a classes:Ability ;
+    rdfs:label "Mummy"@en ;
+    schema1:description "Contact with the Pokémon changes the attacker's Ability to Mummy."@en,
+        "Contact with the Pokémon spreads this Ability."@en,
+        "Contact with this Pokémon spreads this Ability."@en ;
+    schema1:name "Mummy"@en .
+
+ability:Mycelium_Might a classes:Ability ;
+    rdfs:label "Mycelium_Might"@en ;
+    schema1:description "The Pokémon will always act more slowly when using status moves, but these moves will be unimpeded by the Ability of the target."@en ;
+    schema1:name "Mycelium_Might"@en .
+
+ability:Natural_Cure a classes:Ability ;
+    rdfs:label "Natural_Cure"@en ;
+    schema1:description "All status conditions heal when the Pokémon switches out."@en,
+        "All status conditions heal when the Pokémon switches out. "@en,
+        "All status problems are healed upon switching out.{{sup/4"@en,
+        "All status problems heal when it switches out."@en,
+        "Heals upon switching out."@en,
+        "The Pokémon's status conditions are cured when it switches out."@en ;
+    schema1:name "Natural_Cure"@en .
+
+ability:Neuroforce a classes:Ability ;
+    rdfs:label "Neuroforce"@en ;
+    schema1:description "Powers up moves that are super effective."@en,
+        "Powers up the Pokémon’s supereffective attacks even further."@en ;
+    schema1:name "Neuroforce"@en .
+
+<http://localhost:8000/ability/Neutralizing&nbsp;Gas> a classes:Ability ;
+    rdfs:label "Neutralizing&nbsp;Gas"@en ;
+    schema1:description "If the Pokémon with Neutralizing Gas is in the battle, the effects of all Pokémon's Abilities will be nullified or will not be triggered."@en,
+        "While the Pokémon is in the battle, the effects of all other Pokémon's Abilities will be nullified or will not be triggered."@en ;
+    schema1:name "Neutralizing&nbsp;Gas"@en .
+
+ability:Neutralizing_Gas a classes:Ability ;
+    rdfs:label "Neutralizing_Gas"@en ;
+    schema1:description "If the Pokémon with Neutralizing Gas is in the battle, the effects of all Pokémon's Abilities will be nullified or will not be triggered."@en,
+        "While the Pokémon is in the battle, the effects of all other Pokémon's Abilities will be nullified or will not be triggered."@en ;
+    schema1:name "Neutralizing_Gas"@en .
+
+ability:No_Guard a classes:Ability ;
+    rdfs:label "No_Guard"@en ;
+    schema1:description "Ensures attacks by or against the Pokémon land."@en,
+        "Ensures attacks by or against the Pokémon land.{{sup/6"@en,
+        "Ensures the Pokémon and its foe's attacks land.{{sup/4"@en,
+        "The Pokémon employs no-guard tactics to ensure incoming and outgoing attacks always land."@en,
+        "The Pokémon employs no-guard tactics to ensure incoming and outgoing attacks always land. "@en ;
+    schema1:name "No_Guard"@en .
+
+ability:Normalize a classes:Ability ;
+    rdfs:label "Normalize"@en ;
+    schema1:description "All the Pokémon's moves become Normal type."@en,
+        "All the Pokémon's moves become Normal type. The power of those moves is boosted a little."@en,
+        "All the Pokémon's moves become the Normal type."@en ;
+    schema1:name "Normalize"@en .
+
+ability:Oblivious a classes:Ability ;
+    rdfs:label "Oblivious"@en ;
+    schema1:description "Keeps the Pokémon from being infatuated or falling for taunts."@en,
+        "Prevents attraction."@en,
+        "Prevents it from becoming infatuated."@en,
+        "Prevents the Pokémon from becoming infatuated.{{sup/4"@en,
+        "The Pokémon is oblivious, and that keeps it from being infatuated or falling for taunts."@en,
+        "The Pokémon is oblivious, keeping it from being infatuated, falling for taunts, or being affected by Intimidate."@en ;
+    schema1:name "Oblivious"@en .
+
+ability:Opportunist a classes:Ability ;
+    rdfs:label "Opportunist"@en ;
+    schema1:description "If an opponent's stat is boosted, the Pokémon seizes the opportunity to boost the same stat for itself."@en ;
+    schema1:name "Opportunist"@en .
+
+ability:Orichalcum_Pulse a classes:Ability ;
+    rdfs:label "Orichalcum_Pulse"@en ;
+    schema1:description "Turns the sunlight harsh when the Pokémon enters a battle. The ancient pulse thrumming through the Pokémon also boosts its Attack stat in harsh sunlight."@en ;
+    schema1:name "Orichalcum_Pulse"@en .
+
+ability:Overcoat a classes:Ability ;
+    rdfs:label "Overcoat"@en ;
+    schema1:description "Protects the Pokémon from damage from weather."@en,
+        "Protects the Pokémon from things like sand, hail, and powder."@en,
+        "Protects the Pokémon from things like sand, hail, and powder. "@en,
+        "The Pokémon takes no damage from sandstorms. It is also protected from the effects of powders and spores."@en ;
+    schema1:name "Overcoat"@en .
+
+ability:Overgrow a classes:Ability ;
+    rdfs:label "Overgrow"@en ;
+    schema1:description "Powers up Grass-type moves in a pinch."@en,
+        "Powers up Grass-type moves when the Pokémon is in trouble."@en,
+        "Powers up Grass-type moves when the Pokémon's HP is low."@en,
+        "Ups <sc>Grass</sc> moves in a pinch."@en ;
+    schema1:name "Overgrow"@en .
+
+ability:Own_Tempo a classes:Ability ;
+    rdfs:label "Own_Tempo"@en ;
+    schema1:description "Prevents confusion."@en,
+        "Prevents the Pokémon from becoming confused."@en,
+        "The Pokémon sticks to its own tempo, preventing it from becoming confused or being affected by Intimidate."@en,
+        "This Pokémon has its own tempo, and that prevents it from becoming confused."@en ;
+    schema1:name "Own_Tempo"@en .
+
+ability:Perish_Body a classes:Ability ;
+    rdfs:label "Perish_Body"@en ;
+    schema1:description "When hit by a move that makes direct contact, the Pokémon and the attacker will faint after three turns unless they switch out of battle."@en ;
+    schema1:name "Perish_Body"@en .
+
+ability:Pickpocket a classes:Ability ;
+    rdfs:label "Pickpocket"@en ;
+    schema1:description "Steals an item from an attacker that made direct contact."@en,
+        "Steals an item when hit by another Pokémon."@en,
+        "The Pokémon steals the held item from attackers that make direct contact with it."@en ;
+    schema1:name "Pickpocket"@en .
+
+ability:Pickup a classes:Ability ;
+    rdfs:label "Pickup"@en ;
+    schema1:description "May pick up items."@en,
+        "The Pokémon may pick up an item another Pokémon used during a battle. It may pick up items outside of battle, too."@en,
+        "The Pokémon may pick up items."@en,
+        "The Pokémon may pick up items.{{sup/4"@en,
+        "The Pokémon may pick up the item an opposing Pokémon used during a battle. It may pick up items outside of battle, too."@en,
+        "The Pokémon may pick up the item an opposing Pokémon used during a battle. It may pick up items outside of battle, too. "@en ;
+    schema1:name "Pickup"@en .
+
+ability:Pixilate a classes:Ability ;
+    rdfs:label "Pixilate"@en ;
+    schema1:description "Normal-type moves become Fairy-type moves."@en,
+        "Normal-type moves become Fairy-type moves. The power of those moves is boosted a little."@en ;
+    schema1:name "Pixilate"@en .
+
+ability:Plus a classes:Ability ;
+    rdfs:label "Plus"@en ;
+    schema1:description "Boosts Sp. Atk if another Pokémon has Minus.{{sup/4"@en,
+        "Boosts the Sp. Atk stat if another Pokémon has Plus or Minus."@en,
+        "Boosts the Sp. Atk stat of the Pokémon if an ally with the Plus or Minus Ability is also in battle."@en,
+        "Powers up with <sc>Minus</sc>."@en,
+        "Ups Sp. Atk if another Pokémon has Plus or Minus."@en ;
+    schema1:name "Plus"@en .
+
+ability:Poison_Heal a classes:Ability ;
+    rdfs:label "Poison_Heal"@en ;
+    schema1:description "If poisoned, the Pokémon has its HP restored instead of taking damage."@en,
+        "Restores HP if the Pokémon is poisoned instead of losing HP."@en,
+        "Restores HP if the Pokémon is poisoned, instead of losing HP. "@en,
+        "Restores HP if the Pokémon is poisoned."@en ;
+    schema1:name "Poison_Heal"@en .
+
+ability:Poison_Point a classes:Ability ;
+    rdfs:label "Poison_Point"@en ;
+    schema1:description "Contact with the Pokémon may poison the attacker."@en,
+        "Contact with the Pokémon may poison the attacker. "@en,
+        "Contact with the Pokémon may poison the foe."@en,
+        "Poisons foe on contact.{{sup/3"@en ;
+    schema1:name "Poison_Point"@en .
+
+ability:Poison_Puppeteer a classes:Ability ;
+    rdfs:label "Poison_Puppeteer"@en ;
+    schema1:description "Pokémon poisoned by Pecharunt's moves will also become confused."@en ;
+    schema1:name "Poison_Puppeteer"@en .
+
+ability:Poison_Touch a classes:Ability ;
+    rdfs:label "Poison_Touch"@en ;
+    schema1:description "May poison a target when the Pokémon makes contact."@en,
+        "May poison targets when a Pokémon makes contact."@en ;
+    schema1:name "Poison_Touch"@en .
+
+ability:Power_Construct a classes:Ability ;
+    rdfs:label "Power_Construct"@en ;
+    schema1:description "Cells gather to aid the Pokémon when its HP drops to half or less, causing it to change into its Complete Forme."@en,
+        "Other Cells gather to aid when its HP becomes half or less. Then the Pokémon changes its form to Complete Forme."@en ;
+    schema1:name "Power_Construct"@en .
+
+ability:Power_Spot a classes:Ability ;
+    rdfs:label "Power_Spot"@en ;
+    schema1:description "Just being next to the Pokémon powers up moves."@en ;
+    schema1:name "Power_Spot"@en .
+
+ability:Power_of_Alchemy a classes:Ability ;
+    rdfs:label "Power_of_Alchemy"@en ;
+    schema1:description "The Pokémon copies the Ability of a defeated ally."@en ;
+    schema1:name "Power_of_Alchemy"@en .
+
+ability:Prankster a classes:Ability ;
+    rdfs:label "Prankster"@en ;
+    schema1:description "Gives priority to a status move."@en,
+        "Gives priority to the Pokémon's status moves."@en ;
+    schema1:name "Prankster"@en .
+
+ability:Pressure a classes:Ability ;
+    rdfs:label "Pressure"@en ;
+    schema1:description "By putting pressure on the opposing Pokémon, it raises their PP usage."@en,
+        "Puts other Pokémon under pressure, causing them to expend more PP to use their moves."@en,
+        "Raises foe's PP usage."@en,
+        "The Pokémon raises opposing Pokémon's PP usage."@en,
+        "The Pokémon raises the foe's PP usage."@en ;
+    schema1:name "Pressure"@en .
+
+ability:Primordial_Sea a classes:Ability ;
+    rdfs:label "Primordial_Sea"@en ;
+    schema1:description "Affects weather and nullifies any Fire-type attacks."@en,
+        "The Pokémon changes the weather to nullify Fire-type attacks."@en ;
+    schema1:name "Primordial_Sea"@en .
+
+ability:Prism_Armor a classes:Ability ;
+    rdfs:label "Prism_Armor"@en ;
+    schema1:description "Reduces the power of supereffective attacks taken."@en,
+        "Reduces the power of supereffective attacks that hit the Pokémon."@en ;
+    schema1:name "Prism_Armor"@en .
+
+ability:Propeller_Tail a classes:Ability ;
+    rdfs:label "Propeller_Tail"@en ;
+    schema1:description "Ignores the effects of opposing Pokémon's Abilities and moves that draw in moves."@en ;
+    schema1:name "Propeller_Tail"@en .
+
+ability:Protean a classes:Ability ;
+    rdfs:label "Protean"@en ;
+    schema1:description "Changes the Pokémon's type to the type of the move it's about to use."@en,
+        "Changes the Pokémon's type to the type of the move it's about to use. "@en,
+        "Changes the Pokémon's type to the type of the move it's about to use. This works only once each time the Pokémon enters battle."@en,
+        "Changes the Pokémon's type to the type of the move it's using."@en ;
+    schema1:name "Protean"@en .
+
+ability:Protosynthesis a classes:Ability ;
+    rdfs:label "Protosynthesis"@en ;
+    schema1:description "Boosts the Pokémon's most proficient stat in harsh sunlight or if the Pokémon is holding Booster Energy."@en ;
+    schema1:name "Protosynthesis"@en .
+
+ability:Psychic_Surge a classes:Ability ;
+    rdfs:label "Psychic_Surge"@en ;
+    schema1:description "Turns the ground into Psychic Terrain when the Pokémon enters a battle."@en ;
+    schema1:name "Psychic_Surge"@en .
+
+ability:Punk_Rock a classes:Ability ;
+    rdfs:label "Punk_Rock"@en ;
+    schema1:description "Boosts the power of sound-based moves. The Pokémon also takes half the damage from these kinds of moves."@en ;
+    schema1:name "Punk_Rock"@en .
+
+ability:Pure_Power a classes:Ability ;
+    rdfs:label "Pure_Power"@en ;
+    schema1:description "Boosts the Pokémon's Attack stat."@en,
+        "Boosts the power of physical attacks."@en,
+        "Raises <sc>Attack</sc>."@en,
+        "Raises the Pokémon's Attack stat."@en,
+        "Using its pure power, the Pokémon doubles its Attack stat."@en ;
+    schema1:name "Pure_Power"@en .
+
+ability:Purifying_Salt a classes:Ability ;
+    rdfs:label "Purifying_Salt"@en ;
+    schema1:description "The Pokémon's pure salt protects it from status conditions and halves the damage taken from Ghost-type moves."@en ;
+    schema1:name "Purifying_Salt"@en .
+
+ability:Quark_Drive a classes:Ability ;
+    rdfs:label "Quark_Drive"@en ;
+    schema1:description "Boosts the Pokémon's most proficient stat on Electric Terrain or if the Pokémon is holding Booster Energy."@en ;
+    schema1:name "Quark_Drive"@en .
+
+ability:Queenly_Majesty a classes:Ability ;
+    rdfs:label "Queenly_Majesty"@en ;
+    schema1:description "Its majesty pressures the opposing Pokémon, making it unable to attack using priority moves."@en,
+        "The Pokémon's majesty pressures opponents and makes them unable to use priority moves against the Pokémon or its allies."@en ;
+    schema1:name "Queenly_Majesty"@en .
+
+ability:Quick_Feet a classes:Ability ;
+    rdfs:label "Quick_Feet"@en ;
+    schema1:description "Boosts Speed if there is a status problem."@en,
+        "Boosts the Speed stat if the Pokémon has a status condition."@en,
+        "Boosts the Speed stat if the Pokémon has a status condition. "@en ;
+    schema1:name "Quick_Feet"@en .
+
+ability:RKS_System a classes:Ability ;
+    rdfs:label "RKS_System"@en ;
+    schema1:description "Changes the Pokémon's type to match the memory disc it holds."@en ;
+    schema1:name "RKS_System"@en .
+
+ability:Rain_Dish a classes:Ability ;
+    rdfs:label "Rain_Dish"@en ;
+    schema1:description "Slight HP recovery in rain."@en,
+        "The Pokémon gradually recovers HP in rain."@en,
+        "The Pokémon gradually regains HP in rain."@en ;
+    schema1:name "Rain_Dish"@en .
+
+ability:Rattled a classes:Ability ;
+    rdfs:label "Rattled"@en ;
+    schema1:description "Dark-, Ghost-, and Bug-type moves scare the Pokémon and boost its Speed stat."@en,
+        "Some move types scare it and boost its Speed stat."@en,
+        "Some move types scare it and boost its Speed."@en,
+        "The Pokémon gets scared when hit by a Dark-, Ghost-, or Bug-type attack or if intimidated, which boosts its Speed stat."@en ;
+    schema1:name "Rattled"@en .
+
+ability:Receiver a classes:Ability ;
+    rdfs:label "Receiver"@en ;
+    schema1:description "The Pokémon copies the Ability of a defeated ally."@en ;
+    schema1:name "Receiver"@en .
+
+ability:Reckless a classes:Ability ;
+    rdfs:label "Reckless"@en ;
+    schema1:description "Powers up moves that have recoil damage."@en ;
+    schema1:name "Reckless"@en .
+
+ability:Refrigerate a classes:Ability ;
+    rdfs:label "Refrigerate"@en ;
+    schema1:description "Normal-type moves become Ice-type moves."@en,
+        "Normal-type moves become Ice-type moves. The power of those moves is boosted a little."@en ;
+    schema1:name "Refrigerate"@en .
+
+ability:Regenerator a classes:Ability ;
+    rdfs:label "Regenerator"@en ;
+    schema1:description "Restores a little HP when withdrawn from battle."@en,
+        "The Pokémon has a little of its HP restored when withdrawn from battle."@en ;
+    schema1:name "Regenerator"@en .
+
+ability:Ripen a classes:Ability ;
+    rdfs:label "Ripen"@en ;
+    schema1:description "Ripens Berries and doubles their effect."@en ;
+    schema1:name "Ripen"@en .
+
+ability:Rivalry a classes:Ability ;
+    rdfs:label "Rivalry"@en ;
+    schema1:description "Becomes competitive and deals more damage to Pokémon of the same gender, but deals less to Pokémon of the opposite gender."@en,
+        "Becomes competitive and deals more damage to Pokémon of the same gender, but deals less to Pokémon of the opposite gender. "@en,
+        "Deals more damage to Pokémon of the same gender."@en,
+        "Deals more damage to a Pokémon of same gender."@en,
+        "Raises Attack if the foe is of the same gender."@en,
+        "The Pokémon's competitive spirit makes it deal more damage to Pokémon of the same gender, but less damage to Pokémon of the opposite gender."@en ;
+    schema1:name "Rivalry"@en .
+
+ability:Rock_Head a classes:Ability ;
+    rdfs:label "Rock_Head"@en ;
+    schema1:description "Prevents recoil damage."@en,
+        "Protects the Pokémon from recoil damage."@en ;
+    schema1:name "Rock_Head"@en .
+
+ability:Rocky_Payload a classes:Ability ;
+    rdfs:label "Rocky_Payload"@en ;
+    schema1:description "Powers up Rock-type moves."@en ;
+    schema1:name "Rocky_Payload"@en .
+
+ability:Rough_Skin a classes:Ability ;
+    rdfs:label "Rough_Skin"@en ;
+    schema1:description "Hurts to touch."@en,
+        "Inflicts damage to the attacker on contact."@en,
+        "Inflicts damage to the foe on contact."@en,
+        "The Pokémon's rough skin damages attackers that make direct contact with it."@en,
+        "This Pokémon inflicts damage with its rough skin to the attacker on contact."@en ;
+    schema1:name "Rough_Skin"@en .
+
+ability:Run_Away a classes:Ability ;
+    rdfs:label "Run_Away"@en ;
+    schema1:description "Enables a sure getaway from wild Pokémon."@en,
+        "Enables sure getaway from wild Pokémon.{{sup/4"@en,
+        "Makes escaping easier."@en ;
+    schema1:name "Run_Away"@en .
+
+ability:Sand_Force a classes:Ability ;
+    rdfs:label "Sand_Force"@en ;
+    schema1:description "Boosts certain moves' power in a sandstorm."@en,
+        "Boosts the power of Rock-, Ground-, and Steel-type moves in a sandstorm."@en ;
+    schema1:name "Sand_Force"@en .
+
+ability:Sand_Rush a classes:Ability ;
+    rdfs:label "Sand_Rush"@en ;
+    schema1:description "Boosts the Pokémon's Speed in a sandstorm."@en,
+        "Boosts the Pokémon's Speed stat in a sandstorm."@en ;
+    schema1:name "Sand_Rush"@en .
+
+ability:Sand_Spit a classes:Ability ;
+    rdfs:label "Sand_Spit"@en ;
+    schema1:description "The Pokémon creates a sandstorm when it's hit by an attack."@en ;
+    schema1:name "Sand_Spit"@en .
+
+ability:Sand_Stream a classes:Ability ;
+    rdfs:label "Sand_Stream"@en ;
+    schema1:description "Summons a sandstorm."@en,
+        "The Pokémon summons a sandstorm in battle."@en,
+        "The Pokémon summons a sandstorm when it enters a battle."@en ;
+    schema1:name "Sand_Stream"@en .
+
+ability:Sand_Veil a classes:Ability ;
+    rdfs:label "Sand_Veil"@en ;
+    schema1:description "Boosts the Pokémon's evasion in a sandstorm."@en,
+        "Boosts the Pokémon's evasiveness in a sandstorm."@en,
+        "Ups evasion in a sandstorm."@en ;
+    schema1:name "Sand_Veil"@en .
+
+ability:Sap_Sipper a classes:Ability ;
+    rdfs:label "Sap_Sipper"@en ;
+    schema1:description "Boosts Attack when hit by a Grass-type move."@en,
+        "Boosts the Attack stat if hit by a Grass-type move instead of taking damage."@en,
+        "Boosts the Attack stat if hit by a Grass-type move, instead of taking damage. "@en,
+        "Boosts the Attack stat when hit by a Grass-type move."@en,
+        "The Pokémon takes no damage when hit by Grass-type moves. Instead, its Attack stat is boosted."@en ;
+    schema1:name "Sap_Sipper"@en .
+
+ability:Schooling a classes:Ability ;
+    rdfs:label "Schooling"@en ;
+    schema1:description "When it has a lot of HP, the Pokémon forms a powerful school. It stops schooling when its HP is low."@en ;
+    schema1:name "Schooling"@en .
+
+ability:Scrappy a classes:Ability ;
+    rdfs:label "Scrappy"@en ;
+    schema1:description "Enables moves to hit Ghost-type Pokémon."@en,
+        "Enables moves to hit Ghost-type foes. "@en,
+        "Makes Normal- and Fighting-type moves hit Ghost-type Pokémon."@en,
+        "The Pokémon can hit Ghost-type Pokémon with Normal- and Fighting-type moves."@en,
+        "The Pokémon can hit Ghost-type Pokémon with Normal- and Fighting-type moves. "@en,
+        "The Pokémon can hit Ghost-type Pokémon with Normal- and Fighting-type moves. It is also unaffected by Intimidate."@en ;
+    schema1:name "Scrappy"@en .
+
+ability:Screen_Cleaner a classes:Ability ;
+    rdfs:label "Screen_Cleaner"@en ;
+    schema1:description "When the Pokémon enters a battle, the effects of Light Screen, Reflect, and Aurora Veil are nullified for both opposing and ally Pokémon."@en ;
+    schema1:name "Screen_Cleaner"@en .
+
+ability:Seed_Sower a classes:Ability ;
+    rdfs:label "Seed_Sower"@en ;
+    schema1:description "Turns the ground into Grassy Terrain when the Pokémon is hit by an attack."@en ;
+    schema1:name "Seed_Sower"@en .
+
+ability:Serene_Grace a classes:Ability ;
+    rdfs:label "Serene_Grace"@en ;
+    schema1:description "Boosts the likelihood of added effects appearing."@en,
+        "Boosts the likelihood of additional effects occurring when attacking."@en,
+        "Boosts the likelihood of additional effects occurring."@en,
+        "Promotes added effects."@en,
+        "Raises the likelihood of additional effects occurring when the Pokémon uses its moves."@en ;
+    schema1:name "Serene_Grace"@en .
+
+ability:Shadow_Shield a classes:Ability ;
+    rdfs:label "Shadow_Shield"@en ;
+    schema1:description "Reduces the amount of damage the Pokémon takes while its HP is full."@en ;
+    schema1:name "Shadow_Shield"@en .
+
+ability:Shadow_Tag a classes:Ability ;
+    rdfs:label "Shadow_Tag"@en ;
+    schema1:description "Prevents opposing Pokémon from escaping."@en,
+        "Prevents the foe from escaping."@en,
+        "Prevents the foe's escape."@en,
+        "The Pokémon steps on the opposing Pokémon's shadows to prevent them from fleeing or switching out."@en,
+        "This Pokémon steps on the opposing Pokémon's shadow to prevent it from escaping."@en ;
+    schema1:name "Shadow_Tag"@en .
+
+ability:Sharpness a classes:Ability ;
+    rdfs:label "Sharpness"@en ;
+    schema1:description "Powers up slicing moves."@en ;
+    schema1:name "Sharpness"@en .
+
+ability:Shed_Skin a classes:Ability ;
+    rdfs:label "Shed_Skin"@en ;
+    schema1:description "Heals the body by shedding."@en,
+        "The Pokémon may cure its own status conditions by shedding its skin."@en,
+        "The Pokémon may heal its own status conditions by shedding its skin."@en,
+        "The Pokémon may heal its own status conditions."@en,
+        "The Pokémon may heal its own status problems."@en ;
+    schema1:name "Shed_Skin"@en .
+
+ability:Sheer_Force a classes:Ability ;
+    rdfs:label "Sheer_Force"@en ;
+    schema1:description "Removes added effects to increase move damage."@en,
+        "Removes additional effects to increase move damage."@en,
+        "Removes additional effects to increase the power of moves when attacking."@en,
+        "Removes additional effects to increase the power of moves when attacking. "@en,
+        "Removes any additional effects from the Pokémon's moves, but increases the moves' power."@en ;
+    schema1:name "Sheer_Force"@en .
+
+ability:Shell_Armor a classes:Ability ;
+    rdfs:label "Shell_Armor"@en ;
+    schema1:description "A hard shell protects the Pokémon from critical hits."@en,
+        "A hard shell protects the Pokémon from critical hits. "@en,
+        "Blocks critical hits."@en,
+        "Protects the Pokémon from critical hits."@en,
+        "The Pokémon is protected against critical hits."@en ;
+    schema1:name "Shell_Armor"@en .
+
+ability:Shield_Dust a classes:Ability ;
+    rdfs:label "Shield_Dust"@en ;
+    schema1:description "Blocks the added effects of attacks taken."@en,
+        "Blocks the additional effects of attacks taken."@en,
+        "Prevents added effects."@en,
+        "Protective dust shields the Pokémon from the additional effects of moves."@en,
+        "This Pokémon's dust blocks the additional effects of attacks taken."@en ;
+    schema1:name "Shield_Dust"@en .
+
+ability:Shields_Down a classes:Ability ;
+    rdfs:label "Shields_Down"@en ;
+    schema1:description "When its HP becomes half or less, the Pokémon's shell breaks and it becomes aggressive."@en,
+        "When its HP drops to half or less, the Pokémon's shell breaks and it becomes aggressive."@en ;
+    schema1:name "Shields_Down"@en .
+
+ability:Simple a classes:Ability ;
+    rdfs:label "Simple"@en ;
+    schema1:description "Doubles the effects of the Pokémon's stat changes."@en,
+        "The Pokémon is prone to wild stat changes."@en,
+        "The stat changes the Pokémon receives are doubled."@en ;
+    schema1:name "Simple"@en .
+
+ability:Skill_Link a classes:Ability ;
+    rdfs:label "Skill_Link"@en ;
+    schema1:description "Increases the frequency of multi-strike moves."@en,
+        "Increases the number of times multi-strike moves hit."@en,
+        "Maximizes the number of times multi-strike moves hit."@en,
+        "Maximizes the number of times multistrike moves hit."@en,
+        "Maximizes the number of times multistrike moves hit.<!--No dash-->"@en ;
+    schema1:name "Skill_Link"@en .
+
+ability:Slow_Start a classes:Ability ;
+    rdfs:label "Slow_Start"@en ;
+    schema1:description "For five turns, the Pokémon's Attack and Speed stats are halved."@en,
+        "For five turns, the Pokémon's Attack and Speed stats are halved.{{sup/8"@en,
+        "Temporarily halves Attack and Speed."@en,
+        "Temporarily halves the Pokémon's Attack and Speed stats."@en ;
+    schema1:name "Slow_Start"@en .
+
+ability:Slush_Rush a classes:Ability ;
+    rdfs:label "Slush_Rush"@en ;
+    schema1:description "Boosts the Pokémon's Speed stat in a hailstorm."@en,
+        "Boosts the Pokémon's Speed stat in snow."@en ;
+    schema1:name "Slush_Rush"@en .
+
+ability:Sniper a classes:Ability ;
+    rdfs:label "Sniper"@en ;
+    schema1:description "If the Pokémon's attack lands a critical hit, the attack is powered up even further."@en,
+        "Powers up moves if they become critical hits when attacking."@en,
+        "Powers up moves if they become critical hits."@en ;
+    schema1:name "Sniper"@en .
+
+ability:Snow_Cloak a classes:Ability ;
+    rdfs:label "Snow_Cloak"@en ;
+    schema1:description "Boosts evasion in a hailstorm."@en,
+        "Boosts evasiveness in a hailstorm."@en,
+        "Boosts the Pokémon's evasiveness in snow."@en,
+        "Raises evasion in a hailstorm."@en ;
+    schema1:name "Snow_Cloak"@en .
+
+ability:Snow_Warning a classes:Ability ;
+    rdfs:label "Snow_Warning"@en ;
+    schema1:description "The Pokémon makes it snow when it enters a battle."@en,
+        "The Pokémon summons a hailstorm in battle."@en,
+        "The Pokémon summons a hailstorm when it enters a battle."@en ;
+    schema1:name "Snow_Warning"@en .
+
+ability:Solar_Power a classes:Ability ;
+    rdfs:label "Solar_Power"@en ;
+    schema1:description "Boosts Sp. Atk, but lowers HP in sunshine."@en,
+        "Boosts the Sp. Atk stat in harsh sunlight, but HP decreases every turn."@en,
+        "Boosts the Sp. Atk stat in sunny weather, but HP decreases every turn.{{sup/7"@en,
+        "Boosts the Sp. Atk stat in sunny weather, but HP decreases."@en,
+        "In harsh sunlight, the Pokémon's Sp. Atk stat is boosted, but its HP decreases every turn."@en,
+        "In sunshine, Sp. Atk is boosted but HP decreases."@en ;
+    schema1:name "Solar_Power"@en .
+
+ability:Solid_Rock a classes:Ability ;
+    rdfs:label "Solid_Rock"@en ;
+    schema1:description "Powers down super-effective moves.{{sup/4"@en,
+        "Reduces damage from supereffective attacks."@en,
+        "Reduces damage from supereffective attacks.<!--Yes, no space.-->"@en,
+        "Reduces the power of supereffective attacks taken."@en,
+        "Reduces the power of supereffective attacks that hit the Pokémon."@en ;
+    schema1:name "Solid_Rock"@en .
+
+ability:Soul-Heart a classes:Ability ;
+    rdfs:label "Soul-Heart"@en ;
+    schema1:description "Boosts its Sp. Atk stat every time a Pokémon faints."@en,
+        "Boosts the Pokémon's Sp. Atk stat every time another Pokémon faints."@en ;
+    schema1:name "Soul-Heart"@en .
+
+ability:Soundproof a classes:Ability ;
+    rdfs:label "Soundproof"@en ;
+    schema1:description "Avoids sound-based moves."@en,
+        "Gives full immunity to all sound-based moves."@en,
+        "Soundproofing gives the Pokémon full immunity to all sound-based moves."@en,
+        "Soundproofing of the Pokémon itself gives full immunity to all sound-based moves. "@en ;
+    schema1:name "Soundproof"@en .
+
+ability:Speed_Boost a classes:Ability ;
+    rdfs:label "Speed_Boost"@en ;
+    schema1:description "Gradually boosts <sc>Speed</sc>."@en,
+        "Its Speed stat is boosted every turn."@en,
+        "Its Speed stat is gradually boosted."@en,
+        "The Pokémon's Speed stat is boosted every turn."@en,
+        "The Pokémon's Speed stat is gradually boosted.{{sup/4"@en ;
+    schema1:name "Speed_Boost"@en .
+
+ability:Stakeout a classes:Ability ;
+    rdfs:label "Stakeout"@en ;
+    schema1:description "Doubles the damage dealt to a target that has just switched into battle."@en,
+        "Doubles the damage dealt to the target's replacement if the target switches out."@en ;
+    schema1:name "Stakeout"@en .
+
+ability:Stall a classes:Ability ;
+    rdfs:label "Stall"@en ;
+    schema1:description "The Pokémon is always the last to use its moves."@en,
+        "The Pokémon moves after all other Pokémon do."@en,
+        "The Pokémon moves after even slower foes."@en ;
+    schema1:name "Stall"@en .
+
+ability:Stalwart a classes:Ability ;
+    rdfs:label "Stalwart"@en ;
+    schema1:description "Ignores the effects of opposing Pokémon's Abilities and moves that draw in moves."@en ;
+    schema1:name "Stalwart"@en .
+
+ability:Stamina a classes:Ability ;
+    rdfs:label "Stamina"@en ;
+    schema1:description "Boosts the Defense stat when hit by an attack."@en,
+        "Boosts the Defense stat when the Pokémon is hit by an attack."@en ;
+    schema1:name "Stamina"@en .
+
+ability:Stance_Change a classes:Ability ;
+    rdfs:label "Stance_Change"@en ;
+    schema1:description "The Pokémon changes form depending on how it battles."@en,
+        "The Pokémon changes its form to Blade Forme when it uses an attack move and changes to Shield Forme when it uses King's Shield."@en,
+        "The Pokémon changes its form to Blade Forme when it uses an attack move, and changes to Shield Forme when it uses King's Shield."@en ;
+    schema1:name "Stance_Change"@en .
+
+ability:Static a classes:Ability ;
+    rdfs:label "Static"@en ;
+    schema1:description "Contact with the Pokémon may cause paralysis."@en,
+        "Paralyzes on contact."@en,
+        "The Pokémon is charged with static electricity and may paralyze attackers that make direct contact with it."@en,
+        "The Pokémon is charged with static electricity, so contact with it may cause paralysis."@en ;
+    schema1:name "Static"@en .
+
+ability:Steadfast a classes:Ability ;
+    rdfs:label "Steadfast"@en ;
+    schema1:description "Boosts the Speed stat each time the Pokémon flinches."@en,
+        "Raises Speed each time the Pokémon flinches."@en,
+        "The Pokémon's determination boosts its Speed stat every time it flinches."@en,
+        "The Pokémon's determination boosts the Speed stat each time the Pokémon flinches."@en ;
+    schema1:name "Steadfast"@en .
+
+ability:Steam_Engine a classes:Ability ;
+    rdfs:label "Steam_Engine"@en ;
+    schema1:description "Boosts the Pokémon's Speed stat drastically if hit by a Fire- or Water-type move."@en,
+        "Boosts the Speed stat drastically when the Pokémon is hit by a Fire- or Water-type move."@en ;
+    schema1:name "Steam_Engine"@en .
+
+ability:Steelworker a classes:Ability ;
+    rdfs:label "Steelworker"@en ;
+    schema1:description "Powers up Steel-type moves."@en ;
+    schema1:name "Steelworker"@en .
+
+ability:Steely_Spirit a classes:Ability ;
+    rdfs:label "Steely_Spirit"@en ;
+    schema1:description "Powers up ally Pokémon's Steel-type moves."@en,
+        "Powers up the Steel-type moves of the Pokémon and its allies."@en ;
+    schema1:name "Steely_Spirit"@en .
+
+ability:Stench a classes:Ability ;
+    rdfs:label "Stench"@en ;
+    schema1:description "By releasing a stench when attacking, the Pokémon may cause the target to flinch."@en,
+        "By releasing stench when attacking, this Pokémon may cause the target to flinch."@en,
+        "Helps repel wild <sc>Pok</sc>é<sc>mon</sc>.{{sup/3"@en,
+        "The stench helps keep wild Pokémon away.{{sup/4"@en,
+        "The stench may cause the target to flinch."@en ;
+    schema1:name "Stench"@en .
+
+ability:Sticky_Hold a classes:Ability ;
+    rdfs:label "Sticky_Hold"@en ;
+    schema1:description "Items held by the Pokémon are stuck fast and cannot be removed by other Pokémon."@en,
+        "Prevents item theft."@en,
+        "Protects the Pokémon from item theft."@en,
+        "The Pokémon's held items cling to its sticky body and cannot be removed by other Pokémon."@en ;
+    schema1:name "Sticky_Hold"@en .
+
+ability:Storm_Drain a classes:Ability ;
+    rdfs:label "Storm_Drain"@en ;
+    schema1:description "Draws in all Water-type moves to boost its Sp. Atk stat."@en,
+        "Draws in all Water-type moves to up Sp. Attack."@en,
+        "Draws in all Water-type moves. Instead of being hit by Water-type moves, it boosts its Sp. Atk."@en,
+        "The Pokémon draws in all Water-type moves."@en,
+        "The Pokémon draws in all Water-type moves. Instead of taking damage from them, its Sp. Atk stat is boosted."@en ;
+    schema1:name "Storm_Drain"@en .
+
+ability:Strong_Jaw a classes:Ability ;
+    rdfs:label "Strong_Jaw"@en ;
+    schema1:description "The Pokémon's strong jaw boosts the power of its biting moves."@en,
+        "The Pokémon's strong jaw gives it tremendous biting power."@en ;
+    schema1:name "Strong_Jaw"@en .
+
+ability:Sturdy a classes:Ability ;
+    rdfs:label "Sturdy"@en ;
+    schema1:description "It cannot be knocked out with one hit."@en,
+        "It cannot be knocked out with one hit. One-hit KO moves cannot knock it out, either."@en,
+        "Negates 1-hit KO Attacks."@en,
+        "The Pokémon cannot be knocked out by a single hit as long as its HP is full. One-hit KO moves will also fail to knock it out."@en,
+        "The Pokémon is protected against 1-hit KO attacks.{{sup/4"@en ;
+    schema1:name "Sturdy"@en .
+
+ability:Suction_Cups a classes:Ability ;
+    rdfs:label "Suction_Cups"@en ;
+    schema1:description "Firmly anchors the body."@en,
+        "Negates all moves and items that force switching out."@en,
+        "Negates all moves that force switching out."@en,
+        "Negates moves that force switching out.{{sup/4"@en,
+        "The Pokémon uses suction cups to stay in one spot. This protects it from moves and items that would force it to switch out."@en,
+        "This Pokémon uses suction cups to stay in one spot to negate all moves and items that force switching out."@en ;
+    schema1:name "Suction_Cups"@en .
+
+ability:Super_Luck a classes:Ability ;
+    rdfs:label "Super_Luck"@en ;
+    schema1:description "Boosts the critical-hit ratios of moves."@en,
+        "Heightens the critical-hit ratios of moves."@en,
+        "The Pokémon is so lucky that the critical-hit ratios of its moves are boosted."@en ;
+    schema1:name "Super_Luck"@en .
+
+ability:Supersweet_Syrup a classes:Ability ;
+    rdfs:label "Supersweet_Syrup"@en ;
+    schema1:description "A sickly sweet scent spreads across the field the first time the Pokémon enters a battle, lowering the evasiveness of opposing Pokémon."@en ;
+    schema1:name "Supersweet_Syrup"@en .
+
+ability:Supreme_Overlord a classes:Ability ;
+    rdfs:label "Supreme_Overlord"@en ;
+    schema1:description "When the Pokémon enters a battle, its Attack and Sp. Atk stats are slightly boosted for each of the allies in its party that have already been defeated."@en ;
+    schema1:name "Supreme_Overlord"@en .
+
+ability:Surge_Surfer a classes:Ability ;
+    rdfs:label "Surge_Surfer"@en ;
+    schema1:description "Doubles the Pokémon's Speed stat on Electric Terrain."@en ;
+    schema1:name "Surge_Surfer"@en .
+
+ability:Swarm a classes:Ability ;
+    rdfs:label "Swarm"@en ;
+    schema1:description "Powers up Bug-type moves in a pinch."@en,
+        "Powers up Bug-type moves when the Pokémon is in trouble."@en,
+        "Powers up Bug-type moves when the Pokémon's HP is low."@en,
+        "Ups <sc>Bug</sc> moves in a pinch."@en ;
+    schema1:name "Swarm"@en .
+
+ability:Sweet_Veil a classes:Ability ;
+    rdfs:label "Sweet_Veil"@en ;
+    schema1:description "Prevents itself and ally Pokémon from falling asleep."@en,
+        "Prevents the Pokémon and its allies from falling asleep."@en ;
+    schema1:name "Sweet_Veil"@en .
+
+ability:Swift_Swim a classes:Ability ;
+    rdfs:label "Swift_Swim"@en ;
+    schema1:description "Boosts the Pokémon's Speed in rain."@en,
+        "Boosts the Pokémon's Speed stat in rain."@en,
+        "Raises <sc>Speed</sc> in rain."@en ;
+    schema1:name "Swift_Swim"@en .
+
+ability:Sword_of_Ruin a classes:Ability ;
+    rdfs:label "Sword_of_Ruin"@en ;
+    schema1:description "The power of the Pokémon's ruinous sword lowers the Defense stats of all Pokémon except itself."@en ;
+    schema1:name "Sword_of_Ruin"@en .
+
+ability:Symbiosis a classes:Ability ;
+    rdfs:label "Symbiosis"@en ;
+    schema1:description "The Pokémon can pass an item to an ally."@en,
+        "The Pokémon passes its held item to an ally that has used up an item."@en,
+        "The Pokémon passes its item to an ally that has used up an item."@en ;
+    schema1:name "Symbiosis"@en .
+
+ability:Synchronize a classes:Ability ;
+    rdfs:label "Synchronize"@en ;
+    schema1:description "If the Pokémon is burned, paralyzed, or poisoned by another Pokémon, that Pokémon will be inflicted with the same status condition."@en,
+        "Passes a burn, poison, or paralysis to the foe."@en,
+        "Passes on a burn, poison, or paralysis to the foe.{{sup/4"@en,
+        "Passes on status problems."@en,
+        "Passes poison, paralyze<!--not paralysis-->, or burn to the Pokémon that inflicted it."@en,
+        "The attacker will receive the same status condition if it inflicts a burn, poison, or paralysis to the Pokémon."@en,
+        "The attacker will receive the same status condition if it inflicts a burn, poison, or paralysis to the Pokémon. "@en ;
+    schema1:name "Synchronize"@en .
+
+ability:Tablets_of_Ruin a classes:Ability ;
+    rdfs:label "Tablets_of_Ruin"@en ;
+    schema1:description "The power of the Pokémon's ruinous wooden tablets lowers the Attack stats of all Pokémon except itself."@en ;
+    schema1:name "Tablets_of_Ruin"@en .
+
+ability:Tangled_Feet a classes:Ability ;
+    rdfs:label "Tangled_Feet"@en ;
+    schema1:description "Boosts the Pokémon's evasiveness if it is confused."@en,
+        "Raises evasion if the Pokémon is confused."@en,
+        "Raises evasion if the Pokémon is confused. "@en,
+        "Raises evasiveness if the Pokémon is confused."@en ;
+    schema1:name "Tangled_Feet"@en .
+
+ability:Tangling_Hair a classes:Ability ;
+    rdfs:label "Tangling_Hair"@en ;
+    schema1:description "Contact with the Pokémon lowers the attacker's Speed stat."@en ;
+    schema1:name "Tangling_Hair"@en .
+
+ability:Technician a classes:Ability ;
+    rdfs:label "Technician"@en ;
+    schema1:description "Powers up the Pokémon's weaker moves."@en,
+        "Powers up the Pokémon's weaker moves. "@en,
+        "Powers up weak moves so the Pokémon can deal more damage with them."@en ;
+    schema1:name "Technician"@en .
+
+ability:Telepathy a classes:Ability ;
+    rdfs:label "Telepathy"@en ;
+    schema1:description "Anticipates an ally's attack and dodges it."@en,
+        "The Pokémon anticipates and dodges the attacks of its allies."@en ;
+    schema1:name "Telepathy"@en .
+
+ability:Tera_Shell a classes:Ability ;
+    rdfs:label "Tera_Shell"@en ;
+    schema1:description "The Pokémon's shell contains the powers of each type. All damage-dealing moves that hit the Pokémon when its HP is full will not be very effective."@en ;
+    schema1:name "Tera_Shell"@en .
+
+ability:Tera_Shift a classes:Ability ;
+    rdfs:label "Tera_Shift"@en ;
+    schema1:description "When the Pokémon enters a battle, it absorbs the energy around itself and transforms into its Terastal Form."@en ;
+    schema1:name "Tera_Shift"@en .
+
+ability:Teraform_Zero a classes:Ability ;
+    rdfs:label "Teraform_Zero"@en ;
+    schema1:description "When Terapagos changes into its Stellar Form, it uses its hidden powers to eliminate all effects of weather and terrain, reducing them to zero."@en ;
+    schema1:name "Teraform_Zero"@en .
+
+ability:Teravolt a classes:Ability ;
+    rdfs:label "Teravolt"@en ;
+    schema1:description "Moves can be used on the target regardless of its Abilities."@en,
+        "Moves can be used regardless of Abilities."@en,
+        "The Pokémon's moves are unimpeded by the Ability of the target."@en ;
+    schema1:name "Teravolt"@en .
+
+ability:Thermal_Exchange a classes:Ability ;
+    rdfs:label "Thermal_Exchange"@en ;
+    schema1:description "Boosts the Attack stat when the Pokémon is hit by a Fire-type move. The Pokémon also cannot be burned."@en ;
+    schema1:name "Thermal_Exchange"@en .
+
+ability:Thick_Fat a classes:Ability ;
+    rdfs:label "Thick_Fat"@en ;
+    schema1:description "Boosts resistance to Fire- and Ice-type moves."@en,
+        "Heat-and-cold protection."@en,
+        "Raises resistance to Fire- and Ice-type moves.{{sup/4"@en,
+        "The Pokémon is protected by a layer of thick fat, which halves the damage taken from Fire- and Ice-type moves."@en,
+        "The Pokémon is protected by a layer of thick fat, which halves the damage taken from Fire- and Ice-type moves. "@en,
+        "Ups resistance to Fire- and Ice-type moves."@en ;
+    schema1:name "Thick_Fat"@en .
+
+ability:Tinted_Lens a classes:Ability ;
+    rdfs:label "Tinted_Lens"@en ;
+    schema1:description "Powers up \"not very effective\" moves."@en,
+        "The Pokémon can use \"not very effective\" moves to deal regular damage."@en,
+        "The Pokémon can use \"not very effective\" moves to deal regular damage. "@en ;
+    schema1:name "Tinted_Lens"@en .
+
+ability:Torrent a classes:Ability ;
+    rdfs:label "Torrent"@en ;
+    schema1:description "Powers up Water-type moves in a pinch."@en,
+        "Powers up Water-type moves when the Pokémon is in trouble."@en,
+        "Powers up Water-type moves when the Pokémon's HP is low."@en,
+        "Ups <sc>Water</sc> moves in a pinch."@en ;
+    schema1:name "Torrent"@en .
+
+ability:Tough_Claws a classes:Ability ;
+    rdfs:label "Tough_Claws"@en ;
+    schema1:description "Powers up moves that make direct contact."@en ;
+    schema1:name "Tough_Claws"@en .
+
+ability:Toxic_Boost a classes:Ability ;
+    rdfs:label "Toxic_Boost"@en ;
+    schema1:description "Powers up physical attacks when poisoned."@en,
+        "Powers up physical attacks when the Pokémon is poisoned."@en,
+        "Powers up physical attacks when the Pokémon is poisoned. "@en,
+        "Powers up physical moves when the Pokémon is poisoned."@en ;
+    schema1:name "Toxic_Boost"@en .
+
+ability:Toxic_Chain a classes:Ability ;
+    rdfs:label "Toxic_Chain"@en ;
+    schema1:description "The power of the Pokémon's toxic chain may badly poison any target the Pokémon hits with a move."@en ;
+    schema1:name "Toxic_Chain"@en .
+
+ability:Toxic_Debris a classes:Ability ;
+    rdfs:label "Toxic_Debris"@en ;
+    schema1:description "Scatters poison spikes at the feet of the opposing team when the Pokémon takes damage from physical moves."@en ;
+    schema1:name "Toxic_Debris"@en .
+
+ability:Trace a classes:Ability ;
+    rdfs:label "Trace"@en ;
+    schema1:description "Copies special ability."@en,
+        "The Pokémon copies a foe's Ability."@en,
+        "The Pokémon copies an opposing Pokémon's Ability."@en,
+        "The Pokémon copies the foe's ability."@en,
+        "When it enters a battle, the Pokémon copies an opposing Pokémon's Ability."@en,
+        "When it enters a battle, the Pokémon copies an opposing Pokémon's Ability. "@en ;
+    schema1:name "Trace"@en .
+
+ability:Transistor a classes:Ability ;
+    rdfs:label "Transistor"@en ;
+    schema1:description "Powers up Electric-type moves."@en ;
+    schema1:name "Transistor"@en .
+
+ability:Triage a classes:Ability ;
+    rdfs:label "Triage"@en ;
+    schema1:description "Gives priority to a healing move."@en,
+        "Gives priority to the Pokémon's healing moves."@en ;
+    schema1:name "Triage"@en .
+
+ability:Truant a classes:Ability ;
+    rdfs:label "Truant"@en ;
+    schema1:description "Each time the Pokémon uses a move, it spends the next turn loafing around."@en,
+        "Moves only every two turns."@en,
+        "Pokémon can't attack on consecutive turns."@en,
+        "The Pokémon can't attack on consecutive turns."@en,
+        "The Pokémon can't attack on consecutive turns.{{sup/4"@en,
+        "The Pokémon can't use a move if it had used a move on the previous turn."@en,
+        "The Pokémon can't use a move the following turn if it uses one."@en ;
+    schema1:name "Truant"@en .
+
+ability:Turboblaze a classes:Ability ;
+    rdfs:label "Turboblaze"@en ;
+    schema1:description "Moves can be used on the target regardless of its Abilities."@en,
+        "Moves can be used regardless of Abilities."@en,
+        "The Pokémon's moves are unimpeded by the Ability of the target."@en ;
+    schema1:name "Turboblaze"@en .
+
+ability:Unaware a classes:Ability ;
+    rdfs:label "Unaware"@en ;
+    schema1:description "Ignores any change in ability by the foe."@en,
+        "Ignores any stat changes in the Pokémon."@en,
+        "Ignores the opposing Pokémon's stat changes."@en,
+        "When attacking, the Pokémon ignores the target Pokémon's stat changes."@en,
+        "When attacking, the Pokémon ignores the target's stat changes."@en ;
+    schema1:name "Unaware"@en .
+
+ability:Unburden a classes:Ability ;
+    rdfs:label "Unburden"@en ;
+    schema1:description "Boosts the Speed stat if its held item is used or lost."@en,
+        "Boosts the Speed stat if the Pokémon's held item is used or lost."@en,
+        "Raises Speed if a held item is used."@en ;
+    schema1:name "Unburden"@en .
+
+ability:Unnerve a classes:Ability ;
+    rdfs:label "Unnerve"@en ;
+    schema1:description "Makes the foe nervous and unable to eat Berries."@en,
+        "Unnerves opposing Pokémon and makes them unable to eat Berries."@en,
+        "Unnerves opposing Pokémon and makes them unable to eat Berries. "@en ;
+    schema1:name "Unnerve"@en .
+
+ability:Unseen_Fist a classes:Ability ;
+    rdfs:label "Unseen_Fist"@en ;
+    schema1:description "If the Pokémon uses moves that make direct contact, it can attack the target even if the target protects itself."@en ;
+    schema1:name "Unseen_Fist"@en .
+
+ability:Vessel_of_Ruin a classes:Ability ;
+    rdfs:label "Vessel_of_Ruin"@en ;
+    schema1:description "The power of the Pokémon's ruinous vessel lowers the Sp. Atk stats of all Pokémon except itself."@en ;
+    schema1:name "Vessel_of_Ruin"@en .
+
+ability:Victory_Star a classes:Ability ;
+    rdfs:label "Victory_Star"@en ;
+    schema1:description "Boosts the accuracy of its allies and itself."@en,
+        "Boosts the accuracy of the Pokémon and its allies."@en ;
+    schema1:name "Victory_Star"@en .
+
+ability:Vital_Spirit a classes:Ability ;
+    rdfs:label "Vital_Spirit"@en ;
+    schema1:description "Prevents sleep."@en,
+        "Prevents the Pokémon from falling asleep."@en,
+        "The Pokémon is full of vitality, and that prevents it from falling asleep."@en ;
+    schema1:name "Vital_Spirit"@en .
+
+ability:Volt_Absorb a classes:Ability ;
+    rdfs:label "Volt_Absorb"@en ;
+    schema1:description "If hit by an Electric-type move, the Pokémon has its HP restored instead of taking damage."@en,
+        "Restores HP if hit by an Electric-type move instead of taking damage."@en,
+        "Restores HP if hit by an Electric-type move, instead of taking damage."@en,
+        "Restores HP if hit by an Electric-type move."@en,
+        "Turns electricity into HP."@en ;
+    schema1:name "Volt_Absorb"@en .
+
+ability:Wandering_Spirit a classes:Ability ;
+    rdfs:label "Wandering_Spirit"@en ;
+    schema1:description "The Pokémon exchanges Abilities with a Pokémon that hits it with a move that makes direct contact."@en ;
+    schema1:name "Wandering_Spirit"@en .
+
+ability:Water_Absorb a classes:Ability ;
+    rdfs:label "Water_Absorb"@en ;
+    schema1:description "Changes water into HP."@en,
+        "If hit by a Water-type move, the Pokémon has its HP restored instead of taking damage."@en,
+        "Restores HP if hit by a Water-type move instead of taking damage."@en,
+        "Restores HP if hit by a Water-type move, instead of taking damage."@en,
+        "Restores HP if hit by a Water-type move."@en ;
+    schema1:name "Water_Absorb"@en .
+
+ability:Water_Bubble a classes:Ability ;
+    rdfs:label "Water_Bubble"@en ;
+    schema1:description "Lowers the power of Fire-type moves done to the Pokémon and prevents the Pokémon from getting a burn."@en,
+        "Lowers the power of Fire-type moves that hit the Pokémon and prevents it from being burned."@en ;
+    schema1:name "Water_Bubble"@en .
+
+ability:Water_Compaction a classes:Ability ;
+    rdfs:label "Water_Compaction"@en ;
+    schema1:description "Boosts the Defense stat sharply when the Pokémon is hit by a Water-type move."@en,
+        "Boosts the Pokémon's Defense stat sharply when hit by a Water-type move."@en ;
+    schema1:name "Water_Compaction"@en .
+
+ability:Water_Veil a classes:Ability ;
+    rdfs:label "Water_Veil"@en ;
+    schema1:description "Prevents burns."@en,
+        "Prevents the Pokémon from getting a burn."@en,
+        "The Pokémon is covered with a water veil, which prevents the Pokémon from getting a burn."@en,
+        "The Pokémon is covered with a water veil, which prevents the Pokémon from getting a burn. "@en,
+        "The Pokémon's water veil prevents it from being burned."@en ;
+    schema1:name "Water_Veil"@en .
+
+ability:Weak_Armor a classes:Ability ;
+    rdfs:label "Weak_Armor"@en ;
+    schema1:description "Physical attacks lower Defense and raise Speed."@en,
+        "Physical attacks lower its Defense stat and raise its Speed stat."@en,
+        "Physical attacks to the Pokémon lower its Defense stat but sharply raise its Speed stat."@en,
+        "The Pokémon's Defense stat is lowered when it takes damage from physical moves, but its Speed stat is sharply boosted."@en ;
+    schema1:name "Weak_Armor"@en .
+
+ability:Well-Baked_Body a classes:Ability ;
+    rdfs:label "Well-Baked_Body"@en ;
+    schema1:description "The Pokémon takes no damage when hit by Fire-type moves. Instead, its Defense stat is sharply boosted."@en ;
+    schema1:name "Well-Baked_Body"@en .
+
+ability:White_Smoke a classes:Ability ;
+    rdfs:label "White_Smoke"@en ;
+    schema1:description "Prevents ability reduction."@en,
+        "Prevents other Pokémon from lowering its stats."@en,
+        "Prevents the Pokémon's stats from being lowered.{{sup/4"@en,
+        "The Pokémon is protected by its white smoke, which prevents other Pokémon from lowering its stats."@en,
+        "The Pokémon is protected by its white smoke, which prevents other Pokémon from lowering its stats. "@en ;
+    schema1:name "White_Smoke"@en .
+
+ability:Wimp_Out a classes:Ability ;
+    rdfs:label "Wimp_Out"@en ;
+    schema1:description "The Pokémon cowardly switches out when its HP becomes half or less."@en,
+        "The Pokémon cowardly switches out when its HP drops to half or less."@en ;
+    schema1:name "Wimp_Out"@en .
+
+ability:Wind_Power a classes:Ability ;
+    rdfs:label "Wind_Power"@en ;
+    schema1:description "The Pokémon becomes charged when it is hit by a wind move, boosting the power of the next Electric-type move the Pokémon uses."@en ;
+    schema1:name "Wind_Power"@en .
+
+ability:Wind_Rider a classes:Ability ;
+    rdfs:label "Wind_Rider"@en ;
+    schema1:description "Boosts the Pokémon's Attack stat if Tailwind takes effect or if the Pokémon is hit by a wind move. The Pokémon also takes no damage from wind moves."@en ;
+    schema1:name "Wind_Rider"@en .
+
+ability:Wonder_Guard a classes:Ability ;
+    rdfs:label "Wonder_Guard"@en ;
+    schema1:description "\"Super effective\" hits.{{sup/3"@en,
+        "Its mysterious power only lets supereffective moves hit the Pokémon."@en,
+        "Only supereffective moves will hit."@en,
+        "Only supereffective moves will hit.<!--Yes, no space.-->"@en ;
+    schema1:name "Wonder_Guard"@en .
+
+ability:Wonder_Skin a classes:Ability ;
+    rdfs:label "Wonder_Skin"@en ;
+    schema1:description "Makes status moves more likely to miss the Pokémon."@en,
+        "Makes status moves more likely to miss."@en,
+        "Makes status-changing moves more likely to miss."@en ;
+    schema1:name "Wonder_Skin"@en .
+

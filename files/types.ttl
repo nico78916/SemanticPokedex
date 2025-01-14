@@ -1,0 +1,58 @@
+@prefix classes: <http://localhost:8000/ontology/> .
+@prefix schema1: <http://schema.org/> .
+@prefix types: <http://localhost:8000/types/> .
+
+types:Bug a classes:ElementaryType ;
+    schema1:name "Bug" .
+
+types:Dark a classes:ElementaryType ;
+    schema1:name "Dark" .
+
+types:Dragon a classes:ElementaryType ;
+    schema1:name "Dragon" .
+
+types:Electric a classes:ElementaryType ;
+    schema1:name "Electric" .
+
+types:Fairy a classes:ElementaryType ;
+    schema1:name "Fairy" .
+
+types:Fighting a classes:ElementaryType ;
+    schema1:name "Fighting" .
+
+types:Fire a classes:ElementaryType ;
+    schema1:name "Fire" .
+
+types:Flying a classes:ElementaryType ;
+    schema1:name "Flying" .
+
+types:Ghost a classes:ElementaryType ;
+    schema1:name "Ghost" .
+
+types:Grass a classes:ElementaryType ;
+    schema1:name "Grass" .
+
+types:Ground a classes:ElementaryType ;
+    schema1:name "Ground" .
+
+types:Ice a classes:ElementaryType ;
+    schema1:name "Ice" .
+
+types:Normal a classes:ElementaryType ;
+    schema1:name "Normal" .
+
+types:Poison a classes:ElementaryType ;
+    schema1:name "Poison" .
+
+types:Psychic a classes:ElementaryType ;
+    schema1:name "Psychic" .
+
+types:Rock a classes:ElementaryType ;
+    schema1:name "Rock" .
+
+types:Steel a classes:ElementaryType ;
+    schema1:name "Steel" .
+
+types:Water a classes:ElementaryType ;
+    schema1:name "Water" .
+

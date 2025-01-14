@@ -1,0 +1,31 @@
+@prefix classes: <http://localhost:8000/ontology/> .
+@prefix generation: <http://localhost:8000/generation/> .
+@prefix schema1: <http://schema.org/> .
+
+generation:generation_I a classes:Generation ;
+    schema1:name "generation_I" .
+
+generation:generation_II a classes:Generation ;
+    schema1:name "generation_II" .
+
+generation:generation_III a classes:Generation ;
+    schema1:name "generation_III" .
+
+generation:generation_IV a classes:Generation ;
+    schema1:name "generation_IV" .
+
+generation:generation_IX a classes:Generation ;
+    schema1:name "generation_IX" .
+
+generation:generation_V a classes:Generation ;
+    schema1:name "generation_V" .
+
+generation:generation_VI a classes:Generation ;
+    schema1:name "generation_VI" .
+
+generation:generation_VII a classes:Generation ;
+    schema1:name "generation_VII" .
+
+generation:generation_VIII a classes:Generation ;
+    schema1:name "generation_VIII" .
+
