@@ -1,10 +1,15 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix schema: <http://schema.org/> .
+@prefix wdt: <https://dbpedia.org/ontology/>
 @prefix ex: <http://exemple.org/ontology>
+
+ex:Pokemon a rdfs:Class;
+    rdfs:label "Pokemon";
+    rdfs:SubClassOf wdt:Species.
 
 # Class for Ability
 ex:Ability a rdfs:Class ;
+    rdfs:SubClassOf wdt:Skill;
     rdfs:label "Ability" ;
     rdfs:comment "A special skill or power that a Pokémon can have." .
 
