@@ -1,26 +1,30 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix schema: <https://schema.org/>
-@prefix ex: <http://localhost:8000/ontology/>
+@prefix schema: <https://schema.org/>.
+@prefix ex: <http://localhost:8000/index/ontology/>.
 
 ex:Pokemon a rdfs:Class;
     rdfs:label "Pokémon"@en,"Pokémon"@fr;
     rdfs:comment "Mot valise entre pocket (poche) et monster (monstre) don pokémon veut dire monstre de poche"@fr, "pokémon litteraly mean pocket monster"@en;
+    schema:name "Pokémon"@en,"Pokémon"@fr;
     rdfs:subClassOf schema:Taxon.
 
 # Class for Ability
 ex:Ability a rdfs:Class ;
     rdfs:subClassOf schema:skills;
-    rdfs:label "Ability"@en ;
+    rdfs:label "Ability"@en, "Capacité"@fr ;
+    schema:name "Ability"@en, "Capacité"@fr ;
     rdfs:comment "A special skill or power that a Pokémon can have."@en, "Une compétence spéciale ou un pouvoir que possède un pokémon"@fr .
 
 # Class for Pokémon Type
 ex:ElementaryType a rdfs:Class ;
-    rdfs:subClassOf ex:Pokemon
-    rdfs:label "Pokémon Elementary Type"@en "Type élémentaire de pokémon"@fr ;
+    rdfs:subClassOf ex:Pokemon;
+    rdfs:label "Pokémon Elementary Type"@en, "Type élémentaire de pokémon"@fr ;
+    schema:name "Pokémon Elementary Type"@en, "Type élémentaire de pokémon"@fr ;
     rdfs:comment "An elemental type that defines the strengths and weaknesses of a Pokémon."@en, "Un type élémentaire qui définit les forces et les faiblesses d'un Pokémon."@fr .
 
 ex:Generation a rdfs:Class ;
-    rdfs:subClassOf schema:DefinedTermSet
+    rdfs:subClassOf schema:DefinedTermSet;
+    schema:name "Generation"@en, "Génération"@fr ;
     rdfs:label "Generation"@en, "Génération"@fr ;
     rdfs:comment "A generation of Pokémon games."@en,  "Une génération correspond aux jeux sorties pendant cette dernière"@fr.

@@ -7,13 +7,13 @@ from server import run
 
 # Définir les namespaces
 SCHEMA = Namespace("http://schema.org/")
-POKEMON = Namespace("http://localhost:8000/pokemon/")
-TYPES = Namespace("http://localhost:8000/types/")
-GENERATION = Namespace("http://localhost:8000/generation/")
+POKEMON = Namespace("http://localhost:8000/index/pokemon/")
+TYPES = Namespace("http://localhost:8000/index/types/")
+GENERATION = Namespace("http://localhost:8000/index/generation/")
 RDFS = Namespace("http://www.w3.org/2000/01/rdf-schema#")
-ABILITY = Namespace("http://localhost:8000/ability/")
-CLASSES = Namespace("http://localhost:8000/ontology/")
-PROPS = Namespace("http://localhost:8000/properties/")
+ABILITY = Namespace("http://localhost:8000/index/ability/")
+CLASSES = Namespace("http://localhost:8000/index/ontology/")
+PROPS = Namespace("http://localhost:8000/index/properties/")
 
 # Créer un site pywikibot pour Bulbapedia
 sites = {"en" : pywikibot.Site("en", "bulpedia"),"fr": pywikibot.Site("fr", "bulpedia")}
@@ -94,6 +94,7 @@ def generation_to_rdf(generations):
         gen_uri = URIRef(GENERATION[gen_name])
         g.add((gen_uri, RDF.type, CLASSES.Generation))
         g.add((gen_uri, SCHEMA.name, Literal(gen_name)))
+        g.add((gen_uri, RDFS.label, Literal(gen_name)))
         for key, value in gen_info:
             if value.startswith("{{") and value.endswith("}}"):
                 for v in value[2:-2].split("|"):

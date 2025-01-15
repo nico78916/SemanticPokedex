@@ -1,31 +1,41 @@
 @prefix classes: <http://localhost:8000/ontology/> .
 @prefix generation: <http://localhost:8000/generation/> .
 @prefix schema1: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 generation:generation_I a classes:Generation ;
+    rdfs:label "generation_I"@en;
     schema1:name "generation_I" .
 
 generation:generation_II a classes:Generation ;
+    rdfs:label "generation_II"@en;
     schema1:name "generation_II" .
 
 generation:generation_III a classes:Generation ;
+    rdfs:label "generation_III"@en;
     schema1:name "generation_III" .
 
 generation:generation_IV a classes:Generation ;
+    rdfs:label "generation_IV"@en;
     schema1:name "generation_IV" .
 
 generation:generation_IX a classes:Generation ;
+    rdfs:label "generation_IX"@en;
     schema1:name "generation_IX" .
 
 generation:generation_V a classes:Generation ;
+    rdfs:label "generation_V"@en;
     schema1:name "generation_V" .
 
 generation:generation_VI a classes:Generation ;
+    rdfs:label "generation_VI"@en;
     schema1:name "generation_VI" .
 
 generation:generation_VII a classes:Generation ;
+    rdfs:label "generation_VII"@en;
     schema1:name "generation_VII" .
 
 generation:generation_VIII a classes:Generation ;
+    rdfs:label "generation_VIII"@en;
     schema1:name "generation_VIII" .
 

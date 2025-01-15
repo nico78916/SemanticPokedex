@@ -1,343 +1,390 @@
 @prefix prop: <http://localhost:8000/properties/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix schema1: <http://schema.org/> .
+@prefix schema: <http://schema.org/> .
 
-prop:SameAs a schema1:Property ;
-    rdfs:label "SameAs"@en .
+prop:SameAs a schema:Property ;
+    rdfs:label "SameAs"@en;
+	 schema:name "SameAs"@en .
 
-prop:ability1 a schema1:Property ;
-    rdfs:label "ability1"@en .
+prop:ability1 a schema:Property ;
+    rdfs:label "ability1"@en;
+	 schema:name "ability1"@en .
 
-prop:ability1note a schema1:Property ;
-    rdfs:label "ability1note"@en .
+prop:ability1note a schema:Property ;
+    rdfs:label "ability1note"@en;
+	 schema:name "ability1note"@en .
 
-prop:ability2 a schema1:Property ;
+prop:ability2 a schema:Property ;
     rdfs:label "ability2"@en .
 
-prop:ability2-1 a schema1:Property ;
+prop:ability2-1 a schema:Property ;
     rdfs:label "ability2-1"@en .
 
-prop:ability2-2 a schema1:Property ;
+prop:ability2-2 a schema:Property ;
     rdfs:label "ability2-2"@en .
 
-prop:ability2note a schema1:Property ;
+prop:ability2note a schema:Property ;
     rdfs:label "ability2note"@en .
 
-prop:ability3-1 a schema1:Property ;
+prop:ability3-1 a schema:Property ;
     rdfs:label "ability3-1"@en .
 
-prop:abilitycol3 a schema1:Property ;
+prop:abilitycol3 a schema:Property ;
     rdfs:label "abilitycol3"@en .
 
-prop:abilitycold a schema1:Property ;
-    rdfs:label "abilitycold"@en .
+prop:abilitycold a schema:Property ;
+    rdfs:label "abilitycold"@en;
+	 schema:name "abilitycold"@en .
 
-prop:abilitycolm a schema1:Property ;
-    rdfs:label "abilitycolm"@en .
+prop:abilitycolm a schema:Property ;
+    rdfs:label "abilitycolm"@en;
+	 schema:name "abilitycolm"@en .
 
-prop:abilityd a schema1:Property ;
-    rdfs:label "abilityd"@en .
+prop:abilityd a schema:Property ;
+    rdfs:label "abilityd"@en;
+	 schema:name "abilityd"@en .
 
-prop:abilityd2 a schema1:Property ;
+prop:abilityd2 a schema:Property ;
     rdfs:label "abilityd2"@en .
 
-prop:abilityd2caption a schema1:Property ;
+prop:abilityd2caption a schema:Property ;
     rdfs:label "abilityd2caption"@en .
 
-prop:abilitydcaption a schema1:Property ;
-    rdfs:label "abilitydcaption"@en .
+prop:abilitydcaption a schema:Property ;
+    rdfs:label "abilitydcaption"@en;
+	 schema:name "abilitydcaption"@en .
 
-prop:abilitylayout a schema1:Property ;
-    rdfs:label "abilitylayout"@en .
+prop:abilitylayout a schema:Property ;
+    rdfs:label "abilitylayout"@en;
+	 schema:name "abilitylayout"@en .
 
-prop:abilitym a schema1:Property ;
-    rdfs:label "abilitym"@en .
+prop:abilitym a schema:Property ;
+    rdfs:label "abilitym"@en;
+	 schema:name "abilitym"@en .
 
-prop:abilitym2 a schema1:Property ;
+prop:abilitym2 a schema:Property ;
     rdfs:label "abilitym2"@en .
 
-prop:abilityn a schema1:Property ;
-    rdfs:label "abilityn"@en .
+prop:abilityn a schema:Property ;
+    rdfs:label "abilityn"@en;
+	 schema:name "abilityn"@en .
 
-prop:abilityold a schema1:Property ;
-    rdfs:label "abilityold"@en .
+prop:abilityold a schema:Property ;
+    rdfs:label "abilityold"@en;
+	 schema:name "abilityold"@en .
 
-prop:abilityoldcaption a schema1:Property ;
-    rdfs:label "abilityoldcaption"@en .
+prop:abilityoldcaption a schema:Property ;
+    rdfs:label "abilityoldcaption"@en;
+	 schema:name "abilityoldcaption"@en .
 
-prop:body a schema1:Property ;
-    rdfs:label "body"@en .
+prop:body a schema:Property ;
+    rdfs:label "body"@en;
+	 schema:name "body"@en .
 
-prop:catchrate a schema1:Property ;
-    rdfs:label "catchrate"@en .
+prop:catchrate a schema:Property ;
+    rdfs:label "catchrate"@en;
+	 schema:name "catchrate"@en .
 
-prop:eggcycles a schema1:Property ;
-    rdfs:label "eggcycles"@en .
+prop:eggcycles a schema:Property ;
+    rdfs:label "eggcycles"@en;
+	 schema:name "eggcycles"@en .
 
-prop:egggroup1 a schema1:Property ;
-    rdfs:label "egggroup1"@en .
+prop:egggroup1 a schema:Property ;
+    rdfs:label "egggroup1"@en;
+	 schema:name "egggroup1"@en .
 
-prop:egggroup1note a schema1:Property ;
-    rdfs:label "egggroup1note"@en .
+prop:egggroup1note a schema:Property ;
+    rdfs:label "egggroup1note"@en;
+	 schema:name "egggroup1note"@en .
 
-prop:egggroup2 a schema1:Property ;
+prop:egggroup2 a schema:Property ;
     rdfs:label "egggroup2"@en .
 
-prop:egggroup2note a schema1:Property ;
+prop:egggroup2note a schema:Property ;
     rdfs:label "egggroup2note"@en .
 
-prop:egggroupn a schema1:Property ;
-    rdfs:label "egggroupn"@en .
+prop:egggroupn a schema:Property ;
+    rdfs:label "egggroupn"@en;
+	 schema:name "egggroupn"@en .
 
-prop:evat a schema1:Property ;
-    rdfs:label "evat"@en .
+prop:evat a schema:Property ;
+    rdfs:label "evat"@en;
+	 schema:name "evat"@en .
 
-prop:evat2 a schema1:Property ;
+prop:evat2 a schema:Property ;
     rdfs:label "evat2"@en .
 
-prop:evat3 a schema1:Property ;
+prop:evat3 a schema:Property ;
     rdfs:label "evat3"@en .
 
-prop:evat4 a schema1:Property ;
+prop:evat4 a schema:Property ;
     rdfs:label "evat4"@en .
 
-prop:evde a schema1:Property ;
-    rdfs:label "evde"@en .
+prop:evde a schema:Property ;
+    rdfs:label "evde"@en;
+	 schema:name "evde"@en .
 
-prop:evde2 a schema1:Property ;
+prop:evde2 a schema:Property ;
     rdfs:label "evde2"@en .
 
-prop:evde3 a schema1:Property ;
+prop:evde3 a schema:Property ;
     rdfs:label "evde3"@en .
 
-prop:evforms a schema1:Property ;
-    rdfs:label "evforms"@en .
+prop:evforms a schema:Property ;
+    rdfs:label "evforms"@en;
+	 schema:name "evforms"@en .
 
-prop:evhp a schema1:Property ;
-    rdfs:label "evhp"@en .
+prop:evhp a schema:Property ;
+    rdfs:label "evhp"@en;
+	 schema:name "evhp"@en .
 
-prop:evhp2 a schema1:Property ;
+prop:evhp2 a schema:Property ;
     rdfs:label "evhp2"@en .
 
-prop:evhp3 a schema1:Property ;
+prop:evhp3 a schema:Property ;
     rdfs:label "evhp3"@en .
 
-prop:evsa a schema1:Property ;
-    rdfs:label "evsa"@en .
+prop:evsa a schema:Property ;
+    rdfs:label "evsa"@en;
+	 schema:name "evsa"@en .
 
-prop:evsa2 a schema1:Property ;
+prop:evsa2 a schema:Property ;
     rdfs:label "evsa2"@en .
 
-prop:evsa3 a schema1:Property ;
+prop:evsa3 a schema:Property ;
     rdfs:label "evsa3"@en .
 
-prop:evsa4 a schema1:Property ;
+prop:evsa4 a schema:Property ;
     rdfs:label "evsa4"@en .
 
-prop:evsd a schema1:Property ;
-    rdfs:label "evsd"@en .
+prop:evsd a schema:Property ;
+    rdfs:label "evsd"@en;
+	 schema:name "evsd"@en .
 
-prop:evsd2 a schema1:Property ;
+prop:evsd2 a schema:Property ;
     rdfs:label "evsd2"@en .
 
-prop:evsd3 a schema1:Property ;
+prop:evsd3 a schema:Property ;
     rdfs:label "evsd3"@en .
 
-prop:evsp a schema1:Property ;
-    rdfs:label "evsp"@en .
+prop:evsp a schema:Property ;
+    rdfs:label "evsp"@en;
+	 schema:name "evsp"@en .
 
-prop:evsp2 a schema1:Property ;
+prop:evsp2 a schema:Property ;
     rdfs:label "evsp2"@en .
 
-prop:evsp4 a schema1:Property ;
+prop:evsp4 a schema:Property ;
     rdfs:label "evsp4"@en .
 
-prop:evtotal a schema1:Property ;
-    rdfs:label "evtotal"@en .
+prop:evtotal a schema:Property ;
+    rdfs:label "evtotal"@en;
+	 schema:name "evtotal"@en .
 
-prop:expyield a schema1:Property ;
-    rdfs:label "expyield"@en .
+prop:expyield a schema:Property ;
+    rdfs:label "expyield"@en;
+	 schema:name "expyield"@en .
 
-prop:female a schema1:Property ;
-    rdfs:label "female"@en .
+prop:female a schema:Property ;
+    rdfs:label "female"@en;
+	 schema:name "female"@en .
 
-prop:foot2 a schema1:Property ;
+prop:foot2 a schema:Property ;
     rdfs:label "foot2"@en .
 
-prop:form1 a schema1:Property ;
-    rdfs:label "form1"@en .
+prop:form1 a schema:Property ;
+    rdfs:label "form1"@en;
+	 schema:name "form1"@en .
 
-prop:form2 a schema1:Property ;
+prop:form2 a schema:Property ;
     rdfs:label "form2"@en .
 
-prop:form2type1 a schema1:Property ;
+prop:form2type1 a schema:Property ;
     rdfs:label "form2type1"@en .
 
-prop:form2type2 a schema1:Property ;
+prop:form2type2 a schema:Property ;
     rdfs:label "form2type2"@en .
 
-prop:form3 a schema1:Property ;
+prop:form3 a schema:Property ;
     rdfs:label "form3"@en .
 
-prop:form3type1 a schema1:Property ;
+prop:form3type1 a schema:Property ;
     rdfs:label "form3type1"@en .
 
-prop:form3type2 a schema1:Property ;
+prop:form3type2 a schema:Property ;
     rdfs:label "form3type2"@en .
 
-prop:form4 a schema1:Property ;
+prop:form4 a schema:Property ;
     rdfs:label "form4"@en .
 
-prop:form4type1 a schema1:Property ;
+prop:form4type1 a schema:Property ;
     rdfs:label "form4type1"@en .
 
-prop:form4type2 a schema1:Property ;
+prop:form4type2 a schema:Property ;
     rdfs:label "form4type2"@en .
 
-prop:form5 a schema1:Property ;
+prop:form5 a schema:Property ;
     rdfs:label "form5"@en .
 
-prop:form5type1 a schema1:Property ;
+prop:form5type1 a schema:Property ;
     rdfs:label "form5type1"@en .
 
-prop:form5type2 a schema1:Property ;
+prop:form5type2 a schema:Property ;
     rdfs:label "form5type2"@en .
 
-prop:form6 a schema1:Property ;
+prop:form6 a schema:Property ;
     rdfs:label "form6"@en .
 
-prop:form6type1 a schema1:Property ;
+prop:form6type1 a schema:Property ;
     rdfs:label "form6type1"@en .
 
-prop:form6type2 a schema1:Property ;
+prop:form6type2 a schema:Property ;
     rdfs:label "form6type2"@en .
 
-prop:formbody a schema1:Property ;
-    rdfs:label "formbody"@en .
+prop:formbody a schema:Property ;
+    rdfs:label "formbody"@en;
+	 schema:name "formbody"@en .
 
-prop:formcolors a schema1:Property ;
-    rdfs:label "formcolors"@en .
+prop:formcolors a schema:Property ;
+    rdfs:label "formcolors"@en;
+	 schema:name "formcolors"@en .
 
-prop:forme a schema1:Property ;
-    rdfs:label "forme"@en .
+prop:forme a schema:Property ;
+    rdfs:label "forme"@en;
+	 schema:name "forme"@en .
 
-prop:forme1 a schema1:Property ;
-    rdfs:label "forme1"@en .
+prop:forme1 a schema:Property ;
+    rdfs:label "forme1"@en;
+	 schema:name "forme1"@en .
 
-prop:forme2 a schema1:Property ;
+prop:forme2 a schema:Property ;
     rdfs:label "forme2"@en .
 
-prop:friendship a schema1:Property ;
-    rdfs:label "friendship"@en .
+prop:friendship a schema:Property ;
+    rdfs:label "friendship"@en;
+	 schema:name "friendship"@en .
 
-prop:g4exp a schema1:Property ;
+prop:g4exp a schema:Property ;
     rdfs:label "g4exp"@en .
 
-prop:gendercode a schema1:Property ;
-    rdfs:label "gendercode"@en .
+prop:gendercode a schema:Property ;
+    rdfs:label "gendercode"@en;
+	 schema:name "gendercode"@en .
 
-prop:generation a schema1:Property ;
-    rdfs:label "generation"@en .
+prop:generation a schema:Property ;
+    rdfs:label "generation"@en;
+	 schema:name "generation"@en .
 
-prop:height-ftin a schema1:Property ;
+prop:height-ftin a schema:Property ;
     rdfs:label "height-ftin"@en .
 
-prop:height-ftin2 a schema1:Property ;
+prop:height-ftin2 a schema:Property ;
     rdfs:label "height-ftin2"@en .
 
-prop:height-ftin3 a schema1:Property ;
+prop:height-ftin3 a schema:Property ;
     rdfs:label "height-ftin3"@en .
 
-prop:height-ftin4 a schema1:Property ;
+prop:height-ftin4 a schema:Property ;
     rdfs:label "height-ftin4"@en .
 
-prop:height-m a schema1:Property ;
+prop:height-m a schema:Property ;
     rdfs:label "height-m"@en .
 
-prop:height-m2 a schema1:Property ;
+prop:height-m2 a schema:Property ;
     rdfs:label "height-m2"@en .
 
-prop:height-m3 a schema1:Property ;
+prop:height-m3 a schema:Property ;
     rdfs:label "height-m3"@en .
 
-prop:height-m4 a schema1:Property ;
+prop:height-m4 a schema:Property ;
     rdfs:label "height-m4"@en .
 
-prop:image2 a schema1:Property ;
+prop:image2 a schema:Property ;
     rdfs:label "image2"@en .
 
-prop:image3 a schema1:Property ;
+prop:image3 a schema:Property ;
     rdfs:label "image3"@en .
 
-prop:image4 a schema1:Property ;
+prop:image4 a schema:Property ;
     rdfs:label "image4"@en .
 
-prop:image5 a schema1:Property ;
+prop:image5 a schema:Property ;
     rdfs:label "image5"@en .
 
-prop:image6 a schema1:Property ;
+prop:image6 a schema:Property ;
     rdfs:label "image6"@en .
 
-prop:jtranslit a schema1:Property ;
-    rdfs:label "jtranslit"@en .
+prop:jtranslit a schema:Property ;
+    rdfs:label "jtranslit"@en;
+	 schema:name "jtranslit"@en .
 
-prop:lv100exp a schema1:Property ;
-    rdfs:label "lv100exp"@en .
+prop:lv100exp a schema:Property ;
+    rdfs:label "lv100exp"@en;
+	 schema:name "lv100exp"@en .
 
-prop:male a schema1:Property ;
-    rdfs:label "male"@en .
+prop:male a schema:Property ;
+    rdfs:label "male"@en;
+	 schema:name "male"@en .
 
-prop:mega a schema1:Property ;
-    rdfs:label "mega"@en .
+prop:mega a schema:Property ;
+    rdfs:label "mega"@en;
+	 schema:name "mega"@en .
 
-prop:mega2 a schema1:Property ;
+prop:mega2 a schema:Property ;
     rdfs:label "mega2"@en .
 
-prop:ndex a schema1:Property ;
-    rdfs:label "ndex"@en .
+prop:ndex a schema:Property ;
+    rdfs:label "ndex"@en;
+	 schema:name "ndex"@en .
 
-prop:oldexp a schema1:Property ;
-    rdfs:label "oldexp"@en .
+prop:oldexp a schema:Property ;
+    rdfs:label "oldexp"@en;
+	 schema:name "oldexp"@en .
 
-prop:pokefordex a schema1:Property ;
-    rdfs:label "pokefordex"@en .
+prop:pokefordex a schema:Property ;
+    rdfs:label "pokefordex"@en;
+	 schema:name "pokefordex"@en .
 
-prop:tmname a schema1:Property ;
-    rdfs:label "tmname"@en .
+prop:tmname a schema:Property ;
+    rdfs:label "tmname"@en;
+	 schema:name "tmname"@en .
 
-prop:type1 a schema1:Property ;
-    rdfs:label "type1"@en .
+prop:type1 a schema:Property ;
+    rdfs:label "type1"@en;
+	 schema:name "type1"@en .
 
-prop:type2 a schema1:Property ;
+prop:type2 a schema:Property ;
     rdfs:label "type2"@en .
 
-prop:typebox a schema1:Property ;
-    rdfs:label "typebox"@en .
+prop:typebox a schema:Property ;
+    rdfs:label "typebox"@en;
+	 schema:name "typebox"@en .
 
-prop:typen a schema1:Property ;
-    rdfs:label "typen"@en .
+prop:typen a schema:Property ;
+    rdfs:label "typen"@en;
+	 schema:name "typen"@en .
 
-prop:weight-kg a schema1:Property ;
+prop:weight-kg a schema:Property ;
     rdfs:label "weight-kg"@en .
 
-prop:weight-kg2 a schema1:Property ;
+prop:weight-kg2 a schema:Property ;
     rdfs:label "weight-kg2"@en .
 
-prop:weight-kg3 a schema1:Property ;
+prop:weight-kg3 a schema:Property ;
     rdfs:label "weight-kg3"@en .
 
-prop:weight-kg4 a schema1:Property ;
+prop:weight-kg4 a schema:Property ;
     rdfs:label "weight-kg4"@en .
 
-prop:weight-lbs a schema1:Property ;
+prop:weight-lbs a schema:Property ;
     rdfs:label "weight-lbs"@en .
 
-prop:weight-lbs2 a schema1:Property ;
+prop:weight-lbs2 a schema:Property ;
     rdfs:label "weight-lbs2"@en .
 
-prop:weight-lbs3 a schema1:Property ;
+prop:weight-lbs3 a schema:Property ;
     rdfs:label "weight-lbs3"@en .
 
-prop:weight-lbs4 a schema1:Property ;
+prop:weight-lbs4 a schema:Property ;
     rdfs:label "weight-lbs4"@en .
 

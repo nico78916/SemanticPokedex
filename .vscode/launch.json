@@ -11,6 +11,13 @@
             "request": "launch",
             "program": "${workspaceFolder}/q2.py",
             "console": "integratedTerminal"
+        },
+        {
+            "name" : "serverOnly",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/server.py",
+            "console": "integratedTerminal"
         }
     ]
 }
