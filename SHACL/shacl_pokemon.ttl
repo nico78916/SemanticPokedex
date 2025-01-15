@@ -1,0 +1,851 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix poke: <http://example.org/pokemon#> .
+
+# Définition de la forme pour un Pokémon (SHACL)
+
+poke:PokemonShape
+    a sh:NodeShape ;
+    sh:targetClass poke:Pokemon ;  
+    sh:property [
+        sh:path poke:name ;        
+        sh:datatype xsd:string ;   
+        sh:minCount 1 ;            
+        sh:maxCount 1 ;            
+    ] ;
+    sh:property [
+        sh:path poke:jname ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1;
+    ] ;
+    sh:property [
+        sh:path poke:tmname ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path poke:jtranslit ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path poke:category ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path poke:ndex ;
+        sh:datatype xsd:integer ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+
+
+
+    sh:property [
+        sh:path poke:forme ;
+        sh:datatype xsd:integer ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:minInclusive 2 ;           
+        sh:maxInclusive 6 ; 
+    ] ;
+    sh:property [
+        sh:path poke:form1 ;
+        sh:datatype xsd:string ;
+        sh:minCount 0 ;              
+        sh:maxCount 1 ;               
+        sh:optional true ;
+    ] ;
+    sh:property [
+        sh:path poke:form2 ;
+        sh:datatype xsd:string ;
+        sh:minCount 0 ;              
+        sh:maxCount 1 ;               
+        sh:optional true ;
+    ] ;
+    sh:property [
+        sh:path poke:form3 ;
+        sh:datatype xsd:string ;
+        sh:minCount 0 ;              
+        sh:maxCount 1 ;               
+        sh:optional true ;
+    ] ;
+    sh:property [
+        sh:path poke:form4 ;
+        sh:datatype xsd:string ;
+        sh:minCount 0 ;              
+        sh:maxCount 1 ;               
+        sh:optional true ;
+    ] ;
+    sh:property [
+        sh:path poke:form5 ;
+        sh:datatype xsd:string ;
+        sh:minCount 0 ;              
+        sh:maxCount 1 ;               
+        sh:optional true ;
+    ] ;
+    sh:property [
+        sh:path poke:form6 ;
+        sh:datatype xsd:string ;
+        sh:minCount 0 ;              
+        sh:maxCount 1 ;               
+        sh:optional true ;
+    ] ;
+
+
+
+    sh:property [
+        sh:path poke:image ;
+        sh:datatype xsd:anyURI ;
+        sh:minCount 1 ;              
+        sh:maxCount 1 ;    
+    ] ;
+    sh:property [
+        sh:path poke:image2 ;
+        sh:datatype xsd:anyURI ;
+        sh:minCount 0 ;              
+        sh:maxCount 1 ; 
+        sh:optional true ;   
+    ] ;
+    sh:property [
+        sh:path poke:image3 ;
+        sh:datatype xsd:anyURI ;
+        sh:minCount 0 ;              
+        sh:maxCount 1 ; 
+        sh:optional true ;   
+    ] ;
+    sh:property [
+        sh:path poke:image4 ;
+        sh:datatype xsd:anyURI ;
+        sh:minCount 0 ;              
+        sh:maxCount 1 ; 
+        sh:optional true ;   
+    ] ;
+    sh:property [
+        sh:path poke:image5 ;
+        sh:datatype xsd:anyURI ;
+        sh:minCount 0 ;              
+        sh:maxCount 1 ; 
+        sh:optional true ;   
+    ] ;
+    sh:property [
+        sh:path poke:image6 ;
+        sh:datatype xsd:anyURI ;
+        sh:minCount 0 ;              
+        sh:maxCount 1 ; 
+        sh:optional true ;   
+    ] ;
+
+
+    sh:property [
+        sh:path poke:type1 ;                 
+        sh:datatype xsd:string ;             
+        sh:minCount 1 ;
+        sh:maxCount 1 ;                    
+        sh:uniqueLang true ;                 
+        sh:in ("Normal" "Fire" "Fighting" "Water" "Flying" "Grass" "Poison" "Electric" 
+            "Ground" "Psychic" "Rock" "Ice" "Bug" "Dragon" "Ghost" "Dark" "Steel" "Fairy" "Unknown") ;  
+    ] ;
+
+    sh:property [
+        sh:path poke:type2 ;                 
+        sh:datatype xsd:string ;             
+        sh:minCount 0 ;
+        sh:maxCount 1 ;                    
+        sh:uniqueLang true ;                 
+        sh:in ("Normal" "Fire" "Fighting" "Water" "Flying" "Grass" "Poison" "Electric" 
+            "Ground" "Psychic" "Rock" "Ice" "Bug" "Dragon" "Ghost" "Dark" "Steel" "Fairy" "Unknown") ;  
+        sh:optional true;
+    ] ;
+
+    sh:property [
+        sh:path poke:form2type1 ;                 
+        sh:datatype xsd:string ;             
+        sh:minCount 0 ;
+        sh:maxCount 1 ;                    
+        sh:uniqueLang true ;                 
+        sh:in ("Normal" "Fire" "Fighting" "Water" "Flying" "Grass" "Poison" "Electric" 
+            "Ground" "Psychic" "Rock" "Ice" "Bug" "Dragon" "Ghost" "Dark" "Steel" "Fairy" "Unknown") ;  
+        sh:optional true;
+    ] ;
+
+    sh:property [
+        sh:path poke:form2type2 ;                 
+        sh:datatype xsd:string ;             
+        sh:minCount 0 ;
+        sh:maxCount 1 ;                    
+        sh:uniqueLang true ;                 
+        sh:in ("Normal" "Fire" "Fighting" "Water" "Flying" "Grass" "Poison" "Electric" 
+            "Ground" "Psychic" "Rock" "Ice" "Bug" "Dragon" "Ghost" "Dark" "Steel" "Fairy" "Unknown") ;  
+        sh:optional true;
+    ] ;
+
+    sh:property [
+        sh:path poke:form3type1 ;                 
+        sh:datatype xsd:string ;             
+        sh:minCount 0 ;
+        sh:maxCount 1 ;                    
+        sh:uniqueLang true ;                 
+        sh:in ("Normal" "Fire" "Fighting" "Water" "Flying" "Grass" "Poison" "Electric" 
+            "Ground" "Psychic" "Rock" "Ice" "Bug" "Dragon" "Ghost" "Dark" "Steel" "Fairy" "Unknown") ;  
+        sh:optional true;
+    ] ;
+
+    sh:property [
+        sh:path poke:form3type2 ;                 
+        sh:datatype xsd:string ;             
+        sh:minCount 0 ;
+        sh:maxCount 1 ;                    
+        sh:uniqueLang true ;                 
+        sh:in ("Normal" "Fire" "Fighting" "Water" "Flying" "Grass" "Poison" "Electric" 
+            "Ground" "Psychic" "Rock" "Ice" "Bug" "Dragon" "Ghost" "Dark" "Steel" "Fairy" "Unknown") ;  
+        sh:optional true;
+    ] ;
+
+    sh:property [
+        sh:path poke:form4type1 ;                 
+        sh:datatype xsd:string ;             
+        sh:minCount 0 ;
+        sh:maxCount 1 ;                    
+        sh:uniqueLang true ;                 
+        sh:in ("Normal" "Fire" "Fighting" "Water" "Flying" "Grass" "Poison" "Electric" 
+            "Ground" "Psychic" "Rock" "Ice" "Bug" "Dragon" "Ghost" "Dark" "Steel" "Fairy" "Unknown") ;  
+        sh:optional true;
+    ] ;
+
+    sh:property [
+        sh:path poke:form4type2 ;                 
+        sh:datatype xsd:string ;             
+        sh:minCount 0 ;
+        sh:maxCount 1 ;                    
+        sh:uniqueLang true ;                 
+        sh:in ("Normal" "Fire" "Fighting" "Water" "Flying" "Grass" "Poison" "Electric" 
+            "Ground" "Psychic" "Rock" "Ice" "Bug" "Dragon" "Ghost" "Dark" "Steel" "Fairy" "Unknown") ;  
+        sh:optional true;
+    ] ;
+
+    sh:property [
+        sh:path poke:form5type1 ;                 
+        sh:datatype xsd:string ;             
+        sh:minCount 0 ;
+        sh:maxCount 1 ;                    
+        sh:uniqueLang true ;                 
+        sh:in ("Normal" "Fire" "Fighting" "Water" "Flying" "Grass" "Poison" "Electric" 
+            "Ground" "Psychic" "Rock" "Ice" "Bug" "Dragon" "Ghost" "Dark" "Steel" "Fairy" "Unknown") ;  
+        sh:optional true;
+    ] ;
+
+    sh:property [
+        sh:path poke:form5type2 ;                 
+        sh:datatype xsd:string ;             
+        sh:minCount 0 ;
+        sh:maxCount 1 ;                    
+        sh:uniqueLang true ;                 
+        sh:in ("Normal" "Fire" "Fighting" "Water" "Flying" "Grass" "Poison" "Electric" 
+            "Ground" "Psychic" "Rock" "Ice" "Bug" "Dragon" "Ghost" "Dark" "Steel" "Fairy" "Unknown") ;  
+        sh:optional true;
+    ] ;
+
+    sh:property [
+        sh:path poke:form6type1 ;                 
+        sh:datatype xsd:string ;             
+        sh:minCount 0 ;
+        sh:maxCount 1 ;                    
+        sh:uniqueLang true ;                 
+        sh:in ("Normal" "Fire" "Fighting" "Water" "Flying" "Grass" "Poison" "Electric" 
+            "Ground" "Psychic" "Rock" "Ice" "Bug" "Dragon" "Ghost" "Dark" "Steel" "Fairy" "Unknown") ;  
+        sh:optional true;
+    ] ;
+
+    sh:property [
+        sh:path poke:form6type2 ;                 
+        sh:datatype xsd:string ;             
+        sh:minCount 0 ;
+        sh:maxCount 1 ;                    
+        sh:uniqueLang true ;                 
+        sh:in ("Normal" "Fire" "Fighting" "Water" "Flying" "Grass" "Poison" "Electric" 
+            "Ground" "Psychic" "Rock" "Ice" "Bug" "Dragon" "Ghost" "Dark" "Steel" "Fairy" "Unknown") ;  
+        sh:optional true;
+    ] ;
+
+    sh:property [
+        sh:path poke:abilitylayout ;
+        sh:datatype xsd:integer ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:pattern "^(1|2|1\\+2|2\\+1|2\\+2)$"
+    ] ;
+    sh:property [
+        sh:path poke:ability1 ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path poke:ability2 ;
+        sh:datatype xsd:string ;
+        sh:minCount 0 ;
+        sh:maxCount 1 ;
+        sh:optional true;
+    ] ;
+    sh:property [
+        sh:path poke:ability2-1 ;
+        sh:datatype xsd:string ;
+        sh:minCount 0 ;
+        sh:maxCount 1 ;
+        sh:optional true;
+    ] ;
+    sh:property [
+        sh:path poke:ability2-2 ;
+        sh:datatype xsd:string ;
+        sh:minCount 0 ;
+        sh:maxCount 1 ;
+        sh:optional true;
+    ] ;
+    sh:property [
+        sh:path poke:ability3-1 ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:optional true;
+    ] ;
+    sh:property [
+        sh:path poke:ability3-2 ;
+        sh:datatype xsd:string ;
+        sh:minCount 0 ;
+        sh:maxCount 1 ;
+        sh:optional true;
+    ] ;
+    sh:property [
+        sh:path poke:abilitycol3 ;
+        sh:datatype xsd:integer ;
+        sh:minCount 0 ;
+        sh:maxCount 1 ;
+        sh:in (1 2) ;
+        sh:optional true;
+    ] ;
+    sh:property [
+        sh:path poke:abilitym ;
+        sh:datatype xsd:string ;
+        sh:minCount 0 ;
+        sh:maxCount 1 ;
+        sh:optional true;
+    ] ;
+    sh:property [
+        sh:path poke:abilitycolm ;
+        sh:datatype xsd:string ;
+        sh:minCount 0 ;
+        sh:maxCount 1 ;
+        sh:in (1 2) ;
+        sh:optional true;
+    ] ;
+    sh:property [
+        sh:path poke:abilitym2 ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:optional true;
+    ] ;
+    sh:property [
+        sh:path poke:abilityd ;
+        sh:datatype xsd:string ;
+        sh:minCount 0 ;
+        sh:maxCount 1 ;
+        sh:optional true;
+    ] ;
+    sh:property [
+        sh:path poke:abilitydcaption ;
+        sh:datatype xsd:string ;
+        sh:minCount 0 ;
+        sh:maxCount 1 ;
+        sh:optional true;
+    ] ;
+    sh:property [
+        sh:path poke:abilitycold ;
+        sh:datatype xsd:string ;
+        sh:minCount 0 ;
+        sh:maxCount 1 ;
+        sh:in (1 2) ;
+        sh:optional true;
+    ] ;
+    sh:property [
+        sh:path poke:abilityd2 ;
+        sh:datatype xsd:string ;
+        sh:minCount 0 ;
+        sh:maxCount 1 ;
+        sh:optional true;
+    ] ;
+    sh:property [
+        sh:path poke:ability2caption ;
+        sh:datatype xsd:string ;
+        sh:minCount 0 ;
+        sh:maxCount 1 ;
+        sh:optional true;
+    ] ;
+    sh:property [
+        sh:path poke:abilityyold ;
+        sh:datatype xsd:string ;
+        sh:minCount 0 ;
+        sh:maxCount 1 ;
+        sh:optional true;
+    ] ;
+    sh:property [
+        sh:path poke:abilityoldcaption ;
+        sh:datatype xsd:string ;
+        sh:minCount 0 ;
+        sh:maxCount 1 ;
+        sh:optional true;
+    ] ;
+
+    sh:property [
+        sh:path poke:gendercode ;
+        sh:datatype xsd:integer ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:minInclusive 0 ;
+        sh:maxInclusive 256 ;
+    ] ;
+
+    sh:property [
+        sh:path poke:catchrate ;
+        sh:datatype xsd:integer ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+
+    sh:property [
+        sh:path poke:egggroup ;
+        sh:datatype xsd:integer ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:in (0 1 2) ;
+    ] ;
+
+    sh:property [
+        sh:path poke:egggroup1 ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:in ("Monster" "Human-Like" "Water 1" "Water 3" "Bug" "Mineral" "Flying"
+          "Amorphous" "Field" "Water 2" "Fairy" "Ditto" "Grass" "Dragon"
+          "No Eggs Discovered") ;
+    ] ;
+
+    sh:property [
+        sh:path poke:egggroup2 ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:in ("Monster" "Human-Like" "Water 1" "Water 3" "Bug" "Mineral" "Flying"
+          "Amorphous" "Field" "Water 2" "Fairy" "Ditto" "Grass" "Dragon"
+          "No Eggs Discovered") ;
+        sh:optional true ;
+    ] ;
+
+    sh:property [
+        sh:path poke:eggcycles ;
+        sh:datatype xsd:integer ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+
+    sh:property [
+        sh:path poke:height-ftin ;    
+        sh:datatype xsd:string ; 
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path poke:height-m ;    
+        sh:datatype xsd:integer ; 
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path poke:height-ftin2 ;    
+        sh:datatype xsd:string ; 
+        sh:minCount 0 ;
+        sh:maxCount 1 ;
+        sh:optional true ;
+    ] ;
+    sh:property [
+        sh:path poke:height-m2 ;    
+        sh:datatype xsd:integer ; 
+        sh:minCount 0 ;
+        sh:maxCount 1 ;
+        sh:optional true ;
+    ] ;
+    sh:property [
+        sh:path poke:height-ftin3 ;    
+        sh:datatype xsd:string ; 
+        sh:minCount 0 ;
+        sh:maxCount 1 ;
+        sh:optional true ;
+    ] ;
+    sh:property [
+        sh:path poke:height-m3 ;    
+        sh:datatype xsd:integer ; 
+        sh:minCount 0 ;
+        sh:maxCount 1 ;
+        sh:optional true ;
+    ] ;
+    sh:property [
+        sh:path poke:height-ftin4 ;    
+        sh:datatype xsd:string ; 
+        sh:minCount 0 ;
+        sh:maxCount 1 ;
+        sh:optional true ;
+    ] ;
+    sh:property [
+        sh:path poke:height-m4 ;    
+        sh:datatype xsd:integer ; 
+        sh:minCount 0 ;
+        sh:maxCount 1 ;
+        sh:optional true ;
+    ] ;
+    sh:property [
+        sh:path poke:weight-lbs ;    
+        sh:datatype xsd:integer ; 
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path poke:weight-kg ;    
+        sh:datatype xsd:integer ; 
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path poke:weight-lbs2 ;    
+        sh:datatype xsd:integer ; 
+        sh:minCount 0 ;
+        sh:maxCount 1 ;
+        sh:optional true ;
+    ] ;
+    sh:property [
+        sh:path poke:weight-kg2 ;    
+        sh:datatype xsd:integer ; 
+        sh:minCount 0 ;
+        sh:maxCount 1 ;
+        sh:optional true ;
+    ] ;
+    sh:property [
+        sh:path poke:weight-lbs3 ;    
+        sh:datatype xsd:integer ; 
+        sh:minCount 0 ;
+        sh:maxCount 1 ;
+        sh:optional true ;
+    ] ;
+    sh:property [
+        sh:path poke:weight-kg3 ;    
+        sh:datatype xsd:integer ; 
+        sh:minCount 0 ;
+        sh:maxCount 1 ;
+        sh:optional true ;
+    ] ;
+    sh:property [
+        sh:path poke:weight-lbs4 ;    
+        sh:datatype xsd:integer ; 
+        sh:minCount 0 ;
+        sh:maxCount 1 ;
+        sh:optional true ;
+    ] ;
+    sh:property [
+        sh:path poke:weight-kg4 ;    
+        sh:datatype xsd:integer ; 
+        sh:minCount 0 ;
+        sh:maxCount 1 ;
+        sh:optional true ;
+    ] ;
+    sh:property [
+        sh:path poke:mega ;    
+        sh:datatype xsd:string ;  
+        sh:minCount 1 ;
+        sh:maxCount 1 ;  
+    ] ;
+    sh:property [
+        sh:path poke:mega2 ;    
+        sh:datatype xsd:string ;  
+        sh:minCount 1 ;
+        sh:maxCount 1 ;  
+    ] ;
+    sh:property [
+        sh:path poke:generation ;     
+        sh:datatype xsd:integer ;
+        sh:minCount 1 ;
+        sh:minCount 1 ;         
+    ] ;
+    sh:property [
+        sh:path poke:expyield ;     
+        sh:datatype xsd:integer ;
+        sh:minCount 1 ;
+        sh:minCount 1 ;         
+    ] ;
+    sh:property [
+        sh:path poke:oldexp ;     
+        sh:datatype xsd:integer ;
+        sh:minCount 0 ;
+        sh:minCount 1 ;
+        sh:optional true ;        
+    ] ;
+    sh:property [
+        sh:path poke:g4exp ;     
+        sh:datatype xsd:integer ;
+        sh:minCount 0 ;
+        sh:minCount 1 ;
+        sh:optional true ;         
+    ] ;
+    sh:property [
+        sh:path poke:lv100exp ;  
+        sh:datatype xsd:integer ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;        
+    ] ;
+    sh:property [
+        sh:path poke:evforms ;  
+        sh:datatype xsd:integer ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:in (1 2 3 4) ;   
+        sh:defaultValue 1 ;   
+    ] ;
+    sh:property [
+        sh:path poke:evtotal ;  
+        sh:datatype xsd:integer ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:defaultValue "Unknown" ;   
+    ] ;
+    sh:property [
+        sh:path poke:evhp ;  
+        sh:datatype xsd:integer ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:defaultValue 0 ;   
+    ] ;
+    sh:property [
+        sh:path poke:evat ;  
+        sh:datatype xsd:integer ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:defaultValue 0 ;   
+    ] ;
+    sh:property [
+        sh:path poke:evde ;  
+        sh:datatype xsd:integer ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:defaultValue 0 ;   
+    ] ;
+    sh:property [
+        sh:path poke:evsa ;  
+        sh:datatype xsd:integer ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:defaultValue 0 ;   
+    ] ;
+    sh:property [
+        sh:path poke:evsd ;  
+        sh:datatype xsd:integer ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:defaultValue 0 ;   
+    ] ;
+    sh:property [
+        sh:path poke:evsp ;  
+        sh:datatype xsd:integer ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:defaultValue 0 ;   
+    ] ;
+    sh:property [
+        sh:path poke:evhp2 ;  
+        sh:datatype xsd:integer ;
+        sh:minCount 0 ;
+        sh:maxCount 1 ;
+        sh:optional true ;   
+    ] ;
+    sh:property [
+        sh:path poke:evat2 ;  
+        sh:datatype xsd:integer ;
+        sh:minCount 0 ;
+        sh:maxCount 1 ;
+        sh:optional true ;   
+    ] ;
+    sh:property [
+        sh:path poke:evde2 ;  
+        sh:datatype xsd:integer ;
+        sh:minCount 0 ;
+        sh:maxCount 1 ;
+        sh:optional true ;   
+    ] ;
+    sh:property [
+        sh:path poke:evsa2 ;  
+        sh:datatype xsd:integer ;
+        sh:minCount 0 ;
+        sh:maxCount 1 ;
+        sh:optional true ;   
+    ] ;
+    sh:property [
+        sh:path poke:evsd2 ;  
+        sh:datatype xsd:integer ;
+        sh:minCount 0 ;
+        sh:maxCount 1 ;
+        sh:optional true ;   
+    ] ;
+    sh:property [
+        sh:path poke:evsp2 ;  
+        sh:datatype xsd:integer ;
+        sh:minCount 0 ;
+        sh:maxCount 1 ;
+        sh:optional true ;   
+    ] ;
+    sh:property [
+        sh:path poke:evhp3 ;  
+        sh:datatype xsd:integer ;
+        sh:minCount 0 ;
+        sh:maxCount 1 ;
+        sh:optional true ;   
+    ] ;
+    sh:property [
+        sh:path poke:evat3 ;  
+        sh:datatype xsd:integer ;
+        sh:minCount 0 ;
+        sh:maxCount 1 ;
+        sh:optional true ;   
+    ] ;
+    sh:property [
+        sh:path poke:evde3 ;  
+        sh:datatype xsd:integer ;
+        sh:minCount 0 ;
+        sh:maxCount 1 ;
+        sh:optional true ;   
+    ] ;
+    sh:property [
+        sh:path poke:evsa3 ;  
+        sh:datatype xsd:integer ;
+        sh:minCount 0 ;
+        sh:maxCount 1 ;
+        sh:optional true ;   
+    ] ;
+    sh:property [
+        sh:path poke:evsd3 ;  
+        sh:datatype xsd:integer ;
+        sh:minCount 0 ;
+        sh:maxCount 1 ;
+        sh:optional true ;   
+    ] ;
+    sh:property [
+        sh:path poke:evsp3 ;  
+        sh:datatype xsd:integer ;
+        sh:minCount 0 ;
+        sh:maxCount 1 ;
+        sh:optional true ;   
+    ] ;
+    sh:property [
+        sh:path poke:evhp4 ;  
+        sh:datatype xsd:integer ;
+        sh:minCount 0 ;
+        sh:maxCount 1 ;
+        sh:optional true ;   
+    ] ;
+    sh:property [
+        sh:path poke:evat4 ;  
+        sh:datatype xsd:integer ;
+        sh:minCount 0 ;
+        sh:maxCount 1 ;
+        sh:optional true ;   
+    ] ;
+    sh:property [
+        sh:path poke:evde4 ;  
+        sh:datatype xsd:integer ;
+        sh:minCount 0 ;
+        sh:maxCount 1 ;
+        sh:optional true ;   
+    ] ;
+    sh:property [
+        sh:path poke:evsa4 ;  
+        sh:datatype xsd:integer ;
+        sh:minCount 0 ;
+        sh:maxCount 1 ;
+        sh:optional true ;   
+    ] ;
+    sh:property [
+        sh:path poke:evsd4 ;  
+        sh:datatype xsd:integer ;
+        sh:minCount 0 ;
+        sh:maxCount 1 ;
+        sh:optional true ;   
+    ] ;
+    sh:property [
+        sh:path poke:evsp4 ;  
+        sh:datatype xsd:integer ;
+        sh:minCount 0 ;
+        sh:maxCount 1 ;
+        sh:optional true ;   
+    ] ;
+    sh:property [
+        sh:path poke:body ;  
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:in ("1" "2" "3" "4" "5" "6" "7" "8" "9" "10" "11" "12" "13" "14") ;
+        sh:defaultValue "Unknown" ;
+    ] ;
+    sh:property [
+        sh:path poke:formbody ;  
+        sh:datatype xsd:string ;
+        sh:minCount 0 ;
+        sh:maxCount 1 ;
+        sh:optional true ;   
+    ] ;
+    sh:property [
+        sh:path poke:foot2 ;  
+        sh:datatype xsd:string ;
+        sh:minCount 0 ;
+        sh:maxCount 1 ;
+        sh:optional true ;   
+    ] ;
+    sh:property [
+        sh:path poke:color ;  
+        sh:datatype xsd:string ;
+        sh:minCount 0 ;
+        sh:maxCount 1 ;
+        sh:in ("Red" "Blue" "Green" "Yellow" "Purple" "Pink" "Brown" "Black" "Gray" "White" "Unknown") ;
+        sh:defaultValue "Unknown" ;
+    ] ;
+    sh:property [
+        sh:path poke:formcolors ;  
+        sh:datatype xsd:string ;
+        sh:minCount 0 ;
+        sh:maxCount 1 ;
+        sh:optional true ;
+    ] ;
+    sh:property [
+        sh:path poke:friendship ;  
+        sh:datatype xsd:integer ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path poke:pokefordex ;  
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:defaultValue "type_null";
+    ] ;
+    sh:property [
+        sh:path poke:nocat ;  
+        sh:datatype xsd:boolean ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] .
+    
+    
+

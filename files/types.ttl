@@ -1,58 +1,163 @@
-@prefix classes: <http://localhost:8000/ontology/> .
-@prefix schema1: <http://schema.org/> .
-@prefix types: <http://localhost:8000/types/> .
-
-types:Bug a classes:ElementaryType ;
-    schema1:name "Bug" .
-
-types:Dark a classes:ElementaryType ;
-    schema1:name "Dark" .
-
-types:Dragon a classes:ElementaryType ;
-    schema1:name "Dragon" .
-
-types:Electric a classes:ElementaryType ;
-    schema1:name "Electric" .
-
-types:Fairy a classes:ElementaryType ;
-    schema1:name "Fairy" .
-
-types:Fighting a classes:ElementaryType ;
-    schema1:name "Fighting" .
-
-types:Fire a classes:ElementaryType ;
-    schema1:name "Fire" .
-
-types:Flying a classes:ElementaryType ;
-    schema1:name "Flying" .
-
-types:Ghost a classes:ElementaryType ;
-    schema1:name "Ghost" .
-
-types:Grass a classes:ElementaryType ;
-    schema1:name "Grass" .
-
-types:Ground a classes:ElementaryType ;
-    schema1:name "Ground" .
-
-types:Ice a classes:ElementaryType ;
-    schema1:name "Ice" .
+@prefix classes: <http://localhost:8000/index/ontology/> .
+@prefix ns1: <http://localhost:8000/index/properties/> .
+@prefix schema: <https://schema.org/> .
+@prefix types: <http://localhost:8000/index/types/> .
 
 types:Normal a classes:ElementaryType ;
-    schema1:name "Normal" .
+    ns1:defense_se types:Fighting ;
+    ns1:offense_nve types:Rock,
+        types:Steel ;
+    schema:name "Normal"@en .
+
+types:Electric a classes:ElementaryType ;
+    ns1:defense_se types:Ground ;
+    ns1:offense_se types:Flying,
+        types:Water ;
+    schema:name "Electric"@en .
+
+types:Dragon a classes:ElementaryType ;
+    ns1:defense_se types:Dragon,
+        types:Fairy,
+        types:Ice ;
+    ns1:offense_se types:Dragon ;
+    schema:name "Dragon"@en .
+
+types:Ghost a classes:ElementaryType ;
+    ns1:defense_se types:Dark,
+        types:Ghost ;
+    ns1:offense_se types:Ghost,
+        types:Psychic ;
+    schema:name "Ghost"@en .
 
 types:Poison a classes:ElementaryType ;
-    schema1:name "Poison" .
+    ns1:defense_se types:Ground,
+        types:Psychic ;
+    ns1:offense_se types:Fairy,
+        types:Grass ;
+    schema:name "Poison"@en .
+
+types:Dark a classes:ElementaryType ;
+    ns1:defense_se types:Bug,
+        types:Fairy,
+        types:Fighting ;
+    ns1:offense_se types:Ghost,
+        types:Psychic ;
+    schema:name "Dark"@en .
+
+types:Fairy a classes:ElementaryType ;
+    ns1:defense_se types:Poison,
+        types:Steel ;
+    ns1:offense_se types:Dark,
+        types:Dragon,
+        types:Fighting ;
+    schema:name "Fairy"@en .
 
 types:Psychic a classes:ElementaryType ;
-    schema1:name "Psychic" .
-
-types:Rock a classes:ElementaryType ;
-    schema1:name "Rock" .
-
-types:Steel a classes:ElementaryType ;
-    schema1:name "Steel" .
+    ns1:defense_se types:Bug,
+        types:Dark,
+        types:Ghost ;
+    ns1:offense_se types:Fighting,
+        types:Poison ;
+    schema:name "Psychic"@en .
 
 types:Water a classes:ElementaryType ;
-    schema1:name "Water" .
+    ns1:defense_se types:Electric,
+        types:Grass ;
+    ns1:offense_se types:Fire,
+        types:Ground,
+        types:Rock ;
+    schema:name "Water"@en .
+
+types:Bug a classes:ElementaryType ;
+    ns1:defense_se types:Fire,
+        types:Flying,
+        types:Rock ;
+    ns1:offense_se types:Dark,
+        types:Grass,
+        types:Psychic ;
+    schema:name "Bug"@en .
+
+types:Flying a classes:ElementaryType ;
+    ns1:defense_se types:Electric,
+        types:Ice,
+        types:Rock ;
+    ns1:offense_se types:Bug,
+        types:Fighting,
+        types:Grass ;
+    schema:name "Flying"@en .
+
+types:Fire a classes:ElementaryType ;
+    ns1:defense_se types:Ground,
+        types:Rock,
+        types:Water ;
+    ns1:offense_se types:Bug,
+        types:Grass,
+        types:Ice,
+        types:Steel ;
+    schema:name "Fire"@en .
+
+types:Steel a classes:ElementaryType ;
+    ns1:defense_se types:Fighting,
+        types:Fire,
+        types:Ground ;
+    ns1:offense_se types:Fairy,
+        types:Ice,
+        types:Rock ;
+    schema:name "Steel"@en .
+
+types:Fighting a classes:ElementaryType ;
+    ns1:defense_se types:Fairy,
+        types:Flying,
+        types:Psychic ;
+    ns1:offense_se types:Dark,
+        types:Ice,
+        types:Normal,
+        types:Rock,
+        types:Steel ;
+    schema:name "Fighting"@en .
+
+types:Grass a classes:ElementaryType ;
+    ns1:defense_se types:Bug,
+        types:Fire,
+        types:Flying,
+        types:Ice,
+        types:Poison ;
+    ns1:offense_se types:Ground,
+        types:Rock,
+        types:Water ;
+    schema:name "Grass"@en .
+
+types:Ground a classes:ElementaryType ;
+    ns1:defense_se types:Grass,
+        types:Ice,
+        types:Water ;
+    ns1:offense_se types:Electric,
+        types:Fire,
+        types:Poison,
+        types:Rock,
+        types:Steel ;
+    schema:name "Ground"@en .
+
+types:Ice a classes:ElementaryType ;
+    ns1:defense_se types:Fighting,
+        types:Fire,
+        types:Rock,
+        types:Steel ;
+    ns1:offense_se types:Dragon,
+        types:Flying,
+        types:Grass,
+        types:Ground ;
+    schema:name "Ice"@en .
+
+types:Rock a classes:ElementaryType ;
+    ns1:defense_se types:Fighting,
+        types:Grass,
+        types:Ground,
+        types:Steel,
+        types:Water ;
+    ns1:offense_se types:Bug,
+        types:Fire,
+        types:Flying,
+        types:Ice ;
+    schema:name "Rock"@en .
 

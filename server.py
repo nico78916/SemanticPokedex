@@ -10,17 +10,21 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
         query = """
         PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
         PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-        PREFIX properties: <http://localhost:8000/properties/>
-        PREFIX """+category+""": <http://localhost:8000/"""+category+"""/>
-        PREFIX class: <http://localhost:8000/ontology/>
-        PREFIX schema: <http://schema.org/>
-        SELECT DISTINCT ?name ?class ?class_name ?prop ?prop_name ?val WHERE {
+        PREFIX properties: <http://localhost:8000/index/properties/>
+        PREFIX """+category+""": <http://localhost:8000/index/"""+category+"""/>
+        PREFIX class: <http://localhost:8000/index/ontology/>
+        PREFIX schema: <https://schema.org/>
+        SELECT DISTINCT (COALESCE(?name_label,?name_name) AS ?name) ?class (COALESCE(?class_name_label,?class_name_name) AS ?class_name) ?prop (COALESCE(?prop_name_label,?prop_name_name) AS ?prop_name) ?val (COALESCE(?val_label, ?val_name) AS ?val_display) WHERE {
         """+category+":"+item+""" a ?class;
-        ?prop ?val;
-        rdfs:label ?name.
-        ?prop rdfs:label ?prop_name.
-        ?class rdfs:label ?class_name.
-        FILTER(lang(?name) = 'en')
+        ?prop ?val.
+        OPTIONAL {"""+category+":"+item+""" rdfs:label ?name_label.  FILTER(lang(?name_label) = "en")}
+        OPTIONAL {"""+category+":"+item+""" schema:name ?name_name.  FILTER(lang(?name_name) = "en")}
+        OPTIONAL {?prop rdfs:label ?prop_name_label. FILTER(lang(?prop_name_label) = "en")}
+        OPTIONAL {?prop schema:name ?prop_name_name. FILTER(lang(?prop_name_name) = "en")}
+        OPTIONAL {?class rdfs:label ?class_name_label. FILTER(lang(?class_name_label) = "en")}
+        OPTIONAL {?class schema:name ?class_name_name. FILTER(lang(?class_name_name) = "en")}
+        OPTIONAL { ?val rdfs:label ?val_label. FILTER(lang(?val_label) = "en")} 
+        OPTIONAL { ?val schema:name ?val_name. FILTER(lang(?val_name) = "en")}
         }
         """
         response = self.fuseki.query(query)
@@ -54,12 +58,17 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
                 response += f"<tr><th>Property</th><th>Value</th></tr>"
                 i = 0
                 for line in info:
-                    i += 1
-                    if i % 2 == 0:
-                        if 'xml:lang' in line['val']:
-                            lang = '('+line['val']['xml:lang']+')'
+                    if 'xml:lang' in line['val']:
+                        lang = '('+line['val']['xml:lang']+')'
+                    else: 
+                        lang = ''
+                    if 'val_display' in line:
+                        if 'xml:lang' in line['val_display']:
+                            lang = '('+line['val_display']['xml:lang']+')'
                         else: 
                             lang = ''
+                        response += f"<tr><td>{line['prop_name']['value']}</td><td><a href='{line['val']['value']}'>{line['val_display']['value']}</a>{lang}</td></tr>"
+                    else:
                         response += f"<tr><td>{line['prop_name']['value']}</td><td>{line['val']['value']}{lang}</td></tr>"
                 response += "</table></body></html>"
             self.wfile.write(response.encode('utf-8'))

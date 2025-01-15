@@ -1,41 +1,306 @@
-@prefix classes: <http://localhost:8000/ontology/> .
-@prefix generation: <http://localhost:8000/generation/> .
-@prefix schema1: <http://schema.org/> .
+@prefix classes: <http://localhost:8000/index/ontology/> .
+@prefix generation: <http://localhost:8000/index/generation/> .
+@prefix ns1: <http://localhost:8000/index/properties/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-generation:generation_I a classes:Generation ;
-    rdfs:label "generation_I"@en;
-    schema1:name "generation_I" .
-
-generation:generation_II a classes:Generation ;
-    rdfs:label "generation_II"@en;
-    schema1:name "generation_II" .
-
-generation:generation_III a classes:Generation ;
-    rdfs:label "generation_III"@en;
-    schema1:name "generation_III" .
-
-generation:generation_IV a classes:Generation ;
-    rdfs:label "generation_IV"@en;
-    schema1:name "generation_IV" .
+@prefix schema: <https://schema.org/> .
 
 generation:generation_IX a classes:Generation ;
-    rdfs:label "generation_IX"@en;
-    schema1:name "generation_IX" .
+    rdfs:label "Generation IX"@en ;
+    ns1:debuten "November 18, 2022"@en ;
+    ns1:debutjp "November 18, 2022"@en ;
+    ns1:maingames "Legends: Z-A"@en,
+        "Scarlet and Violet}} <small>([[The Hidden Treasure of Area Zero]])</small><br>{{pkmn"@en,
+        "pkmn"@en ;
+    ns1:ndex "1015{{tt|*|Only 478 Pokémon are currently available in Scarlet and Violet}}"@en ;
+    ns1:new_pokemon "1025 <small>({{cat|Generation IX Pokémon|120 new}}, [[List of Pokémon by Paldea Pokédex number|734 available]])</small>{{sup/9|SV}}"@en ;
+    ns1:primary "Scarlet"@en ;
+    ns1:region "[[Paldea]], [[Kitakami]]"@en ;
+    ns1:secondary "Violet"@en ;
+    ns1:sidegames "GO}} <small>([[Pokémon GO/Version history"@en,
+        "Sleep}}, {{pkmn"@en,
+        "Trading Card Game Pocket"@en,
+        "Versions 0.255.0+]])</small>, {{pkmn"@en,
+        "pkmn"@en ;
+    ns1:storage "{{pkmn|HOME}} <small>(ver 3.0+)</small>"@en ;
+    ns1:suffix "<!--intentionally null-->"@en ;
+    ns1:timeworkarounden "no"@en ;
+    ns1:timeworkaroundjp "no"@en ;
+    ns1:titlescreen "#switch: {{#expr: {{#time: U}} mod 2}}"@en,
+        "0=Scarlet"@en,
+        "1=Violet"@en ;
+    schema:name "Generation IX"@en ;
+    schema:size "250px"@en .
 
 generation:generation_V a classes:Generation ;
-    rdfs:label "generation_V"@en;
-    schema1:name "generation_V" .
+    rdfs:label "Generation V"@en ;
+    ns1:debuten "March 4, 2011"@en ;
+    ns1:debutjp "September 18, 2010"@en ;
+    ns1:enden "October 12, 2013"@en ;
+    ns1:endjp "October 12, 2013"@en ;
+    ns1:maingames "Black 2 and White 2"@en,
+        "Black and White Versions"@en,
+        "Black and White Versions 2"@en,
+        "Black and White}}, {{pkmn"@en,
+        "pkmn"@en ;
+    ns1:ndex "649"@en ;
+    ns1:primary "#switch: {{#expr: {{#time: U}} mod 2}}"@en,
+        "0=Black"@en,
+        "1=Black 2"@en ;
+    ns1:region "[[Unova]]"@en ;
+    ns1:secondary "#switch: {{#expr: {{#time: U}} mod 2}}"@en,
+        "0=White"@en,
+        "1=White 2"@en ;
+    ns1:sidegames "Conquest}}, {{pkmn"@en,
+        "Mystery Dungeon: Gates to Infinity}}, {{pkmn"@en,
+        "Rumble Blast}}, [[Learn with Pokémon: Typing Adventure]], [[PokéPark 2: Wonders Beyond]], {{pkmn"@en,
+        "Rumble U"@en,
+        "pkmn"@en ;
+    ns1:storage "Dream Radar"@en,
+        "pkmn"@en ;
+    ns1:titlescreen "#switch: {{#expr: {{#time: U}} mod 4}}"@en,
+        "0=Black"@en,
+        "1=White"@en,
+        "2=Black2"@en,
+        "3=White2"@en ;
+    schema:caption "#switch: {{#expr: {{#time: U}} mod 4}}"@en,
+        "0=<span style=\"color:#000000\">Title screen of Pokémon Black Version</span>"@en,
+        "1=<span style=\"color:#000000\">Title screen of Pokémon White Version</span>"@en,
+        "2=<span style=\"color:#000000\">Title screen of Pokémon Black Version 2</span>"@en,
+        "3=<span style=\"color:#000000\">Title screen of Pokémon White Version 2</span>"@en ;
+    schema:name "Generation V"@en .
 
 generation:generation_VI a classes:Generation ;
-    rdfs:label "generation_VI"@en;
-    schema1:name "generation_VI" .
+    rdfs:label "Generation VI"@en ;
+    ns1:debuten "October 12, 2013"@en ;
+    ns1:debutjp "October 12, 2013"@en ;
+    ns1:enden "November 18, 2016"@en ;
+    ns1:endjp "November 18, 2016"@en ;
+    ns1:maingames "X and Y"@en,
+        "pkmn"@en ;
+    ns1:ndex "721"@en ;
+    ns1:otherrpg "Omega Ruby and Alpha Sapphire"@en,
+        "pkmn"@en ;
+    ns1:primary "X"@en ;
+    ns1:region "[[Kalos]]"@en ;
+    ns1:remakes generation:generation_III ;
+    ns1:secondary "Y"@en ;
+    ns1:sidegames "Art Academy}}, {{pkmn"@en,
+        "Battle Trozei}}, {{pkmn"@en,
+        "Detective Pikachu"@en,
+        "Detective Pikachu – Birth of a New Duo}}, {{pkmn"@en,
+        "Duel"@en,
+        "GO}}, {{pkmn"@en,
+        "Picross}}, [[Pokkén Tournament]], {{vg"@en,
+        "Rumble World}}, {{pkmn"@en,
+        "Shuffle}}, {{pkmn"@en,
+        "Super Mystery Dungeon}}, {{pkmn"@en,
+        "pkmn"@en ;
+    ns1:storage "Bank"@en,
+        "pkmn"@en ;
+    ns1:suffix "<!--intentionally null-->"@en ;
+    ns1:titlescreen "#switch: {{#expr: {{#time: U}} mod 4}}"@en,
+        "0=X"@en,
+        "1=Y"@en,
+        "2=Omega Ruby"@en,
+        "3=Alpha Sapphire"@en ;
+    schema:name "Generation VI"@en ;
+    schema:size "250px"@en .
 
 generation:generation_VII a classes:Generation ;
-    rdfs:label "generation_VII"@en;
-    schema1:name "generation_VII" .
+    rdfs:label "Generation VII"@en ;
+    ns1:debuten "November 18, 2016"@en ;
+    ns1:debutjp "November 18, 2016"@en ;
+    ns1:enden "November 15, 2019"@en ;
+    ns1:endjp "November 15, 2019"@en ;
+    ns1:maingames "Sun and Moon"@en,
+        "Sun, Moon}}, {{pkmn"@en,
+        "Ultra Sun and Ultra Moon"@en,
+        "Ultra Sun, and Ultra Moon"@en,
+        "pkmn"@en ;
+    ns1:new_pokemon "802 <small>({{cat|Generation VII Pokémon|81 new}})</small>{{sup/7|SM}}<br />807 <small>({{cat|Generation VII Pokémon|5 new}})</small>{{sup/7|USUM}}<br />809 <small>({{cat|Generation VII Pokémon|2 new}}; [[List of Pokémon by Kanto Pokédex number|153 available]])</small>{{sup/7|PE}}"@en ;
+    ns1:otherrpg "[[Pokémon: Let's Go, Pikachu! and Let's Go, Eevee!|Let's Go, Pikachu! and Let's Go, Eevee!]]"@en ;
+    ns1:primary "Sun"@en ;
+    ns1:region "[[Alola]]"@en ;
+    ns1:remakes generation:generation_I ;
+    ns1:secondary "Moon"@en ;
+    ns1:sidegames "Detective Pikachu}}, {{pkmn"@en,
+        "GO}} <small>([[Pokémon GO/Version history"@en,
+        "Magikarp Jump]], [[Pokkén Tournament"@en,
+        "Masters"@en,
+        "Masters EX"@en,
+        "Pokkén Tournament DX]], {{vg"@en,
+        "Quest}}, {{pkmn"@en,
+        "Rumble Rush}}, {{pkmn"@en,
+        "Versions 0.47.1—0.161.0]])</small>, [[Pokémon: Magikarp Jump"@en,
+        "pkmn"@en ;
+    ns1:storage "Bank}} <small>([[Pokémon Bank#Version history"@en,
+        "HOME}}{{sup/7"@en,
+        "PE"@en,
+        "SMUSUM}}, {{pkmn"@en,
+        "Version 1.4+]])</small>{{sup/7"@en,
+        "pkmn"@en ;
+    ns1:suffix "<!--intentionally null-->"@en ;
+    ns1:titlescreen "#switch: {{#expr: {{#time: U}} mod 6}}"@en,
+        "0=Sun"@en,
+        "1=Moon"@en,
+        "2=Ultra Sun"@en,
+        "3=Ultra Moon"@en,
+        "4=LGPikachu"@en,
+        "5=LGEevee"@en ;
+    schema:caption "#switch: {{#expr: {{#time: U}} mod 6}}"@en,
+        "0=Title screen of Pokémon Sun"@en,
+        "1=Title screen of Pokémon Moon"@en,
+        "2=Title screen of Pokémon Ultra Sun"@en,
+        "3=Title screen of Pokémon Ultra Moon"@en,
+        "4=Title screen of Pokémon: Let's Go, Pikachu!"@en,
+        "5=Title screen of Pokémon: Let's Go, Eevee!"@en ;
+    schema:name "Generation VII"@en ;
+    schema:size "250px"@en .
 
 generation:generation_VIII a classes:Generation ;
-    rdfs:label "generation_VIII"@en;
-    schema1:name "generation_VIII" .
+    rdfs:label "Generation VIII"@en ;
+    ns1:debuten "November 15, 2019"@en ;
+    ns1:debutjp "November 15, 2019"@en ;
+    ns1:enden "November 18, 2022"@en ;
+    ns1:endjp "November 18, 2022"@en ;
+    ns1:maingames "Expansion Pass]])</small><br>{{pkmn"@en,
+        "Legends: Arceus"@en,
+        "Sword and Shield}} <small>([[Pokémon Sword and Shield Expansion Pass"@en,
+        "pkmn"@en ;
+    ns1:ndex "905{{tt|*|Only 664 Pokémon are available in Sword and Shield as of Patch 1.3.0}}"@en ;
+    ns1:new_pokemon "898 <small>({{cat|Generation VIII Pokémon|89 new}}, [[List of Pokémon by Galar Pokédex number|664 available]])</small>{{sup/8|SwSh}}<br />898 <small>([[List of Pokémon by Sinnoh Pokédex number|493 available]])</small>{{sup/8|BDSP}}<br />905 <small>({{cat|Generation VIII Pokémon|7 new}}; [[List of Pokémon by Hisui Pokédex number|242 available]])</small>{{sup/8|LA}}"@en ;
+    ns1:otherrpg "Brilliant Diamond and Shining Pearl"@en,
+        "pkmn"@en ;
+    ns1:primary "Sword"@en ;
+    ns1:region "[[Galar]] <small>([[Isle of Armor]], [[Crown Tundra]])</small><br>[[Hisui]]"@en ;
+    ns1:remakes generation:generation_IV ;
+    ns1:secondary "Shield"@en ;
+    ns1:storage "HOME"@en,
+        "pkmn"@en ;
+    ns1:suffix "<!--intentionally null-->"@en ;
+    ns1:titlescreen "#switch: {{#expr: {{#time: U}} mod 5}}"@en,
+        "0=Sword"@en,
+        "1=Shield"@en,
+        "2=Brilliant Diamond"@en,
+        "3=Shining Pearl"@en,
+        "4=Legends Arceus"@en ;
+    schema:name "Generation VIII"@en ;
+    schema:size "250px"@en .
+
+generation:generation_II a classes:Generation ;
+    rdfs:label "Generation II"@en ;
+    ns1:battlearena "Stadium 2"@en,
+        "pkmn"@en ;
+    ns1:debuten "October 15, 2000"@en ;
+    ns1:debutjp "November 21, 1999"@en ;
+    ns1:enden "March 19, 2003"@en ;
+    ns1:endjp "November 21, 2002"@en ;
+    ns1:ndex "251"@en ;
+    ns1:primary "Gold"@en ;
+    ns1:region "[[Johto]]"@en ;
+    ns1:secondary "Silver"@en ;
+    ns1:sidegames "Puzzle Challenge}}, {{pkmn"@en,
+        "Trading Card Game 2: The Invasion of Team GR!"@en,
+        "pkmn"@en ;
+    ns1:tertiary "Crystal"@en ;
+    ns1:titlescreen "#switch: {{#expr: {{#time: U}} mod 3}}"@en,
+        "0=Gold"@en,
+        "1=Silver"@en,
+        "2=Crystal"@en ;
+    schema:name "Generation II"@en .
+
+generation:generation_III a classes:Generation ;
+    rdfs:label "Generation III"@en ;
+    ns1:battlearena "Colosseum}}, {{pkmn"@en,
+        "XD"@en,
+        "XD: Gale of Darkness"@en,
+        "pkmn"@en ;
+    ns1:debuten "March 19, 2003"@en ;
+    ns1:debutjp "November 21, 2002"@en ;
+    ns1:enden "April 22, 2007"@en ;
+    ns1:endjp "September 28, 2006"@en ;
+    ns1:ndex "386"@en ;
+    ns1:otherrpg "2v2"@en,
+        "FireRed"@en,
+        "LeafGreen"@en ;
+    ns1:primary "Ruby"@en ;
+    ns1:region "[[Hoenn]], [[Orre]], [[Sevii Islands]] ([[Kanto]])"@en ;
+    ns1:remakes generation:generation_I ;
+    ns1:secondary "Sapphire"@en ;
+    ns1:sidegames "Dash}}, {{pkmn"@en,
+        "Mystery Dungeon: Red Rescue Team and Blue Rescue Team}}, {{vg"@en,
+        "Pinball: Ruby & Sapphire}}, {{pkmn"@en,
+        "Pokémon Ranger"@en,
+        "Ranger"@en,
+        "Trozei!}}, {{pkmn"@en,
+        "pkmn"@en ;
+    ns1:storage "Box"@en,
+        "Box Ruby & Sapphire"@en,
+        "pkmn"@en ;
+    ns1:tertiary "Emerald"@en ;
+    ns1:titlescreen "#switch: {{#expr: {{#time: U}} mod 5}}"@en,
+        "0=Ruby"@en,
+        "1=Sapphire"@en,
+        "2=Emerald"@en,
+        "3=FireRed"@en,
+        "4=LeafGreen"@en ;
+    schema:name "Generation III"@en .
+
+generation:generation_IV a classes:Generation ;
+    rdfs:label "Generation IV"@en ;
+    ns1:battlearena "Battle Revolution"@en,
+        "pkmn"@en ;
+    ns1:debuten "April 22, 2007"@en ;
+    ns1:debutjp "September 28, 2006"@en ;
+    ns1:enden "March 4, 2011"@en ;
+    ns1:endjp "September 18, 2010"@en ;
+    ns1:ndex "493"@en ;
+    ns1:otherrpg "2v2"@en,
+        "HeartGold"@en,
+        "SoulSilver"@en ;
+    ns1:primary "Diamond"@en ;
+    ns1:region "[[Sinnoh]]"@en ;
+    ns1:remakes generation:generation_II ;
+    ns1:secondary "Pearl"@en ;
+    ns1:sidegames "Mystery Dungeon (WiiWare)}}, [[PokéPark Wii: Pikachu's Adventure]], {{pkmn"@en,
+        "Mystery Dungeon: Explorers of Sky}}, {{pkmn"@en,
+        "Mystery Dungeon: Explorers of Time and Explorers of Darkness}}, {{pkmn"@en,
+        "Ranger: Guardian Signs"@en,
+        "Ranger: Shadows of Almia}}, {{pkmn"@en,
+        "Rumble}}, {{pkmn"@en,
+        "pkmn"@en ;
+    ns1:storage "[[My Pokémon Ranch|Ranch]] <small>([[Pokémon Diamond and Pearl|Pokémon Diamond, Pearl]], and Japanese {{v2|Platinum}} only)</small>"@en ;
+    ns1:tertiary "Platinum"@en ;
+    ns1:titlescreen "#switch: {{#expr: {{#time: U}} mod 5}}"@en,
+        "0=Diamond"@en,
+        "1=Pearl"@en,
+        "2=Platinum"@en,
+        "3=HeartGold"@en,
+        "4=SoulSilver"@en ;
+    schema:name "Generation IV"@en .
+
+generation:generation_I a classes:Generation ;
+    rdfs:label "Generation I"@en ;
+    ns1:battlearena "[[Pokémon Stadium (Japanese)|Stadium (Japanese)]], [[Pokémon Stadium|Stadium (International)]]"@en ;
+    ns1:debuten "September 28, 1998"@en ;
+    ns1:debutjp "February 27, 1996"@en ;
+    ns1:enden "October 15, 2000"@en ;
+    ns1:endjp "November 21, 1999"@en ;
+    ns1:maingames "{{4v2|Red|Green|Blue|Yellow}} <small>(Japan)</small><br>{{3v2|Red|Blue|Yellow}} <small>(International)</small>"@en ;
+    ns1:ndex "151"@en ;
+    ns1:primary "Red"@en ;
+    ns1:region "[[Kanto]]"@en ;
+    ns1:secondary "Green"@en ;
+    ns1:sidegames "Pinball}}, {{pkmn"@en,
+        "Pokémon Trading Card Game"@en,
+        "Puzzle League"@en,
+        "Snap}}, {{pkmn"@en,
+        "Trading Card Game}}, {{pkmn"@en,
+        "vg"@en ;
+    ns1:titlescreen "#switch: {{#expr: {{#time: U}} mod 4}}"@en,
+        "0=Red"@en,
+        "1=Green"@en,
+        "2=Blue"@en,
+        "3=Yellow"@en ;
+    schema:name "Generation I"@en .
 

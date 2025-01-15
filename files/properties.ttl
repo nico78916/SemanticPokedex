@@ -1,10 +1,30 @@
-@prefix prop: <http://localhost:8000/properties/> .
+@prefix prop: <http://localhost:8000/index/properties/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix schema: <http://schema.org/> .
+@prefix schema: <https://schema.org/> .
 
-prop:SameAs a schema:Property ;
-    rdfs:label "SameAs"@en;
-	 schema:name "SameAs"@en .
+prop:defense_immune a schema:Property ;
+    rdfs:label "immune to"@en;
+    schema:name "immune to"@en .
+
+prop:offense_immune a schema:Property ;
+    rdfs:label "can't attack"@en;
+    schema:name "can't attack"@en .
+
+prop:defense_se a schema:Property ;
+    rdfs:label "defense super effective against"@en;
+    schema:name "defense super effective against"@en .
+
+prop:offense_se a schema:Property ;
+    rdfs:label "offense super effective against"@en;
+    schema:name "offense super effective against"@en .
+
+prop:defense_nve a schema:Property ;
+    rdfs:label "defense not very effective"@en;
+    schema:name "defense not very effective"@en .
+
+prop:offense_nve a schema:Property ;
+    rdfs:label "offense not very effective"@en;
+    schema:name "offense not very effective"@en .
 
 prop:ability1 a schema:Property ;
     rdfs:label "ability1"@en;
@@ -387,4 +407,64 @@ prop:weight-lbs3 a schema:Property ;
 
 prop:weight-lbs4 a schema:Property ;
     rdfs:label "weight-lbs4"@en .
+
+prop:battlearena a schema:Property ;
+    rdfs:label "battlearena"@en .
+
+prop:debuten a schema:Property ;
+    rdfs:label "debuten"@en .
+
+prop:debutjp a schema:Property ;
+    rdfs:label "debutjp"@en .
+
+prop:enden a schema:Property ;
+    rdfs:label "enden"@en .
+
+prop:endjp a schema:Property ;
+    rdfs:label "endjp"@en .
+
+prop:maingames a schema:Property ;
+    rdfs:label "maingames"@en .
+
+prop:ndex a schema:Property ;
+    rdfs:label "ndex"@en .
+
+prop:new_pokemon a schema:Property ;
+    rdfs:label "new_pokemon"@en .
+
+prop:otherrpg a schema:Property ;
+    rdfs:label "otherrpg"@en .
+
+prop:primary a schema:Property ;
+    rdfs:label "primary"@en .
+
+prop:region a schema:Property ;
+    rdfs:label "region"@en .
+
+prop:remakes a schema:Property ;
+    rdfs:label "remakes"@en .
+
+prop:secondary a schema:Property ;
+    rdfs:label "secondary"@en .
+
+prop:sidegames a schema:Property ;
+    rdfs:label "sidegames"@en .
+
+prop:storage a schema:Property ;
+    rdfs:label "storage"@en .
+
+prop:suffix a schema:Property ;
+    rdfs:label "suffix"@en .
+
+prop:tertiary a schema:Property ;
+    rdfs:label "tertiary"@en .
+
+prop:timeworkarounden a schema:Property ;
+    rdfs:label "timeworkarounden"@en .
+
+prop:timeworkaroundjp a schema:Property ;
+    rdfs:label "timeworkaroundjp"@en .
+
+prop:titlescreen a schema:Property ;
+    rdfs:label "titlescreen"@en .
 

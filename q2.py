@@ -6,7 +6,7 @@ from rdflib import Graph, Literal, RDF, URIRef, Namespace
 from server import run
 
 # Définir les namespaces
-SCHEMA = Namespace("http://schema.org/")
+SCHEMA = Namespace("https://schema.org/")
 POKEMON = Namespace("http://localhost:8000/index/pokemon/")
 TYPES = Namespace("http://localhost:8000/index/types/")
 GENERATION = Namespace("http://localhost:8000/index/generation/")
@@ -47,6 +47,7 @@ def get_type_info(type_name):
     for line in text.split("\n"):
         if line.startswith("|") and in_type_prop:
             key, value = map(str.strip, line.split("=", 1))
+            key = key.replace("|", "")
             if key == "type":
                 continue
             if key == "prop":
@@ -68,11 +69,12 @@ def get_generation_info(gen_name):
     
     gen_info_box, in_infobox = [], False
     for line in text.split("\n"):
-        if line.startswith("{{Generation"):
+        if line.startswith("{{GenInfo"):
             in_infobox = True
         if in_infobox:
             if "=" in line:
                 key, value = map(str.strip, line.split("=", 1))
+                key = key.replace("|", "")
                 gen_info_box.append((key, value))
         if line.startswith("}}"):
             in_infobox = False
@@ -91,18 +93,27 @@ def generation_to_rdf(generations):
     g.bind("ability", ABILITY)
     g.bind("classes", CLASSES)
     for gen_name, gen_info in generations.items():
+
         gen_uri = URIRef(GENERATION[gen_name])
+        gen_name = gen_name.replace("_", " ")
+        #make the first letter uppercase
+        gen_name = gen_name[0].upper() + gen_name[1:]
         g.add((gen_uri, RDF.type, CLASSES.Generation))
-        g.add((gen_uri, SCHEMA.name, Literal(gen_name)))
-        g.add((gen_uri, RDFS.label, Literal(gen_name)))
+        g.add((gen_uri, SCHEMA.name, Literal(gen_name, lang="en")))
+        g.add((gen_uri, RDFS.label, Literal(gen_name, lang="en")))
         for key, value in gen_info:
+            prop = ""
+            if key in own_properties:
+                prop = PROPS[key]
+            else:
+                prop = SCHEMA[key]
             if value.startswith("{{") and value.endswith("}}"):
                 for v in value[2:-2].split("|"):
-                    g.add((gen_uri, SCHEMA[key], Literal(v)))
+                    g.add((gen_uri, prop, Literal(v, lang="en")))
             elif key == "remakes":
-                g.add((gen_uri, SCHEMA[key], GENERATION["generation_" + value]))
+                g.add((gen_uri, prop, GENERATION["generation_" + value]))
             else:    
-                g.add((gen_uri, SCHEMA[key], Literal(value)))
+                g.add((gen_uri, prop, Literal(value, lang="en")))
     return g
 
 def get_ability_info(ability_name):
@@ -225,17 +236,18 @@ def generate_rdf(pokemons):
             if key.endswith("type1") or key.endswith("type2"):
                 if value not in types:
                     types[value] = get_type_info(value)
-                g.add((pokemon_uri, SCHEMA[key], TYPES[value]))
+                g.add((pokemon_uri, PROPS[key], TYPES[value]))
             elif key.startswith("ability") and not any(key.endswith(suffix) for suffix in ["note", "layout", "caption"]) and not key.startswith("abilitycol") and not key.startswith("abilityn"):
                 correct_value = value.replace(" ", "_")
                 if correct_value not in abilities:
                     abilities[correct_value] = get_ability_info(correct_value)
-                g.add((pokemon_uri, SCHEMA[key], ABILITY[correct_value]))
+                g.add((pokemon_uri, PROPS[key], ABILITY[correct_value]))
             elif key.startswith("generation"):
                 gen = convert_digit_to_roman(value)
                 if "generation_" + gen not in generations:
                     generations["generation_" + gen] = get_generation_info("generation " + gen)
-            if key == "name":
+                g.add((pokemon_uri, PROPS[key], GENERATION["generation_" + gen]))
+            elif key == "name":
                 g.add((pokemon_uri, RDFS.label, Literal(value, lang="en")))
                 g.add((pokemon_uri, SCHEMA.name, Literal(value, lang="en")))
 
@@ -243,17 +255,23 @@ def generate_rdf(pokemons):
                 for lang, name in translations.items():
                     g.add((pokemon_uri, RDFS.label, Literal(name, lang=lang)))
                     g.add((pokemon_uri, SCHEMA.name, Literal(name, lang=lang)))
-
-            if key == "jname":
+            elif key == "jname":
                 g.add((pokemon_uri, RDFS.label, Literal(value, lang="ja")))
                 g.add((pokemon_uri, SCHEMA.name, Literal(value, lang="ja")))
             else:
                 if key.startswith("<!--"):
                     key = key.split("<!--")[1].strip()
+                t = get_litteral_type(value)
                 if key in own_properties:
-                    g.add((pokemon_uri, PROPS[key], Literal(value, datatype=get_litteral_type(value))))
+                    if t == SCHEMA.Text:
+                        g.add((pokemon_uri, PROPS[key], Literal(value, lang="en")))
+                    else:
+                        g.add((pokemon_uri, PROPS[key], Literal(value, datatype=t)))
                 else:
-                    g.add((pokemon_uri, SCHEMA[key], Literal(value, datatype=get_litteral_type(value))))
+                    if t == SCHEMA.Text:
+                        g.add((pokemon_uri, SCHEMA[key], Literal(value, lang="en")))
+                    else:
+                        g.add((pokemon_uri, SCHEMA[key], Literal(value, datatype=t)))
     return g
 
 def types_to_rdf(types):
@@ -269,11 +287,11 @@ def types_to_rdf(types):
     for type_name, infos in types.items():
         type_uri = TYPES[type_name]
         g.add((type_uri, RDF.type, CLASSES.ElementaryType))
-        g.add((type_uri, SCHEMA.name, Literal(type_name)))
+        g.add((type_uri, SCHEMA.name, Literal(type_name, lang="en")))
         for key, value in infos.items():
             for k, v in value.items():
                 for i in range(len(v)):
-                    g.add((type_uri, SCHEMA[key + "_" + k], TYPES[v[i]]))
+                    g.add((type_uri, PROPS[key + "_" + k], TYPES[v[i]]))
     return g
 
 def save(graph,filename):
@@ -328,8 +346,6 @@ def main():
     }
     for filename, graph in d.items():
         save(graph,filename)
-    #start server
-    run()
 
 
     
